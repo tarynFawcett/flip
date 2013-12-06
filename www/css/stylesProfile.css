@@ -1,0 +1,54 @@
+@font-face{
+	font-family:microYiBaiti;
+    src: url(../fonts/microsoft_yi_baiti-webfont.eot);
+    src: url(../fonts/microsoft_yi_baiti-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/microsoft_yi_baiti-webfont.woff) format('woff'),
+         url(../fonts/microsoft_yi_baiti-webfont.ttf) format('truetype'),
+         url(../fonts/microsoft_yi_baiti-webfont.svg#microYiBaiti) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	width:768px;
+	height:99px;
+	margin-left:auto;
+	margin-right:auto;
+	background: url(../images/bckgrd_blurSanFran.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index:-1;
+}
+
+#container {
+	width:768px;
+	/*height:999px;*/
+	/*background-color:#06F;*/
+	margin-right:auto;
+	margin-left:auto;
+	font-family:microYiBaiti;
+	text-decoration:none;
+}
+
+
+
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 767px){
+	
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 768px) and (max-width: 977px){
+	
+}
+
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 978px){
+	
+}
+
+

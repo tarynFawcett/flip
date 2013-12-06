@@ -1,0 +1,407 @@
+@font-face{
+	/*font-family:microYiBaiti;
+    src: url(../fonts/microsoft_yi_baiti-webfont.eot);
+    src: url(../fonts/microsoft_yi_baiti-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/microsoft_yi_baiti-webfont.woff) format('woff'),
+         url(../fonts/microsoft_yi_baiti-webfont.ttf) format('truetype'),
+         url(../fonts/microsoft_yi_baiti-webfont.svg#microYiBaiti) format('svg');
+    font-weight: normal;
+    font-style: normal;*/
+}
+
+@font-face{
+	font-family:aleoFont;
+    src: url(../fonts/aleo-regular-webfont.eot);
+    src: url(../fonts/aleo-regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/aleo-regular-webfont.woff) format('woff'),
+         url(../fonts/aleo-regular-webfont.ttf) format('truetype'),
+         url(../fonts/aleo-regular-webfont.svg#aleoFont) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#container {
+	width:768px;
+	height:1024px;
+	background-image:url(../images/backgroundTile2.jpg);
+	background-color:#434343; /*#06f*/
+	margin-right:auto;
+	margin-left:auto;
+	font-family:microYiBaiti;
+	text-decoration:none;
+}
+
+#header {
+	background-color:#00b048;  /*#434343*/
+	height:60px;
+	width:768px;
+	position:fixed;
+	z-index:12;
+}
+
+#header ul {
+	margin-left:310px;
+	display:block;
+	width:308px;
+	background-color:#CC6;
+}
+
+#header ul li{
+	color:#FFF;
+	display:inline;
+	font-size:30px;
+	/*line-height:58px;*/
+	background-color:#06C;
+	margin-right:30px;
+	height:30px;
+	width:50px;
+}
+
+#eventsButton {
+	height:100px;
+	width:300px;
+	background-color:#09F;
+}
+
+#sliderPrevButton, #sliderNextButton {
+	height:40px;
+	width:120px;
+	background-color:#C9C;
+}
+
+#imageSlider{
+	position:relative;
+	width:768px;
+	height:964px; /*total height - height of header*/
+	overflow:hidden;
+}
+	
+#slider{
+	position:absolute;
+	width:999999px;
+	height:100%;
+}
+
+.pageSlide {
+	display:block;
+	float:left;
+}
+
+div#logoPage {
+	/*padding-left:170px;*/
+	padding-top:250px;
+	height:964px; /*451px*/
+	width:768px;
+}
+
+#mainLogo {
+	margin-left:175px;
+	background-image:url(../images/mainLogo4.png);
+	height:451px;
+	width:425px;
+}
+
+div#logInPage {
+	width:768px;
+	height:964px;
+	/*background-color:#CF9;
+	opacity:.7;*/
+}
+
+#logInSquare {
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:200px;
+	height:500px;
+	width:480px;
+	background-color:#434343; /*#00b048*/
+	overflow:auto;
+}
+
+#logWhiteBorder {
+	height:440px;
+	width:420px;
+	border-style:solid;
+	border-width:5px;
+	border-color:#fff;
+	margin-left:26px;
+	margin-top:25px;
+}
+
+h1 {
+	color:#fff;
+	font-size:24px;
+	letter-spacing:4px;
+	text-align:center;
+	margin-top:35px;
+	margin-bottom:26px;
+}
+
+h2 {
+	color:#fff;
+	font-size:30px;
+	letter-spacing:4px;
+	text-align:center;
+	margin-top:35px;
+	margin-bottom:35px;
+}
+
+#logWhiteBorder p {
+	color:#fff;
+	font-size:25px;
+	margin-left:89px;
+}
+
+.whiteForm {
+	height:40px;
+	width:270px;
+	background-color:#fff;
+	margin-left:70px;
+	margin-right:auto;
+	border-radius:18px;
+	margin-top:13px;
+	margin-bottom:15px;
+	font-size:15px;
+	padding-left:10px;
+}
+
+h3 {
+	padding-top:13px;
+	margin-left:20px;
+	font-size:20px;
+	opacity:.4;
+}
+
+.submitButton {
+	height:40px;
+	width:150px;
+	background-color:#fff;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:18px;
+	margin-top:33px;
+	display:block;
+	font-size:20px;
+	cursor:pointer;
+}
+
+.submitButton p {
+	color:#434343;
+	margin-left:33px;
+	padding-top:3px;
+}
+
+p#forgot{
+	font-size:18px;
+	margin-top:10px;
+	text-align:center;
+	margin-left:0px;
+}
+
+#forgotHiddenDiv {	
+	height:2360px;
+	width:768px;
+	background-color:#222;
+	opacity:.9;
+	position:absolute;
+}
+
+#forgotHiddenBox {
+	height:735px;
+	width:600px;
+	margin-top:150px;
+	margin-left:84px;
+	background-color:#933;
+	z-index:11;
+	position:fixed;
+	float:left;
+}
+
+#forgotHiddenExitButton {
+	background-color:#fff;
+	height:40px;
+	width:500px;
+	margin-top:915px;
+	margin-left:140px;
+	position:absolute;
+	cursor:pointer;
+}
+
+div#signInPage {
+	width:768px;
+	height:964px;
+	/*background-color:#0CC;
+	opacity:.7;*/
+}
+
+#signInSquare {
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:150px;
+	height:760px;
+	width:480px;
+	background-color:#434343; /*#00b048*/
+	overflow:auto;
+}
+
+#signWhiteBorder {
+	height:700px;
+	width:420px;
+	border-style:solid;
+	border-width:5px;
+	border-color:#fff;
+	margin-left:26px;
+	margin-top:25px;
+}
+
+#signWhiteBorder p {
+	color:#fff;
+	font-size:25px;
+	margin-left:89px;
+}
+
+#nextButton {
+	height:40px;
+	width:150px;
+	background-color:#fff;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:18px;
+	margin-top:8px;
+}
+
+#nextButton p {
+	color:#434343;
+	margin-left:35px;
+	padding-top:8px;
+}
+
+#nextButton a {
+	text-decoration:none;
+}
+
+#buttonSelectorContainer {
+	height:30px;
+	width:120px;
+	/*background-color:#FFF;*/
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+}
+
+ul#buttonSelectorContainer li {
+	background-color:#fff;
+	height:30px;
+	width:30px;
+	margin-right:8px;
+	margin-left:18px;
+	float:left;
+	border-radius:30px;
+}
+
+ul#buttonSelectorContainer li .rowEnd {
+	margin-right:0px;
+}
+
+#buttonSelectorContainer li a{
+	height:30px;
+	width:30px;
+	display:block;
+}
+
+#tagsGroup {
+	height:360px;
+	width:380px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	/*background-color:#FC9;*/
+	overflow:auto;
+}
+
+#tagsGroup li {
+	height:30px;
+	width:120px;
+	margin-right:10px;
+	margin-bottom:10px;
+	/*background-color:#FFF;*/
+	display:inline;
+	float:left;
+	text-align:center;
+	border-radius:30px;
+}
+
+#tagsGroup li p {
+	padding-top:1px;
+	font-size:25px;
+	margin-left:0px;
+}
+
+#tagsGroup li.rowEnd {
+	margin-right:0px;
+}
+
+#tagsGroup li a {
+	width:100%;
+	height:100%;
+}
+
+#tagsGroup li.unselectedTag p{
+	background-color:#FFF;
+	color:#434343;
+	border-radius:30px;
+	padding-top:6px;
+	height:24px;
+	font-size:22px;	
+}
+
+.unselectedTag p {
+	/*color:#434343;*/
+}
+
+.selectedTag {
+	background-color:#00b048;
+}
+
+#tagsGroup li.selectedTag p{
+	color:#ffffff;
+	border-radius:30px;
+	padding-top:6px;
+	height:24px;
+	font-size:22px;	
+}
+
+#createButton {
+	height:40px;
+	width:150px;
+	background-color:#fff;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:18px;
+	margin-top:14px; /*19px*/
+}
+
+#createButton p {
+	color:#434343;
+	margin-left:30px;
+	padding-top:3px;
+}
+
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 767px){
+	
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 768px) and (max-width: 977px){
+	
+}
+
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 978px){
+	
+}
+
+

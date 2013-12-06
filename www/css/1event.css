@@ -1,0 +1,17 @@
+#container {
+	width: 200px;
+	height:300px;
+	margin-left: auto;
+	margin-right: auto;
+	/*position:relative;*/
+	background-color:#CCC;
+}
+
+#bodyList li{
+	height:100px;
+	width:100px;
+	background-color:#0C9;
+	float:left;
+	margin-right:30px;
+}
+

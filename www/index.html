@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width" / >
+        <title>Flip _tablet</title>
+        
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>-->
+        <script src="js/jquery-1.8.2.min.js"></script>
+        <script src="js/jquery.easing.1.3.js" type="text/javascript" ></script>
+        <!--<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
+        <script src="js/jquery.mobile.custom.min.js" type="text/javascript"></script>
+    
+    </head>
+
+    <body>
+    
+    	<div id="container">
+        
+        	<div id="forgotHiddenDiv">
+            </div>
+                
+            <div id="forgotHiddenDivText">
+				<ul>
+					<li id="forgotHiddenBox"></li>
+                    <li id="forgotHiddenExitButton">EXIT</li>
+              	</ul>
+         	</div>
+            
+            
+            <div id="header">
+            	<ul>
+                	<li id="logIn">LOG IN</li> <!--log in-->
+                    <li id="signUp">SIGN UP</li> <!--sign up-->
+                </ul>
+                <!--<div id="buttonContainer">
+                	<a href="#" id="sliderPrevButton"></a>
+                	<a href="#" id="sliderNextButton"></a>
+            	</div>-->
+                
+            </div>
+            
+            <!--<a href="events.html"><div id="eventsButton"></div></a>  blue short cut button -->
+            
+            <div id="imageSlider">
+            
+            	<div id="slider">
+                	<div class="pageSlide" id="logInPage">
+                    	<div id="logInSquare">
+                        	<div id="logWhiteBorder">
+                            	<h2>WELCOME BACK!</h2>
+                                <form id="myForm" onSubmit="sendData(); return false" method="get"> 
+                                    <p>username:</p><input type="text" name="username" id="userName" class="whiteForm" placeholder="This will be visible to all." required> <!--this only works in the browser?-->
+                                    <!--<div><h3>This will be visible to all.</h3></div>-->
+                                    <p>password:</p><input type="password" name="firstname" id="passWord" class="whiteForm" placeholder="This will be kept private.">
+                                    <!--<div><h3>This will be kept private.</h3></div>-->
+                                    <input class="submitButton" type="submit" value="SUBMIT">
+                               	</form>
+                                <!--<div id="submitButton"><p>SUBMIT</p></div>-->
+                                <p id="forgot">FORGOT PASSWORD?</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                	<div class="pageSlide" id="logoPage">
+                    	<div id="mainLogo"> </div>
+            		</div>
+                    
+                    <div class="pageSlide" id="signInPage">
+                    	<div id="signInSquare">
+                        	<div id="signWhiteBorder">
+                            	<div id="firstStep">
+                                    <h1>FIRST THE BUSY WORK...</h1>
+                                    <form id="myForm2">
+                                        <p>name:</p><input type="text" name="firstname" id="fullName" class="whiteForm" placeholder="Kept private until said otherwise.">
+                                        <!--<div><h3>This will be visible to all.</h3></div>-->
+                                        <p>username:</p><input type="text" name="firstname" id="userName2" class="whiteForm" placeholder="This will be visible to all.">
+                                        <!--<div><h3>This will be kept private.</h3></div>-->
+                                        <p>email:</p><input type="text" name="firstname" id="email" class="whiteForm" placeholder="We will not spam you!">
+                                        <!--<div><h3>This will be visible to all.</h3></div>-->
+                                        <p>password:</p><input type="password" name="firstname" id="passWord2" class="whiteForm" placeholder="This will be kept private.">
+                                        <!--<div><h3>This will be kept private.</h3></div>-->
+                                        <p>confirm password:</p><input type="password" name="firstname" id="confirm" class="whiteForm" placeholder="Please confirm password.">
+                                        <!--<div><h3>This will be kept private.</h3></div>-->
+                                   	</form>  
+                                    <div id="nextButton"><a href="#"><p>NEXT</p></a></div>                             
+                            	</div>
+                                
+                                <div id="secondStep">
+                                    <h1>...THEN THE FUN STUFF!</h1>
+                                    <form id="myForm3" onSubmit="sendProfileData(); return false" method="get">
+                                        <p>choose your main city:</p><input type="text" name="maincity" id="mainCity" class="whiteForm" placeholder="This will be visible to all.">
+                                        <!--<div><h3>This will default shown events.</h3></div>-->
+                                   	
+                                    <p>select your favorite tags:</p>
+                                    <div></div>
+                                    	<ul id="tagsGroup">
+                                        	<li class="unselectedTag"><p>Animals</p></li>
+                                            <li class="unselectedTag"><p>Astrology</p></li>
+                                            <li class="rowEnd unselectedTag"><p>Art</p></li>
+                                            <li class="unselectedTag"><p>Book Club</p></li>
+                                            <li class="unselectedTag"><p>Crafts</p></li>
+                                            <li class="rowEnd unselectedTag"><p>Concerts</p></li>
+                                            <li class="unselectedTag"><p>DIY</p></li>
+                                            <li class="unselectedTag"><p>Drink</p></li>
+                                            <li class="rowEnd unselectedTag"><p>Exercise</p></li>
+                                            <li class="unselectedTag"><p>Food</p></li>
+                                            <li class="unselectedTag"><p>Games</p></li>
+                                            <li class="rowEnd unselectedTag"><p>Indoor</p></li>
+                                            <li class="unselectedTag"><p>Karaoke</p></li>
+                                            <li class="unselectedTag"><p>Music</p></li>
+                                            <li class="rowEnd unselectedTag"><p>Outdoor</p></li>
+                                            <li class="unselectedTag"><p>Rec League</p></li>
+                                            <li class="unselectedTag"><p>Running</p></li>
+                                            <li class="rowEnd unselectedTag"><p>Snow</p></li>
+                                            <li class="unselectedTag"><p>Sports</p></li>
+                                            <li class="unselectedTag"><p>Studio</p></li>
+                                            <li class="rowEnd unselectedTag"><p>Teamwork</p></li>
+                                            <li class="unselectedTag"><p>Theater</p></li>
+                                            <li class="unselectedTag"><p>Travel</p></li>
+                                            <li class="rowEnd unselectedTag"><p>Water</p></li>
+                                            <li class="unselectedTag"><p>Yard Games</p></li>
+                                            <li class="unselectedTag"><p>Yoga</p></li>
+                                            <li class="rowEnd unselectedTag"><p>Youth</p></li>
+                                        </ul>
+                                          
+                                    <input id="createButton" class="submitButton" type="submit" value="CREATE">
+                                    </form>
+                                	<!--<div id="createButton"><a href="#"><p>CREATE</p></a></div> -->             
+                            	</div>
+                                
+                                <div id="leftColumn">
+                                	<ul id="buttonSelectorContainer">
+                                   		<!--<li><a href="#" rel="0"></a></li>
+                                 		<li class="rowEnd"><a href="#" rel="1"></a></li>-->
+                                	</ul>
+                                </div>          
+                            </div>
+                        </div>	
+                    </div>
+                </div>
+            </div>
+            
+            
+     	</div>
+        
+        <script>
+		$(document).ready(function() {
+			
+			document.getElementById('secondStep').style.display = "none";
+			document.getElementById('forgotHiddenDiv').style.display = "none";
+			document.getElementById('forgotHiddenDivText').style.display = "none";
+				
+				$("#slider").animate({
+					left: '-='+ 768
+					}, 1000, 'easeInOutExpo'   //}, 1000, 'easeInOutExpo'
+				);
+				currentSliderObject++;
+        });
+		
+		// VARIABLES
+		var numberOfSliderObjects = 3;
+		var currentSliderObject =1;
+		var slideDistance = 768;
+		//var previousSliderButtonVisible = false;
+		//var nextSliderButtonVisible = true;
+		
+		//MOUSE EVENTS
+		$('#logIn').on('tap', function(event){
+			//event.preventDefault();
+			slideToPrevious();
+			//currentSliderObject = 1;
+		});
+		
+		$('#signUp').on('tap', function(event){ 
+			event.preventDefault();
+			slideToNext();
+			//currentSliderObject = 3;	
+		});
+		
+		// TOUCH EVENTS
+		$('#slider').on('swiperight', function(event){ 
+			event.stopPropagation();
+			slideToPrevious();
+		});
+		
+		$('#slider').on('swipeleft', function(event){ 
+			event.stopPropagation();
+			slideToNext();		
+		});
+		
+		// FUNCTIONS
+		function slideToPrevious(){
+			if(currentSliderObject>1){
+				
+				$("#slider").animate({
+					left: '+='+slideDistance
+					}, 'easeInOutExpo'      //}, 1000, 'easeInOutExpo'
+				); 
+				currentSliderObject--;
+				//currentSliderObject = 1;
+			};
+		};
+		
+		function slideToNext(){
+			if(currentSliderObject<numberOfSliderObjects){
+				
+				$("#slider").animate({
+					left: '-='+slideDistance
+					}, 'easeInOutExpo'    //}, 1000, 'easeInOutExpo'
+				);
+				
+				//alert(currentSliderObject);
+				currentSliderObject++; 
+			};
+
+		};
+		
+		////////////////////////////section fade-in on create profile section//////////////////////////////////
+		
+		var firstStep = "#firstStep";
+		var secondStep = "#secondStep";
+		
+		var activeObject = firstStep;
+		
+		$("#nextButton a").click(function() { 
+			revealSecondStep();
+		});
+		
+		function revealSecondStep() {	
+			$(activeObject).fadeOut(500);
+			activeObject = secondStep;
+			//alert("active object now secondStep");
+			$(activeObject).delay(300).fadeIn(500);
+		};
+		
+		/////////////////////////passing data to next page/////////////////////////////////
+		
+		function sendData(){
+			var userNameValue = document.getElementById('userName').value;
+			
+			window.location = "events.html?userName="+userNameValue;
+		}
+		
+		function sendProfileData(){
+			var mainCityValue = document.getElementById('mainCity').value;
+			
+			window.location = "profile.html?mainCity="+mainCityValue;
+		}
+		
+		////////////// end passing data to next page ////////////////////
+		
+		$(function(){
+		 $("#tagsGroup li").click(function () {
+			 if ($(this).hasClass("selectedTag")) {
+				$(this).removeClass("selectedTag").addClass("unselectedTag"); 
+			 } else {
+				 $(this).addClass("selectedTag").removeClass("unselectedTag");
+			 }
+		 });
+		})
+		
+		var disableScroll = false;
+
+		function disableScrolling() {
+    		disableScroll = true;
+		}
+
+		function enableScrolling() {
+		    disableScroll = false;
+		}
+
+		document.ontouchmove = function(e){
+   			if(disableScroll){
+    			e.preventDefault();
+   			} 
+		}
+		
+		$('#forgot').on('tap', function(event){
+			event.preventDefault();
+			$('#forgotHiddenDiv, #forgotHiddenDivText').fadeIn(250);
+			disableScrolling();
+		});
+		$('#forgotHiddenExitButton').on('tap', function(event){
+			event.preventDefault();
+			$('#forgotHiddenDiv, #forgotHiddenDivText').fadeOut(250);
+			enableScrolling();
+		});
+		
+		</script>
+        
+    </body>
+
+</html>

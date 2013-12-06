@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width" / >
+        <title>Flip _tablet</title>
+        
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/stylesEvents.css" rel="stylesheet" type="text/css" />
+        
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>-->
+        <script src="js/jquery-1.8.2.min.js"></script>
+        <script src="js/jquery.easing.1.3.js" type="text/javascript" ></script>
+        <!--<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
+        <script src="js/jquery.mobile.custom.min.js" type="text/javascript"></script>
+        <!--<script src="js/modernizr.custom.js"></script>  codrops-->
+        
+    
+    </head>
+
+    <body onLoad="getData()">
+    
+    	<div id="container">
+        
+        	<!--<nav class="st-menu st-effect-1" id="menu-1">
+				<h2 class="icon icon-lab">Sidebar</h2>
+				<ul>
+					<li><a class="icon icon-data" href="#">Data Management</a></li>
+					<li><a class="icon icon-location" href="#">Location</a></li>
+					<li><a class="icon icon-study" href="#">Study</a></li>
+					<li><a class="icon icon-photo" href="#">Collections</a></li>
+					<li><a class="icon icon-wallet" href="#">Credits</a></li>
+				</ul>
+			</nav>-->
+        	
+        	<div id="header">
+            	<div id="welcomeText">Welcome,&nbsp;<p id="destination"></p></div>
+            </div>
+            
+            <div id="topLeftButtons">
+            	<img id="threeLines" src="images/navButton.png" height="38" width="55" />
+                <!--<button id="threeLines" type="button" onclick="revealNav(); return false;" ><img src="images/navButton.png" height="38" width="55" /></button>-->
+                <!--<button data-effect="st-effect-1">Slide in on top</button>-->
+                <div id="plusButton"><img src="images/whitePlus.png" height="38" width="55"/></div>
+            </div>
+            
+            <div id="hiddenNav">
+            	<!--<button class="menuButton" id="events" type="button" onclick="showEvents(); return false;" >events</button>
+                <button class="menuButton" id="search" type="button" onclick="showSearch(); return false;" >search</button>
+                <button class="menuButton" id="calendar" type="button" onclick="showCal(); return false;" >calendar</button>
+            	<button class="menuButton" id="weather" type="button" onclick="showWeather(); return false;" >weather</button>
+                <button class="menuButton" id="safetytips" type="button" onclick="showSafety(); return false;" >safety tips</button>
+                <button class="menuButton" id="profile" type="button" onclick="showProfile(); return false;" >profile</button>
+                <button class="menuButton" id="settings" type="button" onclick="showSettings(); return false;" >settings</button>
+            	<button class="menuButton" id="hide" type="button" onclick="hideNav(); return false;" >hide</button>-->
+                <p class="menuButton" id="events">events</p>
+                <p class="menuButton" id="search">search</p>
+                <p class="menuButton" id="calendar">calendar</p>
+                <p class="menuButton" id="weather">weather</p>
+                <p class="menuButton" id="safetytips">safety tips</p>
+                <p class="menuButton" id="profile">profile</p>
+                <p class="menuButton" id="settings">settings</p>
+                <p class="menuButton" id="hide">hide</p>
+            </div>
+            
+            <div id="miniLogo"></div>
+            
+            <!--PAGES HIDDEN-->
+            
+            <!-------------------------------------------------------------------EVENTS PAGE-->
+            <div id="eventsPage">
+            	<ul id="eventsGrid">
+                	<li>
+                    	<div class="whiteBorder">
+                        	<div class="eventImage" id="pic1">IMAGE</div>
+                            <h1>PICK UP VOLLEYBALL</h1>
+                            <div class="leftCol"></div>
+                            <div class="rightCol">
+                            	<!--how to make the little divider things-->
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="rowEnd">
+                    	<div class="whiteBorder">
+                        	<div class="eventImage" id="pic2">IMAGE</div>
+                            <h1>Let's go hiking!</h1>
+                            <div class="leftCol"></div>
+                            <div class="rightCol"></div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                    	<div class="whiteBorder">
+                        	<div class="eventImage" id="pic3">IMAGE</div>
+                            <h1>EVENT ONE</h1>
+                            <div class="leftCol"></div>
+                            <div class="rightCol"></div>
+                        </div>
+                    </li>
+                    
+                    <li class="rowEnd">
+                    	<div class="whiteBorder">
+                        	<div class="eventImage" id="pic4">IMAGE</div>
+                            <h1>STUDIO TIME</h1>
+                            <div class="leftCol"></div>
+                            <div class="rightCol"></div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                    	<div class="whiteBorder">
+                        	<div class="eventImage" id="pic5">IMAGE</div>
+                            <h1>Fishing</h1>
+                            <div class="leftCol"></div>
+                            <div class="rightCol"></div>
+                        </div>
+                    </li>
+                    
+                    <li class="rowEnd">
+                    	<div class="whiteBorder">
+                        	<div class="eventImage" id="pic6">IMAGE</div>
+                            <h1>wine tasting</h1>
+                            <div class="leftCol"></div>
+                            <div class="rightCol"></div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                    	<div class="whiteBorder">
+                        	<div class="eventImage" id="pic7">IMAGE</div>
+                            <h1>6v6 basketball</h1>
+                            <div class="leftCol"></div>
+                            <div class="rightCol"></div>
+                        </div>
+                    </li>
+                    
+                    <li class="rowEnd">
+                    	<div class="whiteBorder">
+                        	<div class="eventImage" id="pic8">IMAGE</div>
+                            <h1>arts and crafts</h1>
+                            <div class="leftCol"></div>
+                            <div class="rightCol"></div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                    	<div class="whiteBorder">
+                        	<div class="eventImage" id="pic9">IMAGE</div>
+                            <h1>triathalon runners</h1>
+                            <div class="leftCol"></div>
+                            <div class="rightCol"></div>
+                        </div>
+                    </li>
+                    
+                    <li class="rowEnd">
+                    	<div class="whiteBorder">
+                        	<div class="eventImage" id="pic10">IMAGE</div>
+                            <h1>voluteering</h1>
+                            <div class="leftCol"></div>
+                            <div class="rightCol"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-------------------------------------------------------------------SEARCH PAGE-->
+            <div id="searchPage">
+            	<h2>How Would You Like To Search?</h2>
+                
+                <div id="byCity">
+                
+                </div>
+                
+                <div class="orBreak">
+                	<div class="orLine"></div>
+                    <p>or</p>
+                    <div class="orLine"></div>
+                </div>
+                
+                <div id="byTag"></div>
+                
+                <div class="orBreak">
+                	<div class="orLine"></div>
+                    <p>or</p>
+                    <div class="orLine"></div>
+                </div>
+                
+                <div id="byCal"></div>
+            </div>
+            
+            <!-------------------------------------------------------------------CALENDAR PAGE-->
+            <div id="calPage">
+            	<div id="calendarHalf">                  
+                    
+                    <ul id="daysOfWeek">
+                    	<li>M</li>
+                        <li>T</li>
+                        <li>W</li>
+                        <li>Th</li>
+                        <li class="friday">F</li>
+                        <li>Sa</li>
+                        <li class="rowEnd">Su</li>
+                    </ul>
+                    
+                    <div id="slider">
+                    	<div class="sliderBlock">
+                        	<p>NOVEMBER 2013</p>
+                            <ul class="novCal">
+                                <li class="wrongMonth"><div class="tinyDate">28</div><div class="bigNumber">2</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">29</div><div class="bigNumber">1</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">30</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">31</div></li>
+                                <li class="friday"><div class="tinyDate">1</div></li>
+                                <li><a href="#calendarEvents" rel="0"><div class="tinyDate">2</div><div class="bigNumber">7</div></a></li>
+                                <li class="rowEnd"><a href="#calendarEvents" rel="1"><div class="tinyDate">3</div><div class="bigNumber">2</div></a></li>
+                                <li><div class="tinyDate">4</div></li>
+                                <li><a href="#calendarEvents" rel="2"><div class="tinyDate">5</div><div class="bigNumber">4</div></a></li>
+                                <li><a href="#calendarEvents" rel="3"><div class="tinyDate">6</div><div class="bigNumber">3</div></a></li>
+                                <li><a href="#calendarEvents" rel="4"><div class="tinyDate">7</div><div class="bigNumber">1</div></a></li>
+                                <li class="friday"><div class="tinyDate">8</div></li>
+                                <li><a href="#calendarEvents" rel="5"><div class="tinyDate">9</div><div class="bigNumber">5</div></a></li>
+                                <li class="rowEnd"><div class="tinyDate">10</div></li>
+                                <li><a href="#calendarEvents" rel="6"><div class="tinyDate">11</div><div class="bigNumber">1</div></a></li>
+                                <li><div class="tinyDate">12</div></li>
+                                <li><a href="#calendarEvents" rel="7"><div class="tinyDate">13</div><div class="bigNumber">1</div></a></li>
+                                <li><a href="#calendarEvents" rel="8"><div class="tinyDate">14</div><div class="bigNumber">2</div></a></li>
+                                <li class="friday"><div class="tinyDate">15</div></li>
+                                <li><div class="tinyDate">16</div></li>
+                                <li class="rowEnd"><a href="#calendarEvents" rel="9"><div class="tinyDate">17</div><div class="bigNumber">1</div></a></li>
+                                <li><div class="tinyDate">18</div></li>
+                                <li><a href="#calendarEvents" rel="10"><div class="tinyDate">19</div><div class="bigNumber">2</div></a></li>
+                                <li><a href="#calendarEvents" rel="11"><div class="tinyDate">20</div><div class="bigNumber">4</div></a></li>
+                                <li><div class="tinyDate">21</div></li>
+                                <li class="friday"><a href="#calendarEvents" rel="12"><div class="tinyDate">22</div><div class="bigNumber">3</div></a></li>
+                                <li><div class="tinyDate">23</div></li>
+                                <li class="rowEnd"><div class="tinyDate">24</div></li>
+                                <li><div class="tinyDate">25</div></li>
+                                <li><div class="tinyDate">26</div></li>
+                                <li><div class="tinyDate">27</div></li>
+                                <li><a href="#calendarEvents" rel="13"><div class="tinyDate">28</div><div class="bigNumber">1</div></a></li>
+                                <li class="friday"><div class="tinyDate">29</div></li>
+                                <li><a href="#calendarEvents" rel="14"><div class="tinyDate">30</div><div class="bigNumber">9</div></a></li>
+                                <li class="rowEnd wrongMonth"><div class="tinyDate">1</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">2</div><div class="bigNumber">4</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">3</div><div class="bigNumber">5</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">4</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">5</div></li>
+                                <li class="friday wrongMonth"><div class="tinyDate">6</div><div class="bigNumber">4</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">7</div><div class="bigNumber">8</div></li>
+                                <li class="rowEnd wrongMonth"><div class="tinyDate">8</div></li>
+                            </ul>
+                    	</div>
+                    	<div class="sliderBlock">
+                        	<p>DECEMBER 2013</p>
+                            <ul class="novCal">
+                                <li class="wrongMonth"><div class="tinyDate">25</div><div class="bigNumber">4</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">26</li>
+                                <li class="wrongMonth"><div class="tinyDate">27</div><div class="bigNumber">4</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">28</div><div class="bigNumber">4</div></li>
+                                <li class="friday wrongMonth"><div class="tinyDate">29</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">30</div><div class="bigNumber">4</div></li>
+                                <li class="rowEnd"><a href="#calendarEvents" rel="15"><div class="tinyDate">1</div><div class="bigNumber">4</div></a></li>
+                                <li><a href="#calendarEvents" rel="16"><div class="tinyDate">2</div><div class="bigNumber">4</div></a></li>
+                                <li><div class="tinyDate">3</div></li>
+                                <li><a href="#calendarEvents" rel="17"><div class="tinyDate">4</div><div class="bigNumber">4</div></a></li>
+                                <li><div class="tinyDate">5</div></li>
+                                <li class="friday"><div class="tinyDate">6</div></li>
+                                <li><a href="#calendarEvents" rel="18"><div class="tinyDate">7</div><div class="bigNumber">4</div></a></li>
+                                <li class="rowEnd"><div class="tinyDate">8</div></li>
+                                <li><a href="#calendarEvents" rel="19"><div class="tinyDate">9</div><div class="bigNumber">4</div></a></li>
+                                <li><a href="#calendarEvents" rel="20"><div class="tinyDate">10</div><div class="bigNumber">4</div></a></li>
+                                <li><div class="tinyDate">11</div></li>
+                                <li><a href="#calendarEvents" rel="21"><div class="tinyDate">12</div><div class="bigNumber">4</div></a></li>
+                                <li class="friday"><div class="tinyDate">13</div></li>
+                                <li><a href="#calendarEvents" rel="22"><div class="tinyDate">14</div><div class="bigNumber">4</div></a></li>
+                                <li class="rowEnd"><a href="#calendarEvents" rel="23"><div class="tinyDate">15</div><div class="bigNumber">4</div></a></li>
+                                <li><div class="tinyDate">16</div></li>
+                                <li><a href="#calendarEvents" rel="24"><div class="tinyDate">17</div><div class="bigNumber">4</div></a></li>
+                                <li><a href="#calendarEvents" rel="25"><div class="tinyDate">18</div><div class="bigNumber">4</div></li>
+                                <li><div class="tinyDate">19</div></li>
+                                <li class="friday"><a href="#calendarEvents" rel="26"><div class="tinyDate">20</div><div class="bigNumber">4</div></a></li>
+                                <li><a href="#calendarEvents" rel="27">div class="tinyDate">21</div><div class="bigNumber">4</div></a></li>
+                                <li class="rowEnd"><div class="tinyDate">22</div></li>
+                                <li><a href="#calendarEvents" rel="28"><div class="tinyDate">23</div><div class="bigNumber">4</div></a></li>
+                                <li><div class="tinyDate">24</div></li>
+                                <li><a href="#calendarEvents" rel="29"><div class="tinyDate">25</div><div class="bigNumber">4</div></a></li>
+                                <li><div class="tinyDate">26</div></li>
+                                <li class="friday"><div class="tinyDate">27</div></li>
+                                <li><a href="#calendarEvents" rel="30"><div class="tinyDate">28</div><div class="bigNumber">4</div></a></li>
+                                <li class="rowEnd"><div class="tinyDate">29</div></li>
+                                <li><div class="tinyDate">30</div></li>
+                                <li><a href="#calendarEvents" rel="31"><div class="tinyDate">31</div><div class="bigNumber">4</div></a></li>
+                                <li class="wrongMonth"><div class="tinyDate">1</div><div class="bigNumber">4</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">2</div></li>
+                                <li class="friday wrongMonth"><div class="tinyDate">3</div><div class="bigNumber">4</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">4</div><div class="bigNumber">4</div></li>
+                                <li class="rowEnd wrongMonth"><div class="tinyDate">5</div><div class="bigNumber">4</div></li>
+                            </ul>
+                      	</div>
+                        <div class="sliderBlock">
+                        	<p>JANUARY 2014</p>
+                            <ul class="novCal">
+                                <li class="wrongMonth"><div class="tinyDate">30</div><div class="bigNumber">4</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">31</div><div class="bigNumber">4</div></li>
+                                <li><div class="tinyDate">1</div><div class="bigNumber">8</div></li>
+                                <li><div class="tinyDate">2</div></li>
+                                <li class="friday"><div class="tinyDate">3</div></li>
+                                <li><div class="tinyDate">4</div><div class="bigNumber">4</div></li>
+                                <li class="rowEnd"><div class="tinyDate">5</div><div class="bigNumber">4</div></li>
+                                <li><div class="tinyDate">6</div></li>
+                                <li><div class="tinyDate">7</div><div class="bigNumber">4</div></li>
+                                <li><div class="tinyDate">8</div><div class="bigNumber">4</div></li>
+                                <li><div class="tinyDate">9</div></li>
+                                <li class="friday"><div class="tinyDate">10</div><div class="bigNumber">4</div></li>
+                                <li><div class="tinyDate">11</div></li>
+                                <li class="rowEnd"><div class="tinyDate">12</div><div class="bigNumber">4</div></li>
+                                <li><div class="tinyDate">13</div><div class="bigNumber">4</div></li>
+                                <li><div class="tinyDate">14</div></li>
+                                <li><div class="tinyDate">15</div><div class="bigNumber">4</div></li>
+                                <li><div class="tinyDate">16</div><div class="bigNumber">4</div></li>
+                                <li class="friday"><div class="tinyDate">17</div><div class="bigNumber">2</div></li>
+                                <li><div class="tinyDate">18</div><div class="bigNumber">4</div></li>
+                                <li class="rowEnd"><div class="tinyDate">19</div><div class="bigNumber">4</div></li>
+                                <li><div class="tinyDate">20</div><div class="bigNumber">4</div></li>
+                                <li><div class="tinyDate">21</div><div class="bigNumber">4</div></li>
+                                <li><div class="tinyDate">22</div></li>
+                                <li><div class="tinyDate">23</div></li>
+                                <li class="friday"><div class="tinyDate">24</div><div class="bigNumber">4</div></li>
+                                <li><div class="tinyDate">25</div><div class="bigNumber">4</div></li>
+                                <li class="rowEnd"><div class="tinyDate">26</div></li>
+                                <li><div class="tinyDate">27</div></li>
+                                <li><div class="tinyDate">28</div><div class="bigNumber">4</div></li>
+                                <li><div class="tinyDate">29</div><div class="bigNumber">4</div></li>
+                                <li><div class="tinyDate">30</div></li>
+                                <li class="friday"><div class="tinyDate">31</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">1</div><div class="bigNumber">4</div></li>
+                                <li class="rowEnd wrongMonth"><div class="tinyDate">2</div><div class="bigNumber">4</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">3</div><div class="bigNumber">4</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">4</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">5</div><div class="bigNumber">4</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">6</div><div class="bigNumber">4</div></li>
+                                <li class="friday wrongMonth"><div class="tinyDate">7</div></li>
+                                <li class="wrongMonth"><div class="tinyDate">8</div><div class="bigNumber">4</div></li>
+                                <li class="rowEnd wrongMonth"><div class="tinyDate">9</div><div class="bigNumber">4</div></li>
+                            </ul>
+                    	</div>
+                    </div>
+                    
+                </div>
+                
+                <div id="buttonContainer">
+                	<a href="#" id="sliderPrevButton"></a>
+                	<a href="#" id="sliderNextButton"></a>
+            	</div>
+                
+                <div id="calendarEvents">
+                	<div id="nov2div">
+                    	<h2>NOVEMBER 2</h2>
+                    	<ul class="nov2">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="nov3div">
+                    	<h2>NOVEMBER 3</h2>
+                    	<ul class="nov3">
+                        	<li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="nov5div">
+                    	<h2>NOVEMBER 5</h2>
+                    	<ul class="nov5">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="nov6div">
+                    	<h2>NOVEMBER 6</h2>
+                    	<ul class="nov6">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="nov7div">
+                    	<h2>NOVEMBER 7</h2>
+                    	<ul class="nov7">
+                        	<li></li>                           
+                        </ul>
+                    </div>
+                    <div id="nov9div">
+                    	<h2>NOVEMBER 9</h2>
+                    	<ul class="nov9">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="nov11div">
+                    	<h2>NOVEMBER 11</h2>
+                    	<ul class="nov11">
+                        	<li></li>
+                        </ul>
+                    </div>
+                    <div id="nov13div">
+                    	<h2>NOVEMBER 13</h2>
+                    	<ul class="nov13">
+                        	<li></li>
+                        </ul>
+                    </div>
+                    <div id="nov14div">
+                    	<h2>NOVEMBER 14</h2>
+                    	<ul class="nov14">
+                        	<li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="nov17div">
+                    	<h2>NOVEMBER 17</h2>
+                    	<ul class="nov17">
+                        	<li></li>
+                        </ul>
+                    </div>
+                    <div id="nov19div">
+                    	<h2>NOVEMBER 19</h2>
+                    	<ul class="nov19">
+                        	<li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="nov20div">
+                    	<h2>NOVEMBER 20</h2>
+                    	<ul class="nov20">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="nov22div">
+                    	<h2>NOVEMBER 22</h2>
+                    	<ul class="nov22">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="nov28div">
+                    	<h2>NOVEMBER 28</h2>
+                    	<ul class="nov28">
+                        	<li></li>
+                        </ul>
+                    </div>
+                    <div id="nov30div">
+                    	<h2>NOVEMBER 30</h2>
+                    	<ul class="nov30">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="dec1div">
+                    	<h2>DECEMBER 1</h2>
+                    	<ul class="dec1">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="dec2div">
+                    	<h2>DECEMBER 2</h2>
+                    	<ul class="dec2">
+                        	<li></li>
+                        </ul>
+                    </div>
+                    <div id="dec4div">
+                    	<h2>DECEMBER 4</h2>
+                    	<ul class="dec4">
+                        	<li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="dec7div">
+                    	<h2>DECEMBER 7</h2>
+                    	<ul class="dec7">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="dec9div">
+                    	<h2>DECEMBER 9</h2>
+                    	<ul class="dec9">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="dec10div">
+                    	<h2>DECEMBER 10</h2>
+                    	<ul class="dec10">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="dec12div">
+                    	<h2>DECEMBER 12</h2>
+                    	<ul class="dec12">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="dec14div">
+                    	<h2>DECEMBER 14</h2>
+                    	<ul class="dec14">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="dec15div">
+                    	<h2>DECEMBER 15</h2>
+                    	<ul class="dec15">
+                        	<li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="dec17div">
+                    	<h2>DECEMBER 17</h2>
+                    	<ul class="dec17">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="dec18div">
+                    	<h2>DECEMBER 18</h2>
+                    	<ul class="dec18">
+                        	<li></li>
+                        </ul>
+                    </div>
+                    <div id="dec20div">
+                    	<h2>DECEMBER 20</h2>
+                    	<ul class="dec20">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="dec21div">
+                    	<h2>DECEMBER 21</h2>
+                    	<ul class="dec21">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="dec23div">
+                    	<h2>DECEMBER 23</h2>
+                    	<ul class="dec23">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="dec25div">
+                    	<h2>DECEMBER 25</h2>
+                    	<ul class="dec25">
+                        	<li></li>
+                        </ul>
+                    </div>
+                    <div id="dec28div">
+                    	<h2>DECEMBER 28</h2>
+                    	<ul class="dec28">
+                        	<li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="dec31div">
+                    	<h2>DECEMBER 31</h2>
+                    	<ul class="dec31">
+                        	<li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+            <!-------------------------------------------------------------------WEATHER PAGE-->
+            <div id="weatherPage">
+            
+            </div>
+            
+            <!-------------------------------------------------------------------SAFEPAGE PAGE-->
+            <div id="safePage">
+                	<h2>SAFETY TIPS</h2>
+                	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here is where I'm going to write safety tips to keep the people feeling safe while using this app. We are unable to micromanage our events, just as the other social media sites handle it.</p>
+                    <ul>
+                    	<li>1. Rules test. Rules Test. Rules Test. Rules test. Rules Test. Rules Test. Rules test. Rules Test. Rules Test. Rules test. Rules Test. Rules Test. Rules test. Rules Test. Rules Test.</li>
+                        <li>2. Rules test. Rules Test. Rules Test.</li>
+                        <li>3. Rules test. Rules Test. Rules Test.</li>
+                        <li>4. Rules test. Rules Test. Rules Test.</li>
+                        <li>5. Rules test. Rules Test. Rules Test.</li>
+                    </ul>
+            </div>
+            
+            <!-------------------------------------------------------------------PROFILE PAGE-->
+            <div id="profilePage">
+            
+            </div>
+            
+            <!-------------------------------------------------------------------SETTINGS PAGE-->
+            <div id="settingsPage">
+            
+            </div>
+            
+     	</div>
+        
+        <script>
+		$(document).ready(function() {		
+			$("#sliderPrevButton").hide();	
+			
+			//NOVEMBER EVENTS/////////////////////////////		
+			document.getElementById('nov3div').style.display = "none";
+			document.getElementById('nov5div').style.display = "none";
+			document.getElementById('nov6div').style.display = "none";
+			document.getElementById('nov7div').style.display = "none";
+			document.getElementById('nov9div').style.display = "none";
+			document.getElementById('nov11div').style.display = "none";
+			document.getElementById('nov13div').style.display = "none";
+			document.getElementById('nov14div').style.display = "none";
+			document.getElementById('nov17div').style.display = "none";
+			document.getElementById('nov19div').style.display = "none";
+			document.getElementById('nov20div').style.display = "none";
+			document.getElementById('nov22div').style.display = "none";
+			document.getElementById('nov28div').style.display = "none";
+			document.getElementById('nov30div').style.display = "none";
+			
+			//DECEMBER EVENTS/////////////////////////////
+			document.getElementById('dec1div').style.display = "none";
+			document.getElementById('dec2div').style.display = "none";
+			document.getElementById('dec4div').style.display = "none";
+			document.getElementById('dec7div').style.display = "none";
+			document.getElementById('dec9div').style.display = "none";
+			document.getElementById('dec10div').style.display = "none";
+			document.getElementById('dec12div').style.display = "none";
+			document.getElementById('dec14div').style.display = "none";
+			document.getElementById('dec15div').style.display = "none";
+			document.getElementById('dec17div').style.display = "none";
+			document.getElementById('dec18div').style.display = "none";
+			document.getElementById('dec20div').style.display = "none";
+			document.getElementById('dec21div').style.display = "none";
+			document.getElementById('dec23div').style.display = "none";
+			document.getElementById('dec25div').style.display = "none";
+			document.getElementById('dec28div').style.display = "none";
+			document.getElementById('dec31div').style.display = "none";
+        });
+		
+		/////////////////////passing information from page to page////////////////////////////
+		
+		var userName;
+			
+	    var searchString = document.location.search;
+    	    
+	    	function getQueryParam(parameter, qs) {
+	            qs = "&" + qs;
+	            var p = escape(unescape(parameter));
+	            var regex = new RegExp("[?&]" + p + "=(?:([^&]*))?", "i");
+	           
+	            var match = regex.exec(qs);
+	            var value = "";
+	            if (match != null) {
+	                value = match[1];
+	            };
+	            return value;
+	        };
+
+	        function getData() {
+	            userName = getQueryParam("username", searchString);
+	            //alert("The user's first name is: " + userName +".");
+				
+				document.getElementById("destination").innerHTML=userName+'!';
+				
+				//for prepping the hidden nav
+				document.getElementById('hiddenNav').style.display = "none";
+				
+				document.getElementById('eventsPage').style.display = "none";
+				document.getElementById('searchPage').style.display = "none";
+				document.getElementById('calPage').style.display = "block";
+				document.getElementById('weatherPage').style.display = "none";
+				document.getElementById('safePage').style.display = "none";
+				document.getElementById('profilePage').style.display = "none";
+				document.getElementById('settingsPage').style.display = "none";
+
+	        };
+		///////////////end passing info from page to page/////////////////////	
+			
+			
+		////////////////////////////////////side menu reveal//////////////////////////////////////
+		
+		var i = 0;     //what in the world does i%2 do??? why do i need this variable?
+		
+		$('#threeLines').on('tap', function(event){
+			event.preventDefault();
+			$('#hiddenNav').fadeIn(250);
+		});
+		
+		$('#events').on('tap', function(event){
+			event.preventDefault();
+			
+				$('#hiddenNav').fadeOut(250);
+				
+				$('#eventsPage').fadeIn(250);
+				$('#searchPage').fadeOut(250);
+				$('#calPage').fadeOut(250);
+				$('#weatherPage').fadeOut(250);
+				$('#safePage').fadeOut(250);
+				$('#profilePage').fadeOut(250);
+				$('#settingsPage').fadeOut(250);
+		});
+		
+		$('#search').on('tap', function(event){
+			event.preventDefault();
+				
+				$('#hiddenNav').fadeOut(250);
+				
+				$('#eventsPage').fadeOut(250);
+				$('#searchPage').fadeIn(250);
+				$('#calPage').fadeOut(250);
+				$('#weatherPage').fadeOut(250);
+				$('#safePage').fadeOut(250);
+				$('#profilePage').fadeOut(250);
+				$('#settingsPage').fadeOut(250);
+		});
+		
+		$('#calendar').on('tap', function(event){
+			event.preventDefault();
+				
+				$('#hiddenNav').fadeOut(250);
+				
+				$('#eventsPage').fadeOut(250);
+				$('#searchPage').fadeOut(250);
+				$('#calPage').fadeIn(250);
+				$('#weatherPage').fadeOut(250);
+				$('#safePage').fadeOut(250);
+				$('#profilePage').fadeOut(250);
+				$('#settingsPage').fadeOut(250);
+		});
+		
+		$('#weather').on('tap', function(event){
+			event.preventDefault();
+				
+				$('#hiddenNav').fadeOut(250);
+				
+				$('#eventsPage').fadeOut(250);
+				$('#searchPage').fadeOut(250);
+				$('#calPage').fadeOut(250);
+				$('#weatherPage').fadeIn(250);
+				$('#safePage').fadeOut(250);
+				$('#profilePage').fadeOut(250);
+				$('#settingsPage').fadeOut(250);
+		});
+		  
+        $('#safetytips').on('tap', function(event){
+			event.preventDefault();
+				
+				$('#hiddenNav').fadeOut(250);
+				
+				$('#eventsPage').fadeOut(250);
+				$('#searchPage').fadeOut(250);
+				$('#calPage').fadeOut(250);
+				$('#weatherPage').fadeOut(250);
+				$('#safePage').fadeIn(250);
+				$('#profilePage').fadeOut(250);
+				$('#settingsPage').fadeOut(250);
+		}); 
+          
+		  
+        $('#profile').on('tap', function(event){
+			event.preventDefault();
+				
+				$('#hiddenNav').fadeOut(250);
+				
+				$('#eventsPage').fadeOut(250);
+				$('#searchPage').fadeOut(250);
+				$('#calPage').fadeOut(250);
+				$('#weatherPage').fadeOut(250);
+				$('#safePage').fadeOut(250);
+				$('#profilePage').fadeIn(250);
+				$('#settingsPage').fadeOut(250);
+		});  
+		  
+        $('#settings').on('tap', function(event){
+			event.preventDefault();
+				
+				$('#hiddenNav').fadeOut(250);
+				
+				$('#eventsPage').fadeOut(250);
+				$('#searchPage').fadeOut(250);
+				$('#calPage').fadeOut(250);
+				$('#weatherPage').fadeOut(250);
+				$('#safePage').fadeOut(250);
+				$('#profilePage').fadeOut(250);
+				$('#settingsPage').fadeIn(250);
+		});
+        
+        $('#hide').on('tap', function(event){
+			event.preventDefault();
+				$('#hiddenNav').fadeOut(250);
+		});
+		
+		 
+		////////////////////END side menu reveal////////////////////////
+		 
+		 
+		/////////function to slide calendar months///////////
+		 
+		var numberOfSliderObjects = 3;
+		var currentSliderObject = 1;
+		var slideDistance = 728;
+		var previousSliderButtonVisible = false;
+		var nextSliderButtonVisible = true;
+		
+		// MOUSE EVENTS
+		$('#sliderPrevButton').on('tap', function(event){
+			event.preventDefault();
+			slideToPrevious();
+		});
+		
+		$('#sliderNextButton').on('tap', function(event){ 
+			event.preventDefault();
+			slideToNext();	
+		});
+		
+		// TOUCH EVENTS
+		$('#slider').on('swiperight', function(event){ 
+			event.stopPropagation();
+			slideToPrevious();
+		});
+		
+		$('#slider').on('swipeleft', function(event){ 
+			event.stopPropagation();
+			slideToNext();		
+		});
+		
+		// FUNCTIONS
+		function slideToPrevious(){
+			if(currentSliderObject>1){
+				
+				$("#slider").animate({
+					left: '+='+slideDistance
+					}, 1000, 'easeInOutExpo'
+				); 
+				
+				currentSliderObject--;
+				checkSliderButtons();
+			};
+			
+		};
+		
+		function slideToNext(){
+			if(currentSliderObject<numberOfSliderObjects){
+				
+				$("#slider").animate({
+					left: '-='+slideDistance
+					}, 1000, 'easeInOutExpo'
+				);
+				
+				currentSliderObject++;
+				checkSliderButtons(); 
+			};
+
+		};
+		
+		function checkSliderButtons(){
+			if(currentSliderObject==1){
+				if(previousSliderButtonVisible==true){
+					previousSliderButtonVisible = false;
+					$("#sliderPrevButton").fadeOut(500); 
+				};
+			}else {
+				if(previousSliderButtonVisible==false){
+					previousSliderButtonVisible = true;
+					$("#sliderPrevButton").fadeIn(500); 
+				};
+			};
+			
+			if(currentSliderObject==numberOfSliderObjects){
+				if(nextSliderButtonVisible==true){
+					nextSliderButtonVisible = false;
+					$("#sliderNextButton").fadeOut(500); 
+				};
+			}else {
+				if(nextSliderButtonVisible==false){
+					nextSliderButtonVisible = true;
+					$("#sliderNextButton").fadeIn(500); 
+				};
+			};
+		};
+		
+		/////////END function to slide calendar months///////////
+		
+		/////////////////////////calendar events option////////////////////////
+		
+		var calArray=new Array();
+		
+		calArray[0]="#nov2div";
+		calArray[1]="#nov3div";
+		calArray[2]="#nov5div";
+		calArray[3]="#nov6div";
+		calArray[4]="#nov7div";
+		calArray[5]="#nov9div";		
+		calArray[6]="#nov11div";
+		calArray[7]="#nov13div";
+		calArray[8]="#nov14div";
+		calArray[9]="#nov17div";
+		calArray[10]="#nov19div";
+		calArray[11]="#nov20div";
+		calArray[12]="#nov22div";
+		calArray[13]="#nov28div";
+		calArray[14]="#nov30div";
+		
+		calArray[15]="#nov2div";
+		calArray[16]="#nov3div";
+		calArray[17]="#nov5div";
+		calArray[18]="#nov6div";
+		calArray[19]="#nov7div";
+		calArray[20]="#nov9div";		
+		calArray[21]="#nov11div";
+		calArray[22]="#nov13div";
+		calArray[23]="#nov14div";
+		calArray[24]="#nov17div";
+		calArray[25]="#nov19div";
+		calArray[26]="#nov20div";
+		calArray[27]="#nov22div";
+		calArray[28]="#nov28div";
+		calArray[29]="#nov30div";
+		calArray[30]="#nov30div";
+		calArray[31]="#nov30div";
+		
+		var activeObject="#nov2div";
+		
+		$(".novCal li a").click(function() {
+			//event.preventDefault();
+			showObjectOfInterest($(this).attr('rel'));
+		});
+		
+		function showObjectOfInterest(sectionNumber){
+			
+			if(activeObject!=calArray[sectionNumber]){
+				
+				$(activeObject).stop(true);
+				
+				$(activeObject).fadeOut(1000); 
+				
+				$(calArray[sectionNumber]).delay(1000).fadeIn(1000);
+				
+				activeObject = calArray[sectionNumber];
+				
+			};
+			
+		};
+		
+		/////////////////////////END calendar events option////////////////////////
+		
+		///////////////GENERAL EASING FUNCTION///////////////
+		
+		$(function() {
+                $('.novCal li a').bind('click',function(event){
+                    var $anchor = $(this);
+					
+					 $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1500,'easeInOutExpo');                    
+                    event.preventDefault();
+				 });
+			   });
+		
+		///////////////END GENERAL EASING FUNCTION///////////////
+		
+		
+		</script>
+        <!--<script src="js/classie.js"></script>
+		<script src="js/sidebarEffects.js"></script>-->
+    </body>
+
+</html>
