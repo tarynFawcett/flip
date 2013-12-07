@@ -157,15 +157,15 @@ button {
 	margin-top:30px;
 	margin-left:-86px;
 	color:#fff;
-	font-size:20px;
 	letter-spacing:1px;
 }
 
 #searchCityText {
-	background-color:#434343;
+	background-color:transparent; /*transparent*/
 	color:#fff;
 	border:none;
 	height:20px;
+	font-size:20px;
 }
 
 #searchingTag {
