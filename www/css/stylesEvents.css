@@ -64,7 +64,7 @@ body {
 
 #header {
 	background-color:#00b048;  /*#00AAB2--new blue #00B048--green  #128d96 this color shows in google as a red, the same red on my ipad..?*/
-	height:60px;
+	height:45px;
 	width:768px;
 	position:fixed;
 	opacity:.9;
@@ -77,8 +77,8 @@ body {
 }
 
 #threeLines {
-	margin-top:10px;
-	margin-left:15px;
+	margin-top:6px;
+	margin-left:10px;
 	float:left;
 	border:none;
 	background-color:transparent;
@@ -93,25 +93,32 @@ button {
 
 #plusButton {
 	float:left;
-	margin-top:10px;
+	margin-top:6px;
 	margin-left:10px;
 }
 
 #notifButton {
-	height:40px;
-	width:38px;
+	height:28px;
+	width:35px;
 	/*background-color:#990;*/
-	background-image:url(../images/notifButton2.png);
+	background-image:url(../images/notifButton4.png);
 	float:right;
-	margin-right:10px;
-	margin-top:10px;
+	margin-right:25px;
+	margin-top:2px;
+}
+
+#horizontalRule {
+	height:1px;
+	width:768px;
+	background-color:#fff;
+	margin-top:44px;
 }
 
 #navBarSearch {
-	height:25px;
-	width:375px;
-	/*background-color:#0ff;*/
-	margin-top:65px;
+	height:33px;
+	width:768px;
+	background-color:#222222;
+	margin-top:45px;
 }
 
 #navSearchDropDown {
@@ -121,7 +128,7 @@ button {
 	font-size:13px;
 	height:20px;
 	border:none;
-	/*margin-top:65px;*/
+	margin-top:7px;
 	margin-left:20px;
 	float:left;
 	padding-left:3px;
@@ -154,7 +161,7 @@ button {
 	border-color:#fff;
 	border-width:1px;
 	float:left;
-	/*margin-top:65px;*/
+	margin-top:6px;
 	margin-left:6px;
 	color:#fff;
 	letter-spacing:1px;
@@ -176,7 +183,7 @@ button {
 	border-color:#fff;
 	border-width:1px;*/
 	float:left;
-	/*margin-top:65px;*/
+	margin-top:6px;
 	margin-left:6px;
 	color:#fff;
 	font-size:20px;
@@ -191,7 +198,7 @@ button {
 	border-color:#fff;
 	border-width:1px;*/
 	float:left;
-	/*margin-top:65px;*/
+	margin-top:6px;
 	margin-left:6px;
 	color:#fff;
 	font-size:20px;
@@ -204,7 +211,7 @@ button {
 	background-color:#434343;
 	color:#fff;
 	float:left;
-	/*margin-top:64px;*/
+	margin-top:6px;
 	margin-left:6px;
 	font-size:13px;
 	padding-top:5px;
@@ -220,6 +227,7 @@ button {
 	z-index:9999;
 	position:fixed;
 	margin-top:10px;
+	cursor:pointer;
 }
 
 #welcomeText {
@@ -227,7 +235,7 @@ button {
 	float:right;
 	font-size:30px;
 	margin-right:15px;
-	margin-top:15px;
+	margin-top:7px;
 	opacity:1;
 	width:auto;
 	z-index:9999;
@@ -253,14 +261,14 @@ button {
 	background-color:#666;
 	position:fixed;
 	z-index:120;
-	margin-top:60px;
+	margin-top:46px;
 }
 
 #hiddenNotif {
 	height:200px;
 	width:250px;
 	background-color:#0C6;
-	z-index:12;
+	z-index:102;
 	margin-top:60px;
 	position:fixed;
 	margin-left:518px;
@@ -276,9 +284,10 @@ button {
 	width:250px;
 	background-color:#0C6;
 	z-index:12;
-	margin-top:60px;
+	margin-top:45px;
 	position:fixed;
 	margin-left:80px;
+	z-index:109;
 }
 
 .menuButton {
