@@ -108,10 +108,10 @@ button {
 }
 
 #navBarSearch {
-	/*height:55px;
-	width:75px;
-	background-color:#0ff;*/
-	/*margin-left:140px;*/
+	height:25px;
+	width:375px;
+	/*background-color:#0ff;*/
+	margin-top:65px;
 }
 
 #navSearchDropDown {
@@ -121,7 +121,7 @@ button {
 	font-size:13px;
 	height:20px;
 	border:none;
-	margin-top:65px;
+	/*margin-top:65px;*/
 	margin-left:20px;
 	float:left;
 	padding-left:3px;
@@ -154,7 +154,7 @@ button {
 	border-color:#fff;
 	border-width:1px;
 	float:left;
-	margin-top:65px;
+	/*margin-top:65px;*/
 	margin-left:6px;
 	color:#fff;
 	letter-spacing:1px;
@@ -172,12 +172,12 @@ button {
 	height:20px;
 	width:auto;
 	/*background-color:#03F;*/
-	border-bottom:dashed;
+	/*border-bottom:dashed;
 	border-color:#fff;
-	border-width:1px;
+	border-width:1px;*/
 	float:left;
-	margin-top:33px;
-	margin-left:-86px;
+	/*margin-top:65px;*/
+	margin-left:6px;
 	color:#fff;
 	font-size:20px;
 	letter-spacing:1px;
@@ -187,12 +187,12 @@ button {
 	height:20px;
 	width:auto;
 	/*background-color:#03F;*/
-	border-bottom:dashed;
+	/*border-bottom:dashed;
 	border-color:#fff;
-	border-width:1px;
+	border-width:1px;*/
 	float:left;
-	margin-top:33px;
-	margin-left:-86px;
+	/*margin-top:65px;*/
+	margin-left:6px;
 	color:#fff;
 	font-size:20px;
 	letter-spacing:1px;
@@ -204,7 +204,7 @@ button {
 	background-color:#434343;
 	color:#fff;
 	float:left;
-	margin-top:32px;
+	/*margin-top:64px;*/
 	margin-left:6px;
 	font-size:13px;
 	padding-top:5px;
