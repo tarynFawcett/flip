@@ -34,7 +34,7 @@
         
         <script>
 			$(document).ready(function(){
-				$(".group3").colorbox({rel:'group3', transition:"none", width:"90%", height:"90%"});
+				//$(".group3").colorbox({rel:'group3', transition:"none", width:"90%", height:"90%"});
 					
 				$("#sliderPrevButton").hide();	
 			
@@ -224,16 +224,25 @@
         	<div id="header">
             	<div id="welcomeText">Welcome,&nbsp;<p id="destination"></p></div>
                 <div id="navBarSearch">
-            		<form id="navBarSearchForm" action="">
+            		<!--<form id="navBarSearchForm" action="">
                 	    <select name="searchNav" id="navSearchDropDown">
                 	        <option selected class="dropDownText" id="cityDropDown" value="city">city</option>
                 	        <option class="dropDownText" id="tagDropDown" value="tag">tag</option>
                 	        <option class="dropDownText" id="calDropDown" value="calendar">calendar</option>
                 	 	</select>
-           			</form>
-                    <div class="revealedSearchDiv" id="searchingCity"><input id="searchCityText" type="text" placeholder="Minneapolis"></form></div>
+           			</form>-->
+                    <!--<div class = "curVal">Gender</div><div class = "arrow">V</div>-->
+                    <div id="dropDownText" class="curVal">Gender</div><div class = "arrow">V</div>
+    					<div class = "choices">
+        				<div class = "choice">Male</div>
+        				<div class = "choice">Female</div>
+        				<div class = "choice">Refuse to answer</div>
+    				</div>
+                    <div class="revealedSearchDiv" id="searchingCity">
+                    	<input id="searchCityText" type="text" placeholder="Minneapolis"></form>
+                    </div>
                     <div class="revealedSearchDiv" id="searchingTag">
-                    	<form id="searchTagDropForm" action="">
+                    	<!--<form id="searchTagDropForm" action="">
                             <select name="searchTag" id="searchCalTagrop">
                                 <option class="month" value="Jan">Animals</option>
                                 <option class="month" value="Feb">Astrology</option>
@@ -263,10 +272,10 @@
                                 <option class="month" value="Nov">Yoga</option>
                                 <option class="month" value="Dec">Youth</option>
                             </select>
-                    	</form>
+                    	</form>-->
                     </div>
                     <div class="revealedSearchDiv" id="searchingCal">
-                    	<form id="searchCalDropForm" action="">
+                    	<!--<form id="searchCalDropForm" action="">
                             <select name="searchMonth" id="searchCalMonthDrop">
                                 <option class="month" value="Jan">Jan</option>
                                 <option class="month" value="Feb">Feb</option>
@@ -314,7 +323,7 @@
                                 <option class="day" value="30">30</option>
                                 <option class="day" value="31">31</option>
                             </select>
-           				</form>
+           				</form>-->
                     </div>
                     <div id="goEvents">Go</div>
                     <div id="notifButton"></div>
@@ -4967,6 +4976,21 @@
      	</div>
         
         <script>
+		
+		$(".choices").hide();
+		$(".arrow").click(function(event) {
+   		$(".choices").slideToggle("fast"); 
+   		event.stopPropagation();
+		});
+		$(".choice").click(function() {
+   		$(".curVal").html($(this).html());
+   		$(".choices").slideToggle("fast");
+   		event.stopPropagation();
+		});
+		$("html").click(function() {
+	    $(".choices").slideUp("fast"); 
+		});
+		
 		
 		$("#navSearchDropDown").change(function () {
 			var str = "";
