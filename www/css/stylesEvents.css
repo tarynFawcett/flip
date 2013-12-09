@@ -105,6 +105,7 @@ button {
 	float:right;
 	margin-right:25px;
 	margin-top:2px;
+	z-index:9;
 }
 
 #horizontalRule {
@@ -128,12 +129,13 @@ button {
 .curVal {
     height: 30px;
     width: 100px;
-    line-height: 30px;
+    line-height:30px;
     vertical-align: middle;
     background-color:transparent;
     color: white;
 	float:left;
-	margin-left:20px;
+	margin-left:10px;
+	margin-top:2px;
 }
 
 .curVal p {
@@ -142,24 +144,114 @@ button {
 	font-size:20px;
 }
 
-.arrow {
-    color: white;
-    background-color:transparent; /* this can be an image */
-    cursor: pointer;
-    height: 30px;
-    line-height: 30px;
+.curVal2 {
+    height:25px;
+    width:93px;
+    line-height:14px;
     vertical-align: middle;
-    float:left;
-    top: 0px;
+    background-color:transparent;
+    color: white;
+	float:left;
+	margin-left:10px;
+	margin-top:1px;
+	border-bottom:1px dashed #ffffff;
 }
+.curVal2 p {
+	/*margin-left:10px;*/
+	letter-spacing:1px;
+	font-size:14px;
+	margin-top:10px;
+}
+
+.curVal3 {
+    height:25px;
+    width:52px;
+    line-height:14px;
+    vertical-align: middle;
+    background-color:transparent;
+    color: white;
+	float:left;
+	margin-left:10px;
+	margin-top:1px;
+	border-bottom:1px dashed #ffffff;
+}
+.curVal3 p {
+	margin-top:10px;
+	letter-spacing:1px;
+	font-size:14px;
+}
+
+.curVal4 {
+    height:26px;
+    width:33px;
+    line-height:14px;
+    vertical-align:middle;
+    background-color:transparent;
+    color: white;
+	float:left;
+	margin-left:10px;
+	margin-top:2px;
+	border-bottom:1px dashed #ffffff;
+}
+.curVal4 p {
+	margin-top:10px;
+	letter-spacing:1px;
+	font-size:14px;
+}
+
+.arrow {
+	background-image:url(../images/dropArrow.png);
+	width:20px;
+    cursor: pointer;
+    height:20px;
+    float:left;
+    margin-top:5px;
+	margin-left:12px;
+	border: 1px solid #fff;
+	margin-left:4px;
+}
+.arrow2 {
+	background-image:url(../images/dropArrow15x15.png);
+	width:15px;
+    cursor: pointer;
+    height:15px;
+    float:left;
+    margin-top:10px;
+	margin-left:5px;
+	border: 1px solid #fff;
+}
+.arrow3 {
+	background-image:url(../images/dropArrow15x15.png);
+	width:15px;
+    cursor:pointer;
+    height:15px;
+    float:left;
+    margin-top:10px;
+	/*margin-left:12px;*/
+	border: 1px solid #fff;
+	margin-left:4px;
+}
+
+.arrow4 {
+	background-image:url(../images/dropArrow15x15.png);
+	width:15px;
+    cursor:pointer;
+    height:15px;
+    float:left;
+    margin-top:10px;
+	/*margin-left:12px;*/
+	border: 1px solid #fff;
+	margin-left:4px;
+}
+
 .choices {
     position: absolute;
     left: 0px;
     top: 78px;
     background-color:#222222;
     color: white;
-    width: 150px;
-	margin-left:20px;
+    width: 125px;
+	margin-left:10px;
 	/*display:inline;*/
 }
 .choices div {
@@ -167,7 +259,55 @@ button {
     cursor: pointer;        
 }
 
-#city {
+.tagChoices {
+	position: absolute;*/
+    left: 0px;
+    top: 78px;
+    background-color:#222222;
+    color: white;
+    width: 150px;
+	height:300px;
+	overflow:scroll;
+	margin-left:5px;
+}
+.tagChoices div {
+	display:block;
+	cursor:pointer;
+}
+
+.calChoices {
+	position: absolute;*/
+    left: 0px;
+    top: 78px;
+    background-color:#222222;
+    color: white;
+    width:68px;
+	height:300px;
+	overflow:scroll;
+	margin-left:9px;
+}
+.calChoices div {
+	display:block;
+	cursor:pointer;
+}
+
+.dayChoices {
+	position: absolute;*/
+    left:0px;
+    top: 78px;
+    background-color:#222222;
+    color: white;
+    width:45px;
+	height:300px;
+	overflow:scroll;
+	margin-left:85px;
+}
+.dayChoices div {
+	display:block;
+	cursor:pointer;
+}
+
+#city, #tag, #cal {
 	height:31px;
 	font-size:20px;
 	margin-left:15px;
@@ -175,25 +315,48 @@ button {
 	letter-spacing:1px;
 }
 
-#tag {
-	height:31px;
-	font-size:20px;
-	margin-left:15px;
-	padding-top:9px;
+#animals, #astrology, #art, #bookClub, #crafts, #concerts, #diy, #drink, #exercise, #food, #games, #indoor, #karaoke, #music, #outdoor, #recLeague, #running, #snow, #sports, #studio, #teamwork, #theater, #travel, #water, #yardGames, #yoga, #youth {
+	height:24px;
+	font-size:17px;
+	margin-left:10px;
+	padding-top:5px;
 	letter-spacing:1px;
 }
 
-#cal {
-	height:31px;
-	font-size:20px;
-	margin-left:15px;
-	padding-top:9px;
+#jan, #feb, #mar, #apr, #may, #jun, #jul, #aug, #sep, #oct, #nov, #dec {
+	height:24px;
+	font-size:17px;
+	margin-left:10px;
+	padding-top:5px;
+	letter-spacing:1px;
+}
+
+#day1, #day2, #day3, #day4, #day5, #day6, #day7, #day8, #day9, #day10, #day11, #day12, #day12, #day14, #day15, #day16, #day17, #day18, #day19, #day20, #day21, #day22, #day23, #day24, #day25, #day26, #day27, #day28, #day29, #day30, #day31 {
+	height:24px;
+	font-size:17px;
+	margin-left:10px;
+	padding-top:5px;
 	letter-spacing:1px;
 }
 
 .dropDivider {
 	height:1px;
+	width:125px;
+	background-color:#fff;
+}
+.dropDividerTag {
+	height:1px;
 	width:150px;
+	background-color:#fff;
+}
+.dropDividerCal {
+	height:1px;
+	width:68px;
+	background-color:#fff;
+}
+.dropDividerDay {
+	height:1px;
+	width:45px;
 	background-color:#fff;
 }
 
@@ -250,36 +413,37 @@ button {
 	color:#fff;
 	border:none;
 	height:20px;
-	font-size:20px;
+	font-size:14px; /*20*/
+	width:140px;
 }
 
 #searchingTag {
 	height:20px;
-	width:auto;
+	/*width:auto;*/
 	/*background-color:#03F;*/
 	/*border-bottom:dashed;
 	border-color:#fff;
 	border-width:1px;*/
 	float:left;
-	margin-top:6px;
-	margin-left:6px;
+	/*margin-top:6px;
+	margin-left:6px;*/
 	color:#fff;
-	font-size:20px;
+	font-size:14px; /*20*/
 	letter-spacing:1px;
 }
 
 #searchingCal {
 	height:20px;
-	width:auto;
+	/*width:auto;*/
 	/*background-color:#03F;*/
 	/*border-bottom:dashed;
 	border-color:#fff;
 	border-width:1px;*/
 	float:left;
-	margin-top:6px;
-	margin-left:6px;
+	/*margin-top:6px;
+	margin-left:6px;*/
 	color:#fff;
-	font-size:20px;
+	font-size:14px;
 	letter-spacing:1px;
 }
 
@@ -346,10 +510,10 @@ button {
 	height:200px;
 	width:250px;
 	background-color:#0C6;
-	z-index:109;
-	margin-top:60px;
+	z-index:309;
+	margin-top:90px;
 	position:fixed;
-	margin-left:518px;
+	margin-left:505px;
 }
 
 #hide {
@@ -359,13 +523,13 @@ button {
 
 #hiddenPlusButton {
 	height:200px;
-	width:250px;
+	width:608px;
 	background-color:#0C6;
 	z-index:12;
-	margin-top:45px;
+	margin-top:150px;
 	position:fixed;
 	margin-left:80px;
-	z-index:109;
+	z-index:309;
 }
 
 .menuButton {
@@ -2550,7 +2714,7 @@ h2 {
 
 
 
-#leftColDescripDiv, #leftColDescripDiv2, #leftColDescripDiv3, #leftColDescripDiv4, #leftColDescripDiv5, #leftColDescripDiv6, #leftColDescripDiv7, #leftColDescripDiv8, #leftColDescripDiv9, #leftColDescripDiv10, #leftColDescripDiv11, #leftColDescripDiv12, #leftColDescripDiv13, #leftColDescripDiv14, #leftColDescripDiv15, #leftColDescripDiv16 {
+#leftColDescripDiv, #leftColDescripDiv2, #leftColDescripDiv3, #leftColDescripDiv4, #leftColDescripDiv5, #leftColDescripDiv6, #leftColDescripDiv7, #leftColDescripDiv8, #leftColDescripDiv9, #leftColDescripDiv10, #leftColDescripDiv11, #leftColDescripDiv12, #leftColDescripDiv13, #leftColDescripDiv14, #leftColDescripDiv15, #leftColDescripDiv16, #hiddenPlusButtonGrayBox, #hiddenNotifGrayBox {
 	height:3704px;
 	width:768px;
 	background-color:#222;

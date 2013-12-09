@@ -147,6 +147,9 @@
 				document.getElementById('leftColDescripDiv16').style.display = "none";
 				document.getElementById('leftColDescripDivText16').style.display = "none";
 				
+				document.getElementById('hiddenPlusButtonGrayBox').style.display = "none";
+				document.getElementById('hiddenNotifGrayBox').style.display = "none";
+				
 				document.getElementById('countGrayBack').style.display = "none";
 				document.getElementById('countGrayBackText').style.display = "none";
 				document.getElementById('countGrayBack2').style.display = "none";
@@ -235,22 +238,80 @@
                 	 	</select>
            			</form>-->
                     <!--<div class = "curVal">Gender</div><div class = "arrow">V</div>-->
-                    <div id="dropDownText" class="curVal"><p>Search</p></div><div class = "arrow">V</div>
+                    <div id="dropDownText" class="curVal"><p>Search</p></div><div class="arrow"></div>
                     
                     <div class = "choices">
         					<div class="dropDivider"></div>
-                        <div class = "choice" id="city">City</div>
+                        <div class = "choice" id="city"><p>City</p></div>
                         	<div class="dropDivider"></div>
-        				<div class = "choice" id="tag">Tag</div>
+        				<div class = "choice" id="tag"><p>Tag</p></div>
                         	<div class="dropDivider"></div>
-        				<div class = "choice" id="cal">Calendar</div>
+        				<div class = "choice" id="cal"><p>Calendar</p></div>
     				</div>
                     
                     <div class="revealedSearchDiv" id="searchingCity">
                     	<input id="searchCityText" type="text" placeholder="Minneapolis"></form>
                     </div>
+                    
                     <div class="revealedSearchDiv" id="searchingTag">
-                    	<form id="searchTagDropForm" action="">
+                    <div class="curVal2"><p>Select</p></div><div class="arrow2"></div>
+                    	<div class="tagChoices">
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="animals"><p>Animals</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="astrology"><p>Astrology</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="art"><p>Art</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="bookClub"><p>Book Club</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="crafts"><p>Crafts</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="concerts"><p>Concerts</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="diy"><p>DIY</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="drink"><p>Drink</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="exercise"><p>Exercise</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="food"><p>Food</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="games"><p>Games</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="indoor"><p>Indoor</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="karaoke"><p>Karaoke</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="music"><p>Music</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="outdoor"><p>Outdoor</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="recLeague"><p>Rec League</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="running"><p>Running</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="snow"><p>Snow</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="sports"><p>Sports</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="studio"><p>Studio</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="teamwork"><p>Teamwork</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="theater"><p>Theater</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="travel"><p>Travel</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="water"><p>Water</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="yardGames"><p>Yard Games</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="yoga"><p>Yoga</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoice" id="youth"><p>Youth</p></div>
+    					</div>
+                    	<!--<form id="searchTagDropForm" action="">
                             <select name="searchTag" id="searchCalTagrop">
                                 <option class="month" value="Jan">Animals</option>
                                 <option class="month" value="Feb">Astrology</option>
@@ -280,10 +341,102 @@
                                 <option class="month" value="Nov">Yoga</option>
                                 <option class="month" value="Dec">Youth</option>
                             </select>
-                    	</form>
+                    	</form>-->
                     </div>
                     <div class="revealedSearchDiv" id="searchingCal">
-                    	<form id="searchCalDropForm" action="">
+                    <div class="curVal3"><p>Month</p></div><div class="arrow3"></div>
+                    	<div class="calChoices">
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoice" id="jan"><p>Jan</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoice" id="feb"><p>Feb</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoice" id="mar"><p>Mar</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoice" id="apr"><p>Apr</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoice" id="may"><p>May</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoice" id="jun"><p>Jun</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoice" id="jul"><p>Jul</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoice" id="aug"><p>Aug</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoice" id="sep"><p>Sep</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoice" id="oct"><p>Oct</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoice" id="nov"><p>Nov</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoice" id="dec"><p>Dec</p></div>
+    					</div>
+           			<div class="curVal4"><p>Day</p></div><div class="arrow4"></div>
+                    	<div class="dayChoices">
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day1"><p>1</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day2"><p>2</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day3"><p>3</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day4"><p>4</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day5"><p>5</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day6"><p>6</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day7"><p>7</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day8"><p>8</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day9"><p>9</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day10"><p>10</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day11"><p>11</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day12"><p>12</p></div>
+                            	<div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day13"><p>13</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day14"><p>14</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day15"><p>15</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day16"><p>16</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day17"><p>17</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day18"><p>18</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day19"><p>19</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day20"><p>20</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day21"><p>21</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day22"><p>22</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day23"><p>23</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day24"><p>24</p></div>
+                            	<div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day25"><p>25</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day26"><p>26</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day27"><p>27</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day28"><p>28</p></div>
+                            	<div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day29"><p>29</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day30"><p>30</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoice" id="day31"><p>31</p></div>
+    					</div>
+                    	<!--<form id="searchCalDropForm" action="">
                             <select name="searchMonth" id="searchCalMonthDrop">
                                 <option class="month" value="Jan">Jan</option>
                                 <option class="month" value="Feb">Feb</option>
@@ -331,7 +484,7 @@
                                 <option class="day" value="30">30</option>
                                 <option class="day" value="31">31</option>
                             </select>
-           				</form>
+           				</form>-->
                     </div>
                     <div id="goEvents">Go</div>
                     <div id="goCal">Go</div>
@@ -347,6 +500,7 @@
             	<div id="horizontalRule"></div>
             </div>
             
+            <div id="hiddenPlusButtonGrayBox"></div>
             <div id="hiddenNavGrayBox"></div>
             
             <div id="hiddenNav">
@@ -368,6 +522,8 @@
             <div id="hiddenNotif">
             	<p class="menuButton" id="hideNotif">hide</p>
             </div>
+            
+            <div id="hiddenNotifGrayBox"></div>
             
             <div id="hiddenPlusButton">
             	<p class="menuButton" id="hidePlusButton">hide</p>
@@ -4990,6 +5146,7 @@
 		
 		$(".arrow").click(function(event) {
    			$(".choices").slideToggle("fast"); 
+			$(".tagChoices").hide(); 
    			event.stopPropagation();
 		});
 		
@@ -5015,9 +5172,60 @@
         	$("#searchingCal, #goCal").fadeIn(1000);
 		});
 		
+		
+		///////////////////////tag drop down
+		$(".tagChoices").hide();
+		
+		$(".arrow2").click(function(event) {
+   			$(".tagChoices").slideToggle("fast"); //scrollTop? 
+			$(".choices").hide();
+   			event.stopPropagation();
+		});
+		
+		$("#animals, #astrology, #art, #bookClub, #crafts, #concerts, #diy, #drink, #exercise, #food, #games, #indoor, #karaoke, #music, #outdoor, #recLeague, #running, #snow, #sports, #studio, #teamwork, #travel, #water, #yardGames, #yoga, #youth").click(function() {
+			$(".curVal2").html($(this).html());
+		});
+		
+		///////////////////////cal drop down one
+		$(".calChoices").hide();
+		
+		$(".arrow3").click(function(event) {
+   			$(".calChoices").slideToggle("fast"); //scrollTop? 
+			$(".choices").hide();
+			$(".tagChoices").hide();
+			$(".dayChoices").hide();
+   			event.stopPropagation();
+		});
+		
+		$("#jan, #feb, #mar, #apr, #may, #jun, #jul, #aug, #sep, #oct, #nov, #dec").click(function() {
+			$(".curVal3").html($(this).html());
+		});
+		
+		///////////////////////cal drop down one
+		$(".dayChoices").hide();
+		
+		$(".arrow4").click(function(event) {
+   			$(".dayChoices").slideToggle("fast"); //scrollTop? 
+			$(".choices").hide();
+			$(".tagChoices").hide();
+			$(".calChoices").hide();			
+   			event.stopPropagation();
+		});
+		
+		$("#day1, #day2, #day3, #day4, #day5, #day6, #day7, #day8, #day9, #day10, #day11, #day12, #day13, #day14, #day15, #day16, #day17, #day18, #day19, #day20, #day21, #day22, #day23, #day24, #day25, #day26, #day27, #day28, #day29, #day30, #day31").click(function() {
+			$(".curVal4").html($(this).html());
+		});
+		
+		////////////
 		$("html").click(function() {
 	    	$(".choices").slideUp("fast");
+			$(".tagChoices").slideUp("fast");
+			$(".calChoices").slideUp("fast");
+			$(".dayChoices").slideUp("fast");
 			$('#hiddenNav, #hiddenNavGrayBox').fadeOut(250);
+			$('#hiddenPlusButton, #hiddenPlusButtonGrayBox').fadeOut(250);
+			$('#hiddenNotif').fadeOut(250);
+			$('#hiddenNotifGrayBox').fadeOut(250);
 			//add more to make everything clickable to get out of things!
 		});
 		
@@ -5160,7 +5368,7 @@
 				$('#settingsPage').fadeOut(250);
 				$('html, body').animate({ scrollTop: -100 });
 				
-				$('#navBarSearch').fadeIn(250);
+				//$('#navBarSearch').fadeIn(250);
 				enableScrolling();
 		});
 		
@@ -5178,7 +5386,7 @@
 				$('#settingsPage').fadeOut(250);
 				$('html, body').animate({ scrollTop: -100 });
 				
-				$('#navBarSearch').fadeOut(250);
+				//$('#navBarSearch').fadeOut(250);
 				enableScrolling();
 		});
 		
@@ -5197,7 +5405,7 @@
 				$('#settingsPage').fadeOut(250);
 				$('html, body').animate({ scrollTop: -100 });
 				
-				$('#navBarSearch').fadeIn(250);
+				//$('#navBarSearch').fadeIn(250);
 				enableScrolling();
 		});
 		  
@@ -5215,7 +5423,7 @@
 				$('#settingsPage').fadeOut(250);
 				$('html, body').animate({ scrollTop: -100 });
 				
-				$('#navBarSearch').fadeOut(250);
+				//$('#navBarSearch').fadeOut(250);
 				enableScrolling();
 		}); 
           
@@ -5234,7 +5442,7 @@
 				$('#settingsPage').fadeOut(250);
 				$('html, body').animate({ scrollTop: -100 });
 				
-				$('#navBarSearch').fadeOut(250);
+				//$('#navBarSearch').fadeOut(250);
 				enableScrolling();
 		});  
 		  
@@ -5252,7 +5460,7 @@
 				$('#settingsPage').fadeIn(250);
 				$('html, body').animate({ scrollTop: 0 });
 				
-				$('#navBarSearch').fadeOut(250);
+				//$('#navBarSearch').fadeOut(250);
 				enableScrolling();
 		});
         
@@ -5269,6 +5477,7 @@
 		$('#notifButton').on('tap', function(event){
 			event.preventDefault();
 			$('#hiddenNotif').fadeIn(250);
+			$('#hiddenNotifGrayBox').fadeIn(250);
 			$('#hiddenPlusButton').fadeOut(250);
 			$('#hiddenNav').fadeOut(250);
 			$('#hiddenNavGrayBox').fadeOut(250);
@@ -5277,6 +5486,7 @@
 		$('#hideNotif').on('tap', function(event){
 			event.preventDefault();
 			$('#hiddenNotif').fadeOut(250);
+			$('#hiddenNotifGrayBox').fadeOut(250);
 		});
 		
 		///////////////////END NOTIFCATIONS REVEAL////////////////
@@ -5286,6 +5496,7 @@
 		$('#plusButton').on('tap', function(event){
 			event.preventDefault();
 			$('#hiddenPlusButton').fadeIn(250);
+			$('#hiddenPlusButtonGrayBox').fadeIn(250);
 			$('#hiddenNotif').fadeOut(250);
 			$('#hiddenNav').fadeOut(250);
 			$('#hiddenNavGrayBox').fadeOut(250);
@@ -5294,6 +5505,7 @@
 		$('#hidePlusButton').on('tap', function(event){
 			event.preventDefault();
 			$('#hiddenPlusButton').fadeOut(250);
+			$('#hiddenPlusButtonGrayBox').fadeOut(250);
 		});
 		
 		///////////////////END new events modal////////////////
