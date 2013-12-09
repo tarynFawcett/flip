@@ -193,8 +193,11 @@
 				document.getElementById('object3').style.display = "none";
 				document.getElementById('object4').style.display = "none";
 				
+				document.getElementById('searchingCity').style.display = "none";
 				document.getElementById('searchingTag').style.display = "none";
 				document.getElementById('searchingCal').style.display = "none";
+				document.getElementById('goEvents').style.display = "none";
+				document.getElementById('goCal').style.display = "none";
         
 			});
 			
@@ -232,17 +235,22 @@
                 	 	</select>
            			</form>-->
                     <!--<div class = "curVal">Gender</div><div class = "arrow">V</div>-->
-                    <div id="dropDownText" class="curVal">Gender</div><div class = "arrow">V</div>
-    					<div class = "choices">
-        				<div class = "choice">Male</div>
-        				<div class = "choice">Female</div>
-        				<div class = "choice">Refuse to answer</div>
+                    <div id="dropDownText" class="curVal"><p>Search</p></div><div class = "arrow">V</div>
+                    
+                    <div class = "choices">
+        					<div class="dropDivider"></div>
+                        <div class = "choice" id="city">City</div>
+                        	<div class="dropDivider"></div>
+        				<div class = "choice" id="tag">Tag</div>
+                        	<div class="dropDivider"></div>
+        				<div class = "choice" id="cal">Calendar</div>
     				</div>
+                    
                     <div class="revealedSearchDiv" id="searchingCity">
                     	<input id="searchCityText" type="text" placeholder="Minneapolis"></form>
                     </div>
                     <div class="revealedSearchDiv" id="searchingTag">
-                    	<!--<form id="searchTagDropForm" action="">
+                    	<form id="searchTagDropForm" action="">
                             <select name="searchTag" id="searchCalTagrop">
                                 <option class="month" value="Jan">Animals</option>
                                 <option class="month" value="Feb">Astrology</option>
@@ -272,10 +280,10 @@
                                 <option class="month" value="Nov">Yoga</option>
                                 <option class="month" value="Dec">Youth</option>
                             </select>
-                    	</form>-->
+                    	</form>
                     </div>
                     <div class="revealedSearchDiv" id="searchingCal">
-                    	<!--<form id="searchCalDropForm" action="">
+                    	<form id="searchCalDropForm" action="">
                             <select name="searchMonth" id="searchCalMonthDrop">
                                 <option class="month" value="Jan">Jan</option>
                                 <option class="month" value="Feb">Feb</option>
@@ -323,9 +331,10 @@
                                 <option class="day" value="30">30</option>
                                 <option class="day" value="31">31</option>
                             </select>
-           				</form>-->
+           				</form>
                     </div>
                     <div id="goEvents">Go</div>
+                    <div id="goCal">Go</div>
                     <div id="notifButton"></div>
            	 	</div>
             </div>
@@ -352,8 +361,8 @@
                 <div class="menuButton" id="profile"><p>profile</p></div>
                 <div class="navDividerLine"></div>
                 <div class="menuButton" id="settings"><p>settings</p></div>
-                <div class="navDividerLine"></div>
-                <div class="menuButton" id="hide"><p>hide</p></div>
+                <!--<div class="navDividerLine"></div>
+                <div class="menuButton" id="hide"><p>hide</p></div>-->
             </div>
             
             <div id="hiddenNotif">
@@ -4978,39 +4987,60 @@
         <script>
 		
 		$(".choices").hide();
+		
 		$(".arrow").click(function(event) {
-   		$(".choices").slideToggle("fast"); 
-   		event.stopPropagation();
+   			$(".choices").slideToggle("fast"); 
+   			event.stopPropagation();
 		});
-		$(".choice").click(function() {
-   		$(".curVal").html($(this).html());
-   		$(".choices").slideToggle("fast");
-   		event.stopPropagation();
+		
+		$("#city").click(function() {
+			$(".curVal").html($(this).html());
+			$("#goCal").hide();
+			$(".revealedSearchDiv").not("#searchingCity").hide();
+        	$("#searchingCity, #goEvents").show();
+        	$("#searchingCity, #goEvents").fadeIn(1000);
 		});
+		$("#tag").click(function() {
+			$(".curVal").html($(this).html());
+			$("#goCal").hide();
+			$(".revealedSearchDiv").not("#searchingTag").hide();
+        	$("#searchingTag, #goEvents").show();
+        	$("#searchingTag, #goEvents").fadeIn(1000);
+		});
+		$("#cal").click(function() {
+			$(".curVal").html($(this).html());
+			$("#goEvents").hide();
+			$(".revealedSearchDiv").not("#searchingCal").hide();
+        	$("#searchingCal, #goCal").show();
+        	$("#searchingCal, #goCal").fadeIn(1000);
+		});
+		
 		$("html").click(function() {
-	    $(".choices").slideUp("fast"); 
+	    	$(".choices").slideUp("fast");
+			$('#hiddenNav, #hiddenNavGrayBox').fadeOut(250);
+			//add more to make everything clickable to get out of things!
 		});
 		
 		
-		$("#navSearchDropDown").change(function () {
-			var str = "";
-			str =  $("select#navSearchDropDown option:selected").text();
-				if(str == "city"){
-					$(".revealedSearchDiv").not("#searchingCity").hide();
-        			$("#searchingCity").show();
-        			$("#searchingCity").fadeIn(1000);
-    			}
-				else if(str == "tag"){
-        			$(".revealedSearchDiv").not("#searchingTag").hide();
-        			$("#searchingTag").show();
-        			$("#searchingTag").fadeIn(1000);
-    			}
-				else if(str == "calendar"){
-        			$(".revealedSearchDiv").not("#searchingCal").hide();
-        			$("#searchingCal").show();
-        			$("#searchingCal").fadeIn(1000);
-    			}
-		});
+		//$("#navSearchDropDown").change(function () {
+		//	var str = "";
+		//	str =  $("select#navSearchDropDown option:selected").text();
+		//		if(str == "city"){
+		//			$(".revealedSearchDiv").not("#searchingCity").hide();
+        //			$("#searchingCity").show();
+        //			$("#searchingCity").fadeIn(1000);
+    	//		}
+		//		else if(str == "tag"){
+        //			$(".revealedSearchDiv").not("#searchingTag").hide();
+        //			$("#searchingTag").show();
+        //			$("#searchingTag").fadeIn(1000);
+    	//		}
+		//		else if(str == "calendar"){
+        //			$(".revealedSearchDiv").not("#searchingCal").hide();
+        //			$("#searchingCal").show();
+        //			$("#searchingCal").fadeIn(1000);
+    	//		}
+		//});
 			
 		
 		////////////////////////////settings category toggle//////////////////
@@ -5097,13 +5127,23 @@
 		
 		var i = 0;     //what in the world does i%2 do??? why do i need this variable?  (might not need it anymore)
 		
-		$('#threeLines').on('tap', function(event){
-			event.preventDefault();
-			$('#hiddenNav, #hiddenNavGrayBox').fadeIn(250);
-			$('#hiddenNotif').fadeOut(250);
-			$('#hiddenPlusButton').fadeOut(250);
-			disableScrolling();
-		});
+		//$(document).ready(function() {   		 //stack overflow suggested to try wrapping .slideToggle in this - didn't work
+			$('#threeLines').on('tap', function(event){
+				//$("#hiddenNav").slideToggle("slow");
+				//$("#hiddenNavGrayBox").fadeIn(250);
+			
+				$('#hiddenNav, #hiddenNavGrayBox').fadeIn(250);
+				$('#hiddenNotif').fadeOut(250);
+				$('#hiddenPlusButton').fadeOut(250);
+				event.preventDefault();
+				disableScrolling();
+			});
+		//}); //ending of doc.ready(function)
+		
+		//$('#goEvents').on('tap', function(event){  //trying to get to go button to reload the events div to stimulate new search
+			//window.location.reload();
+		//	$('#events').load('#events');
+		//});
 		
 		////////////////citySearch and tagSearch could lead to a page that designates which city its searching in//////////////
 		$('#events, #citySearch, #tagSearch, #miniLogo, #goEvents').on('tap', function(event){
@@ -5143,7 +5183,7 @@
 		});
 		
 		/////#calSearch could bring up a box saying this would show your calSearch-ed date! But now it doesn't., then "okay!" would go to the regular Calendar day.
-		$('#calendar, #calSearch').on('tap', function(event){
+		$('#calendar, #calSearch, #goCal').on('tap', function(event){
 			event.preventDefault();
 				
 				$('#hiddenNav').fadeOut(250);
@@ -5216,11 +5256,11 @@
 				enableScrolling();
 		});
         
-        $('#hide').on('tap', function(event){
-			event.preventDefault();
-				$('#hiddenNav, #hiddenNavGrayBox').fadeOut(250);
-				enableScrolling();
-		});
+        //$('#hide').on('tap', function(event){
+		//	event.preventDefault();
+		//		$('#hiddenNav, #hiddenNavGrayBox').fadeOut(250);
+		//		enableScrolling();
+		//});
 		 
 		////////////////////END side menu reveal////////////////////////
 		 
