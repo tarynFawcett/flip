@@ -522,14 +522,249 @@ button {
 }
 
 #hiddenPlusButton {
-	height:200px;
-	width:608px;
-	background-color:#0C6;
+	height:693px;
+	width:645px;
+	background-color:#434343;
 	z-index:12;
 	margin-top:150px;
 	position:fixed;
-	margin-left:80px;
+	margin-left:62px;
 	z-index:309;
+	border: solid 2px #fff;
+}
+
+#newEventTitle {
+	height:50px;
+	color:#00b048;
+	width:645px;
+	/*background-color:#63F;*/
+	font-size:40px;
+	text-align:center;
+	text-transform:uppercase;
+	padding-top:10px;
+	letter-spacing:2px;
+}
+
+#newEventTopLeft {
+	height:240px;
+	width:259px;
+	/*background-color:#C39;*/
+	float:left;
+}
+
+#newEventTopRight {
+	height:240px;
+	width:349px;
+	/*background-color:#06F;*/
+	float:right;
+	margin-right:12px;
+}
+
+.newEventDivider {
+	height:1px;
+	width:620px;
+	background-color:#fff;
+	float:left;
+	margin-top:7px;
+	margin-bottom:15px;
+	margin-left:13px;
+}
+
+#newEventBottomLeft {
+	height:374px;
+	width:256px;
+	background-color:#990;
+	float:left;
+	overflow:hidden;
+	margin-left:10px;
+}
+
+#dYE {
+	color:#fff;
+	margin-left:10px;
+	margin-bottom:10px;
+	padding-top:9px;
+}
+
+#newEventDescrip {
+	height:250px;
+	width:256px;
+	line-height:13px;
+	
+}
+
+#newEventBottomRight {
+	height:374px;
+	width:362px;
+	/*background-color:#3CC;*/
+	float:right;
+}
+
+#tagsGroup {
+	height:360px;
+	width:320px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	/*background-color:#FC9;*/
+	overflow:auto;
+}
+
+#tagsGroup li {
+	height:27px;
+	width:100px;
+	margin-right:7px;
+	margin-bottom:10px;
+	/*background-color:#FFF;*/
+	display:inline;
+	float:left;
+	text-align:center;
+	border-radius:30px;
+}
+
+#tagsGroup li p {
+	padding-top:1px;
+	font-size:15px;
+	margin-left:0px;
+}
+
+#tagsGroup li.rowEnd {
+	margin-right:0px;
+}
+
+#tagsGroup li a {
+	width:100%;
+	height:100%;
+}
+
+#tagsGroup li.unselectedTag p{
+	background-color:#FFF;
+	color:#434343;
+	border-radius:30px;
+	padding-top:6px;
+	height:20px;
+	font-size:16px;	
+}
+
+.unselectedTag p {
+	/*color:#434343;*/
+}
+
+.selectedTag {
+	background-color:#00b048;
+}
+
+#tagsGroup li.selectedTag p{
+	color:#ffffff;
+	border-radius:30px;
+	padding-top:6px;
+	height:20px;
+	font-size:16px;	
+}
+
+#newEventForm p {
+	float:left;
+	color:#fff;
+}
+
+#et {
+	margin-top:5px;
+	margin-left:26px;
+	margin-right:7px;
+}
+
+#c {
+	margin-top:45px;
+	margin-left:21px;
+	margin-right:1px;
+}
+
+#t {
+	margin-top:14px;
+	margin-left:49px;
+	margin-right:7px;
+}
+
+#l {
+	margin-top:14px;
+	margin-left:25px;
+	margin-right:6px;
+}
+
+#newEventTitleBox {
+	float:left;
+	margin-top:9px;
+	margin-left:45px;
+	width:181px;
+	font-size:22px;
+	height:30px;
+	color:#00b048;
+}
+
+#newEventTime {
+	float:left;
+	margin-top:10px;
+	width:52px;
+}
+
+#hour {
+	margin-left:0px;
+	float:left;
+	margin-top:13px;
+	width:46px;
+}
+
+#colon {
+	margin-top:13px;
+	margin-right:1px;
+	margin-left:1px;
+}
+
+#minute {
+	/*margin-left:5px;*/
+	float:left;
+	margin-top:13px;
+	width:46px;
+}
+
+#dayNight {
+	margin-left:5px;
+	float:left;
+	margin-top:13px;
+}
+
+#newEventPlace {
+	float:left;
+	margin-top:10px;
+}
+
+#newEventMonth, #newEventDate {
+	float:left;
+	margin-top:45px;
+	margin-left:5px;
+}
+
+#upImageNewEvent {
+	height:210px;
+	width:349px;
+	background-color:#63C;
+}
+
+#imgInp2 {
+	margin-top:6px;
+	margin-left:40px;
+}
+
+.clearFloat {
+	clear:both;
+}
+
+#hidePlusButton {
+	/*position:fixed;
+	background-color:#009;
+	height:100px;
+	width:300px;
+	z-index:310;*/
 }
 
 .menuButton {
@@ -2301,7 +2536,7 @@ h3 {
 
 #safePage p {
 	width:590px;
-	height:280px;
+	height:180px;
 	/*background-color:#099;*/
 	margin-left:70px;
 	font-size:24px;
@@ -3041,6 +3276,7 @@ h2 {
 	opacity:.9;
 	position:absolute;
 	z-index:100;
+	/*margin-top:2360px;*/ /*what..???? working though*/
 }
 
 #countBox, #countBox2, #countBox3, #countBox4, #countBox5, #countBox6, #countBox7, #countBox8, #countBox9, #countBox10, #countBox11, #countBox12, #countBox13, #countBox14, #countBox15, #countBox16 {

@@ -102,7 +102,8 @@
 				document.getElementById('hiddenNavGrayBox').style.display = "none";
 				document.getElementById('hiddenNotif').style.display = "none";
 				document.getElementById('hiddenPlusButton').style.display = "none";
-				
+				document.getElementById('hidePlusButton').style.display = "none";
+								
 				document.getElementById('eventsPage').style.display = "block";
 				document.getElementById('searchPage').style.display = "none";
 				document.getElementById('calPage').style.display = "none";
@@ -526,8 +527,193 @@
             <div id="hiddenNotifGrayBox"></div>
             
             <div id="hiddenPlusButton">
-            	<p class="menuButton" id="hidePlusButton">hide</p>
+				<div id="newEventTitle">new event</div>
+                <div class="newEventDivider"></div>
+            	<div id="newEventTopLeft" >
+                	<form id="newEventForm" method="get" runat="server" action="">
+                    	<p id="et">Event Title:</p><input type="text" maxlength="24" name="nETB" id="newEventTitleBox" placeholder="Event Title"><br/>
+                        <div class="clearFloat"></div>
+                        <p id="c">Calendar:</p><select name="nED" id="newEventMonth">
+                            <option class="month" value="Jan">Jan</option>
+                            <option class="month" value="Feb">Feb</option>
+                            <option class="month" value="Mar">Mar</option>
+                            <option class="month" value="Apr">Apr</option>
+                            <option class="month" value="May">May</option>
+                            <option class="month" value="Jun">Jun</option>
+                            <option class="month" value="Jul">Jul</option>
+                            <option class="month" value="Aug">Aug</option>
+                            <option class="month" value="Sep">Sep</option>
+                            <option class="month" value="Oct">Oct</option>
+                            <option class="month" value="Nov">Nov</option>
+                            <option class="month" value="Dec">Dec</option>
+                        </select>
+                        <select name="searchDay" id="newEventDate">
+                            <option class="day" value="1">1</option>
+                            <option class="day" value="2">2</option>
+                            <option class="day" value="3">3</option>
+                            <option class="day" value="4">4</option>
+                            <option class="day" value="5">5</option>
+                            <option class="day" value="6">6</option>
+                            <option class="day" value="7">7</option>
+                            <option class="day" value="8">8</option>
+                            <option class="day" value="9">9</option>
+                            <option class="day" value="10">10</option>
+                            <option class="day" value="11">11</option>
+                            <option class="day" value="12">12</option>
+                            <option class="day" value="13">13</option>
+                            <option class="day" value="14">14</option>
+                            <option class="day" value="15">15</option>
+                            <option class="day" value="16">16</option>
+                            <option class="day" value="17">17</option>
+                            <option class="day" value="18">18</option>
+                            <option class="day" value="19">19</option>
+                            <option class="day" value="20">20</option>
+                            <option class="day" value="21">21</option>
+                            <option class="day" value="22">22</option>
+                            <option class="day" value="23">23</option>
+                            <option class="day" value="24">24</option>
+                            <option class="day" value="25">25</option>
+                            <option class="day" value="26">26</option>
+                            <option class="day" value="27">27</option>
+                            <option class="day" value="28">28</option>
+                            <option class="day" value="29">29</option>
+                            <option class="day" value="30">30</option>
+                            <option class="day" value="31">31</option>
+                        </select><br />
+           					<div class="clearFloat"></div>
+                        <p id="t">Time:</p>
+                        	<!--<input type="text" name="nET" id="newEventTime" placeholder="7:00"><br />-->
+                               <select id="hour">
+                                    <option value="12">12</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                               </select>
+                               <p id="colon">:</p>
+                               <select id="minute">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    <option value="32">32</option>
+                                    <option value="33">33</option>
+                                    <option value="34">34</option>
+                                    <option value="35">35</option>
+                                    <option value="36">36</option>
+                                    <option value="37">37</option>
+                                    <option value="38">38</option>
+                                    <option value="39">39</option>
+                                    <option value="40">40</option>
+                                    <option value="41">41</option>
+                                    <option value="42">42</option>
+                                    <option value="43">43</option>
+                                    <option value="44">44</option>
+                                    <option value="45">45</option>
+                                    <option value="46">46</option>
+                                    <option value="47">47</option>
+                                    <option value="48">48</option>
+                                    <option value="49">49</option>
+                                    <option value="50">50</option>
+                                    <option value="51">51</option>
+                                    <option value="52">52</option>
+                                    <option value="53">53</option>
+                                    <option value="54">54</option>
+                                    <option value="55">55</option>
+                                    <option value="56">56</option>
+                                    <option value="57">57</option>
+                                    <option value="58">58</option>
+                                    <option value="59">59</option>
+                               </select>
+                               <select id="dayNight">
+                                    <option value="am">AM</option>
+                                    <option value="pm">PM</option>
+                               </select>
+                        	 <div class="clearFloat"></div>
+                    	<p id="l">Location:</p><input type="text" name="nEP" id="newEventPlace" placeholder="location"> 
+                	</form>            
+                </div>
+                
+            	<div id="newEventTopRight">
+                	<img id="upImageNewEvent" src="images/upEventImage.png"/>
+                	<input type="file" name="browserImage" id="imgInp2" placeholder="newEventPic">
+                </div>
+                
+                <div class="newEventDivider"></div>
+                
+                <div id="newEventBottomLeft">
+                	<p id="dYE">Describe your event:</p>
+                    <textarea type="text" align="top" maxlength="200" name="newEventDescrip" id="newEventDescrip" placeholder="Start here."></textarea>
+                </div>
+                
+                <div id="newEventBottomRight">
+                	<ul id="tagsGroup">
+                        <li class="unselectedTag"><p>Animals</p></li>
+                        <li class="unselectedTag"><p>Astrology</p></li>
+                        <li class="rowEnd unselectedTag"><p>Art</p></li>
+                        <li class="unselectedTag"><p>Book Club</p></li>
+                        <li class="unselectedTag"><p>Crafts</p></li>
+                        <li class="rowEnd unselectedTag"><p>Concerts</p></li>
+                        <li class="unselectedTag"><p>DIY</p></li>
+                        <li class="unselectedTag"><p>Drink</p></li>
+                        <li class="rowEnd unselectedTag"><p>Exercise</p></li>
+                        <li class="unselectedTag"><p>Food</p></li>
+                        <li class="unselectedTag"><p>Games</p></li>
+                        <li class="rowEnd unselectedTag"><p>Indoor</p></li>
+                        <li class="unselectedTag"><p>Karaoke</p></li>
+                        <li class="unselectedTag"><p>Music</p></li>
+                        <li class="rowEnd unselectedTag"><p>Outdoor</p></li>
+                        <li class="unselectedTag"><p>Rec League</p></li>
+                        <li class="unselectedTag"><p>Running</p></li>
+                        <li class="rowEnd unselectedTag"><p>Snow</p></li>
+                        <li class="unselectedTag"><p>Sports</p></li>
+                        <li class="unselectedTag"><p>Studio</p></li>
+                        <li class="rowEnd unselectedTag"><p>Teamwork</p></li>
+                        <li class="unselectedTag"><p>Theater</p></li>
+                        <li class="unselectedTag"><p>Travel</p></li>
+                        <li class="rowEnd unselectedTag"><p>Water</p></li>
+                        <li class="unselectedTag"><p>Yard Games</p></li>
+                        <li class="unselectedTag"><p>Yoga</p></li>
+                        <li class="rowEnd unselectedTag"><p>Youth</p></li>
+                    </ul>
+                </div>            	
             </div>
+            
+            <p id="hidePlusButton">hide</p>
             
             <div id="miniLogo"></div>
             
@@ -4787,7 +4973,7 @@
             <!-------------------------------------------------------------------SAFEPAGE PAGE-->
             <div id="safePage">
                 	<h2>SAFETY TIPS</h2>
-                	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Safety is very important to us here at Flip.  The community created on this application is one of uniqueness and requires special circumstances of meeting with people you may have never met before.  We trust that you all are smart, and have a strong gut instinct. To help prevent any issues that may arise, we have provided these reccommendations to all within the community and ask that you follow them as best you can.</p>
+                	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Safety is very important to us here at Flip.  The community created on this application is one of uniqueness and requires special circumstances of meeting with people you may have never met before.</p>
                     <ul>
                     	<li>1. &nbsp;&nbsp;Trust Your Instincts.</li>
                         <li>2. &nbsp;&nbsp;Review user profiles carefully.</li>
@@ -4797,6 +4983,8 @@
                         <li>6. &nbsp;&nbsp;Report any negative experiences.</li>
                         <li>7. &nbsp;&nbsp;Communicate through Flip.</li>
                     </ul>
+                    <p><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We trust that you all are smart, and have a strong gut instinct. To help prevent any issues that may arise, we have provided these reccommendations to all within the community and ask that you follow them as best you can.
+                    </p>
             </div>
             
             <!-------------------------------------------------------------------PROFILE PAGE-->
@@ -5142,6 +5330,19 @@
         
         <script>
 		
+		////////////new event Tags////////////
+		$(function(){
+		 $("#tagsGroup li").click(function () {
+			 if ($(this).hasClass("selectedTag")) {
+				$(this).removeClass("selectedTag").addClass("unselectedTag"); 
+			 } else {
+				$(this).addClass("selectedTag").removeClass("unselectedTag");
+			 }
+		   });
+		})
+		
+		//////////end new event tags////////
+		
 		$(".choices").hide();
 		
 		$(".arrow").click(function(event) {
@@ -5222,10 +5423,10 @@
 			$(".tagChoices").slideUp("fast");
 			$(".calChoices").slideUp("fast");
 			$(".dayChoices").slideUp("fast");
-			$('#hiddenNav, #hiddenNavGrayBox').fadeOut(250);
-			$('#hiddenPlusButton, #hiddenPlusButtonGrayBox').fadeOut(250);
-			$('#hiddenNotif').fadeOut(250);
-			$('#hiddenNotifGrayBox').fadeOut(250);
+			$('#hiddenNotifGrayBox, #hiddenNav, #hiddenNavGrayBox').fadeOut(250);
+			//$('#hiddenPlusButton, #hiddenPlusButtonGrayBox').fadeOut(250);
+			//$('#hiddenNotif').fadeOut(250);
+			//$('#hiddenNotifGrayBox').fadeOut(250);
 			//add more to make everything clickable to get out of things!
 		});
 		
@@ -5299,6 +5500,23 @@
 			}
 		
 			$("#imgInp").change(function(){
+				readURL(this);
+			});
+			
+			//for the new event
+			function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				
+				reader.onload = function (e) {
+					$('#upImageNewEvent').attr('src', e.target.result);
+				}
+				
+				reader.readAsDataURL(input.files[0]);
+				}
+			}
+		
+			$("#imgInp2").change(function(){
 				readURL(this);
 			});
 		
@@ -5497,6 +5715,7 @@
 			event.preventDefault();
 			$('#hiddenPlusButton').fadeIn(250);
 			$('#hiddenPlusButtonGrayBox').fadeIn(250);
+			$('#hidePlusButton').fadeIn(250);			
 			$('#hiddenNotif').fadeOut(250);
 			$('#hiddenNav').fadeOut(250);
 			$('#hiddenNavGrayBox').fadeOut(250);
