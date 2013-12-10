@@ -571,9 +571,9 @@ button {
 }
 
 #newEventBottomLeft {
-	height:374px;
+	height:333px;
 	width:256px;
-	background-color:#990;
+	/*background-color:#990;*/
 	float:left;
 	overflow:hidden;
 	margin-left:10px;
@@ -593,9 +593,18 @@ button {
 	
 }
 
+#tagDescripDivider {
+	height:348px;
+	width:1px;
+	background-color:#fff;
+	float:left;
+	margin-left:22px;
+	margin-top:-15px;
+}
+
 #newEventBottomRight {
 	height:374px;
-	width:362px;
+	width:351px;
 	/*background-color:#3CC;*/
 	float:right;
 }
