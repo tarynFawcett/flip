@@ -490,6 +490,8 @@
                     <div id="goEvents">Go</div>
                     <div id="goCal">Go</div>
                     <div id="notifButton"></div>
+                    <div id="myCalButton"></div>
+                    <div id="todayEventButton"></div>
            	 	</div>
             </div>
             
@@ -521,7 +523,27 @@
             </div>
             
             <div id="hiddenNotif">
-            	<p class="menuButton" id="hideNotif">hide</p>
+            	<div id="threeNotifs">
+                	<div class="indNotif">
+                    	<div class="smallLeftPic"></div>
+                        <div class="notifUser">lilFlip07</div>
+                        <div class="notifInvite">alerted you of</div>
+                        <div class="eventNotifName">dodgeball</div>
+                    </div>
+                    <div class="indNotif">
+                    	<div class="smallLeftPic"></div>
+                        <div class="notifUser">tfawce</div>
+                        <div class="notifPosted">posted an event:</div>
+                        <div class="eventNotifName2">nertz card game</div>
+                    </div>
+                    <div class="indNotif2">
+                    	<div class="smallLeftPic"></div>
+                        <div class="notifUser">user7034</div>
+                        <div class="notifAttend">is attending your</div>
+                        <div class="eventNotifName">volleyball</div>
+                    </div>
+                </div>
+            	<p id="hideNotif">hide</p>
             </div>
             
             <div id="hiddenNotifGrayBox"></div>
@@ -713,7 +735,7 @@
                 </div>            	
             </div>
             
-            <p id="hidePlusButton">hide</p>
+            <p id="hidePlusButton">post to flip!</p>
             
             <div id="miniLogo"></div>
             
@@ -5423,7 +5445,7 @@
 			$(".tagChoices").slideUp("fast");
 			$(".calChoices").slideUp("fast");
 			$(".dayChoices").slideUp("fast");
-			$('#hiddenNotifGrayBox, #hiddenNav, #hiddenNavGrayBox').fadeOut(250);
+			$('#hiddenNav, #hiddenNavGrayBox').fadeOut(250);
 			//$('#hiddenPlusButton, #hiddenPlusButtonGrayBox').fadeOut(250);
 			//$('#hiddenNotif').fadeOut(250);
 			//$('#hiddenNotifGrayBox').fadeOut(250);
@@ -5534,7 +5556,8 @@
 	            var match = regex.exec(qs);
 	            var value = "";
 	            if (match != null) {
-	                value = match[1];
+	                //value = match[1];
+					value = "cedes";
 	            };
 	            return value;
 	        };
@@ -5725,6 +5748,7 @@
 			event.preventDefault();
 			$('#hiddenPlusButton').fadeOut(250);
 			$('#hiddenPlusButtonGrayBox').fadeOut(250);
+			$('#hidePlusButton').fadeOut(250);
 		});
 		
 		///////////////////END new events modal////////////////

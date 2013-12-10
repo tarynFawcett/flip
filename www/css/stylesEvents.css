@@ -98,13 +98,35 @@ button {
 }
 
 #notifButton {
-	height:28px;
-	width:35px;
+	height:24px;
+	width:30px;
 	/*background-color:#990;*/
-	background-image:url(../images/notifButton4.png);
+	background-image:url(../images/notifButton6.png);
 	float:right;
 	margin-right:25px;
-	margin-top:2px;
+	margin-top:5px;
+	z-index:9;
+}
+
+#myCalButton {
+	height:24px;
+	width:24px;
+	/*background-color:#990;*/
+	background-image:url(../images/myCal.png);
+	float:right;
+	margin-right:20px;
+	margin-top:5px;
+	z-index:9;
+}
+
+#todayEventButton {
+	height:24px;
+	width:24px;
+	/*background-color:#990;*/
+	background-image:url(../images/todayEvent.png);
+	float:right;
+	margin-right:20px;
+	margin-top:5px;
 	z-index:9;
 }
 
@@ -116,7 +138,7 @@ button {
 }
 
 #navBarSearch {
-	height:33px;
+	height:36px;
 	width:768px;
 	background-color:#222222;
 	margin-top:45px;
@@ -508,12 +530,102 @@ button {
 
 #hiddenNotif {
 	height:200px;
-	width:250px;
-	background-color:#0C6;
+	width:278px;
+	background-color:#434343;
 	z-index:309;
-	margin-top:90px;
+	margin-top:85px;
 	position:fixed;
-	margin-left:505px;
+	margin-left:478px;
+}
+
+#threeNotifs {
+	height:200px;
+	width:250px;
+	/*background-color:#36C;*/
+}
+
+.indNotif {
+	height:66px;
+	width:278px;
+	/*background-color:#3F9;*/
+	border-bottom:1px solid #fff;
+}
+.indNotif2 {
+	height:62px;
+	width:278px;
+	/*background-color:#3F9;*/
+}
+
+.smallLeftPic {
+	height:55px;
+	width:55px;
+	background-color:#936;
+	margin-top:5px;
+	margin-left:7px;
+	float:left;
+}
+
+.notifUser {
+	color:#fff;
+	float:left;
+	margin-top:10px;
+	margin-left:6px;
+	text-transform:uppercase;
+	letter-spacing:2px;	
+}
+
+.notifInvite {
+	float:left;
+	color:#fff;
+	font-size:12px;
+	margin-left:10px;
+	margin-top:13px;
+	letter-spacing:1px;
+}
+
+.notifPosted {
+	float:left;
+	font-size:12px;
+	color:#fff;
+	margin-left:10px;
+	margin-top:13px;
+	letter-spacing:1px;
+}
+
+.notifAttend {
+	float:left;
+	font-size:12px;
+	color:#fff;
+	margin-left:5px;
+	margin-top:13px;
+	letter-spacing:1px;
+}
+
+.eventNotifName {
+	color:#00b048;
+	font-size:21px;
+	float:left;
+	margin-top:9px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	margin-left:40px;
+}
+
+.eventNotifName2 {
+	color:#00b048;
+	font-size:19px;
+	float:left;
+	margin-top:9px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	margin-left:10px;
+}
+
+#hideNotif {
+	height:30px;
+	width:250px;
+	background-color:#C93;
+	margin-top:10px;
 }
 
 #hide {
@@ -522,13 +634,13 @@ button {
 }
 
 #hiddenPlusButton {
-	height:693px;
-	width:645px;
+	height:697px;
+	width:660px;
 	background-color:#434343;
 	z-index:12;
 	margin-top:150px;
 	position:fixed;
-	margin-left:62px;
+	margin-left:54px;
 	z-index:309;
 	border: solid 2px #fff;
 }
@@ -536,7 +648,7 @@ button {
 #newEventTitle {
 	height:50px;
 	color:#00b048;
-	width:645px;
+	width:660px;
 	/*background-color:#63F;*/
 	font-size:40px;
 	text-align:center;
@@ -557,17 +669,17 @@ button {
 	width:349px;
 	/*background-color:#06F;*/
 	float:right;
-	margin-right:12px;
+	margin-right:23px;
 }
 
 .newEventDivider {
 	height:1px;
-	width:620px;
+	width:628px;
 	background-color:#fff;
 	float:left;
 	margin-top:7px;
 	margin-bottom:15px;
-	margin-left:13px;
+	margin-left:15px;
 }
 
 #newEventBottomLeft {
@@ -590,7 +702,7 @@ button {
 	height:250px;
 	width:256px;
 	line-height:13px;
-	
+	margin-left:7px;
 }
 
 #tagDescripDivider {
@@ -598,7 +710,7 @@ button {
 	width:1px;
 	background-color:#fff;
 	float:left;
-	margin-left:22px;
+	margin-left:24px;
 	margin-top:-15px;
 }
 
@@ -674,6 +786,7 @@ button {
 #newEventForm p {
 	float:left;
 	color:#fff;
+	letter-spacing:1px;
 }
 
 #et {
@@ -684,7 +797,7 @@ button {
 
 #c {
 	margin-top:45px;
-	margin-left:21px;
+	margin-left:16px;
 	margin-right:1px;
 }
 
@@ -696,7 +809,7 @@ button {
 
 #l {
 	margin-top:14px;
-	margin-left:25px;
+	margin-left:21px;
 	margin-right:6px;
 }
 
@@ -756,7 +869,7 @@ button {
 #upImageNewEvent {
 	height:210px;
 	width:349px;
-	background-color:#63C;
+	/*background-color:#63C;*/
 }
 
 #imgInp2 {
@@ -769,11 +882,18 @@ button {
 }
 
 #hidePlusButton {
-	/*position:fixed;
-	background-color:#009;
-	height:100px;
-	width:300px;
-	z-index:310;*/
+	position:fixed;
+	background-color:#00b048;
+	color:#fff;
+	height:30px;
+	width:554px;
+	z-index:310;
+	margin-top:871px;
+	margin-left:106px;
+	text-align:center;
+	padding-top:12px;
+	text-transform:uppercase;
+	letter-spacing:1px;
 }
 
 .menuButton {
@@ -2571,7 +2691,7 @@ h2 {
 
 #safePage ul li{
 	font-size:27px;
-	color:#fff;
+	color:#00b048;
 	margin-top:20px;
 	letter-spacing:1px;
 }
@@ -2989,7 +3109,7 @@ h2 {
 	height:30px;
 	width:500px;
 	margin-top:865px; /*770px*/
-	margin-left:120px;
+	margin-left:135px;
 	position:fixed;
 	cursor:pointer;
 	text-transform:uppercase;
