@@ -554,6 +554,7 @@ button {
 	height:62px;
 	width:278px;
 	/*background-color:#3F9;*/
+	border-bottom:1px solid #fff;
 }
 
 .smallLeftPic {
@@ -622,10 +623,15 @@ button {
 }
 
 #hideNotif {
-	height:30px;
-	width:250px;
-	background-color:#C93;
-	margin-top:10px;
+	height:24px;
+	width:278px;
+	background-color:#00b048;
+	margin-top:-3px;
+	text-align:center;
+	letter-spacing:1px;
+	color:#fff;
+	text-transform:uppercase;
+	padding-top:6px;
 }
 
 #hide {
@@ -1193,6 +1199,49 @@ h3 {
 	border-style:solid;
 	border-width:1px;
 }
+
+
+.eventFraction {
+	height:90px;
+	width:117px;
+	/*background-color:#09C;*/
+	/*float:left;*/
+	position:absolute;
+	margin-top:577px; /*416px*/
+	margin-left:117px;	
+	border-style:solid;
+	border-color:#fff;
+	border-width:1px;
+}
+
+.eventFraction p {
+	color:#fff;	
+	font-size:17px;
+	letter-spacing:1px;
+	margin-left:5px;
+	margin-top:10px;
+	float:left;
+}
+
+.eventNumerator {
+	float:left;
+	/*position:relative;*/
+	color:#fff;
+	font-size:25px;
+	padding-top:14px;
+	padding-left:22px;
+}
+
+.eventDenominator {
+	float:left;
+	/*position:relative;*/
+	color:#fff;
+	font-size:40px;
+	padding-top:15px;
+	letter-spacing:2px;
+}
+
+
 
 .event1AttendeeBlock {
 	width:100%;
@@ -2924,6 +2973,10 @@ h2 {
 	border-width:3px;*/
 }
 
+.eventSelect {
+	border-bottom:1px solid #00b048;
+}
+
 .pastPersonalCreatedEventsImage {
 	height:150px;
 	width:148px;
@@ -3091,9 +3144,9 @@ h2 {
 
 #leftColDescripBox, #leftColDescripBox2, #leftColDescripBox3, #leftColDescripBox4, #leftColDescripBox5, #leftColDescripBox6, #leftColDescripBox7, #leftColDescripBox8, #leftColDescripBox9, #leftColDescripBox10, #leftColDescripBox11, #leftColDescripBox12, #leftColDescripBox13, #leftColDescripBox14, #leftColDescripBox15, #leftColDescripBox16 {
 	height:686px;
-	width:600px;
+	width:630px;
 	margin-top:150px; /*50px*/
-	margin-left:84px;
+	margin-left:65px;
 	background-color:#434343;
 	z-index:310;
 	position:fixed;
@@ -3200,7 +3253,7 @@ h2 {
 	/*background-color:#33F;*/
 	float:left;
 	margin-top:20px;
-	margin-left:20px;
+	margin-left:42px;
 }
 
 .eventBoxTitle {
@@ -3216,6 +3269,7 @@ h2 {
 	letter-spacing:2px;
 	padding-top:12px;
 	text-transform:uppercase;
+	margin-top:20px;
 }
 
 .eventBoxTitle2 {
@@ -3231,6 +3285,8 @@ h2 {
 	letter-spacing:2px;
 	/*padding-top:12px;*/
 	text-transform:uppercase;
+	margin-top:20px;
+	line-height:2.5;
 }
 
 .eventBoxTitle3 {
@@ -3244,8 +3300,9 @@ h2 {
 	color:#fff;
 	text-align:center;
 	letter-spacing:2px;
-	/*padding-top:12px;*/
+	padding-top:2px;
 	text-transform:uppercase;
+	margin-top:20px;
 }
 
 #eventBoxCity {
@@ -3261,7 +3318,7 @@ h2 {
 
 #horizEventBoxLine {
 	height:1px;
-	width:554px;
+	width:593px;
 	background-color:#fff;
 	float:left;
 	margin-left:20px;
@@ -3270,7 +3327,7 @@ h2 {
 
 #eventBoxTallyBox {
 	height:252px;
-	width:93px;
+	width:83px;
 	/*background-color:#00b048;*/
 	float:left;
 	margin-left:20px;
@@ -3291,32 +3348,32 @@ h2 {
 	text-align:center;
 	letter-spacing:2px;
 	padding-top:12px;
-	float:right;
+	float:left;
 	/*margin-left:110px;*/
-	margin-top:20px;
-	margin-right:20px;
+	margin-top:20px; /*132*/
+	margin-left:10px;
 }
 
-#userListBox {
-	width:230px;
+#userListBox { 
+	width:151px; /*230px*/
 	height:200px;
 	/*background-color:#0C6;*/
 	float:left;
-	margin-left:20px;
+	margin-left:11px; /*20px*/
 }
 
 #userList {
 	width:150px;
 	height:100px;
 	/*background-color:#990;*/
-	float:right;
-	margin-right:20px;
-	margin-top:10px;
+	float:left;
+	margin-left:5px;
+	margin-top:22px;
 }
 
 #userList li {
-	float:right;
-	font-size:20px;
+	float:left;
+	font-size:19px;
 	color:#fff;
 	line-height:26px;
 }
@@ -3409,7 +3466,7 @@ h2 {
 }
 
 #countBox, #countBox2, #countBox3, #countBox4, #countBox5, #countBox6, #countBox7, #countBox8, #countBox9, #countBox10, #countBox11, #countBox12, #countBox13, #countBox14, #countBox15, #countBox16 {
-	height:475px;
+	height:420px;
 	width:500px;
 	margin-top:150px;
 	margin-left:140px;
@@ -3427,7 +3484,7 @@ h2 {
 	color:#00b048;
 	font-size:35px;
 	text-align:center;
-	margin-top:20px;
+	margin-top:27px;
 	letter-spacing:2px;
 }
 
@@ -3463,20 +3520,29 @@ h2 {
 	font-size:27px;
 	text-align:center;
 	letter-spacing:1px;
-	/*line-height:28px;*/
+	line-height:41px;
+}
+
+.countArr {
+	position:absolute;
+	background-image:url(../images/countArrow.png);
+	height:58px;
+	width:75px;
+	margin-top:75px;
+	margin-left:118px;
 }
 
 .toTheTally {
 	height:30px;
 	/*background-color:#096;*/
-	width:330px;
+	width:200px;
 	float:left;
-	margin-left:30px;
+	margin-left:154px;
 	text-align:center;
 	color:#fff;
 	font-size:25px;
 	letter-spacing:1px;
-	margin-top:110px;
+	margin-top:35px;
 	margin-bottom:7px;
 }
 
@@ -3485,11 +3551,11 @@ h2 {
 	text-align:center;
 	letter-spacing:1px;
 	color:#00b048;
-	margin-top:38px;
+	margin-top:30px;
 	width:330px;
 	height:30px;
 	float:left;
-	margin-left:-22px;
+	margin-left:30px;
 }
 
 .event3AttendeeBlockSample {
@@ -3498,15 +3564,22 @@ h2 {
 	background-color:#00b048;
 	box-shadow:0px 0px 12px #333333 inset;
 	position:absolute;
-	margin-left:155px;
-	margin-top:135px;
+	margin-left:175px;
+	margin-top:141px;
+}
+
+.equalsYou {
+	position:absolute;
+	margin-left:260px;
+	margin-top:145px;
+	color:#fff;
 }
 
 #countBoxExit, #countBoxExit2, #countBoxExit3, #countBoxExit4, #countBoxExit5, #countBoxExit6, #countBoxExit7, #countBoxExit8, #countBoxExit9, #countBoxExit10, #countBoxExit11, #countBoxExit12, #countBoxExit13, #countBoxExit14, #countBoxExit15, #countBoxExit16 {
 	background-color:#fff;
 	height:30px;
 	width:500px;
-	margin-top:660px;
+	margin-top:593px;
 	margin-left:141px;
 	position:fixed;
 	cursor:pointer;
