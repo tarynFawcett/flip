@@ -6629,9 +6629,10 @@
 		//////////end events pop up/////////////
 		
 		////////////////count me in pop up/////////////////
-		$('#joinButton').on('tap', function(event){
+		$('#joinButton, #imInButton').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack, #countGrayBackText').fadeIn(250);
+			$('#leftColDescripBox, #leftColDescripDiv, #leftColDescripExitButton').fadeOut(250);
 			disableScrolling();
 		});
 		$('#countBoxExit').on('tap', function(event){
