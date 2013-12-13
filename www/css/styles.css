@@ -428,6 +428,51 @@ ul#buttonSelectorContainer li .rowEnd {
 	padding-top:3px;
 }
 
+#hiddenCreateText {
+	background-color:#434343;
+	height:236px;
+	width:367px;
+	position:absolute;
+	z-index:11;
+	margin-top:270px;
+	margin-left:200px;
+	border:#fff 1px solid;
+}
+
+#hiddenCreateText p {
+	font-size:25px;
+	color:#fff;
+	padding-left:30px;
+	padding-top:30px;
+	width:313px;
+	letter-spacing:1px;
+	line-height:30px;
+}
+
+#hiddenCreateButtonExit {
+	height:29px;
+	width:370px;
+	margin-top:530px;
+	position:absolute;
+	z-index:11;
+	background-color:#00b048;
+	margin-left:200px;
+	color:#fff;
+	font-size:20px;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	padding-top:12px;
+	text-align:center;
+}
+
+#hiddenCreateGrayBox {
+	position:absolute;
+	z-index:10;
+	height:1000px;
+	width:768px;
+	opacity:.9;
+	background-color:#222;
+}
 
 /* MOBILE STYLES */
 @media only screen and (max-width: 767px){

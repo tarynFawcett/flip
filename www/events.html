@@ -112,8 +112,8 @@
 				document.getElementById('hiddenTodayEventButtonExit').style.display = "none";
 				document.getElementById('hiddenTodayEventGrayBox').style.display = "none";
 								
-				document.getElementById('eventsPage').style.display = "none";
-				document.getElementById('searchPage').style.display = "block";
+				document.getElementById('eventsPage').style.display = "block";
+				document.getElementById('searchPage').style.display = "none";
 				document.getElementById('calPage').style.display = "none";
 				document.getElementById('safePage').style.display = "none";
 				document.getElementById('profilePage').style.display = "none";
@@ -249,6 +249,13 @@
 				document.getElementById('eventVolunteeringResults').style.display = "none";
 				document.getElementById('eventFoosballResults').style.display = "none";
 				document.getElementById('eventCardsResults').style.display = "none";
+				
+				window.onload = function(){
+					if(!Modernizr.svg) { 
+					var imgs = $('img[data-fallback]');
+					imgs.attr('src', imgs.data('fallback'));
+					}
+				}
         
 			});
 			
@@ -596,8 +603,10 @@
             <div id="hiddenNotifGrayBox"></div>
             
             <!--check out what events you said you were going to go to-->
-            <div id="hiddenMyCalText"></div>
-            <div id="hiddenMyCalButtonExit"></div>
+            <div id="hiddenMyCalText">
+            	This box would show you a personalized calendar that looks very similar to the Calendar Page within the app, only this would show only your events! Past and future, acting like your own personal archive.
+            </div>
+            <div id="hiddenMyCalButtonExit">Okay!</div>
             
             <div id="hiddenMyCalGrayBox"></div>
             
@@ -659,13 +668,13 @@
                             <li class="unselectedTag"><p>cedes</p></li>
                             <li class="rowEnd unselectedTag"><p>i_heart_flip711</p></li>
                             <li class="unselectedTag"><p>sh0rt_stufff</p></li>
-                            <li class="unselectedTag"><p>yser738210</p></li>
+                            <li class="unselectedTag"><p>user738210</p></li>
                             <li class="rowEnd unselectedTag"><p>luckySeven</p></li>
                             <li class="unselectedTag"><p>jkrier33</p></li>
                             <li class="unselectedTag"><p>lilflip07</p></li>
                             <li class="rowEnd unselectedTag"><p>tfawce</p></li>
                             <li class="unselectedTag"><p>flip7034</p></li>
-                            <li class="unselectedTag"><p>luckySeven</p></li>
+                            <li class="unselectedTag"><p>tacotuesday18</p></li>
                             
                         </ul>
                     </div>
@@ -879,7 +888,9 @@
             
             <p id="hidePlusButton">post to flip!</p>
             
-            <div id="miniLogo"></div>
+            <div id="miniLogo"><a id="mobileNavIcon" href="#">
+                    <img class="logo" src="images/miniLogo.svg" height="91" width="87" data-fallback="images/babyLogo5.png" /></a>
+            </div>
             
             <!--PAGES HIDDEN-->
             

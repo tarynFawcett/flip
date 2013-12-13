@@ -25,9 +25,9 @@
 				document.getElementById('logIn3').style.display = "none";
 				document.getElementById('signUp3').style.display = "none";
 				
-				document.getElementById('hiddenMyCalText').style.display = "none";
-				document.getElementById('hiddenMyCalButtonExit').style.display = "none";
-				document.getElementById('hiddenMyCalGrayBox').style.display = "none";
+				document.getElementById('hiddenCreateText').style.display = "none";
+				document.getElementById('hiddenCreateButtonExit').style.display = "none";
+				document.getElementById('hiddenCreateGrayBox').style.display = "none";
 			});
 		</script>
     
@@ -98,6 +98,13 @@
             		</div>
                     
                     <div class="pageSlide" id="signInPage">
+                    
+                     <div id="hiddenCreateText">
+                     	<p>Thanks for creating a profile! This would take you to your own profile page to get started, but for now, check out my app through the Log In page!</p>
+                     </div>
+					 <div id="hiddenCreateButtonExit">Okay!</div>
+            		 <div id="hiddenCreateGrayBox"></div>
+                     
                     	<div id="signInSquare">
                         	<div id="signWhiteBorder">
                             	<div id="firstStep">
@@ -156,14 +163,11 @@
                                             <li class="rowEnd unselectedTag"><p>Youth</p></li>
                                         </ul>
                                           
-                                    <input id="createButton" class="submitButton" type="submit" value="CREATE">
+                                   <!--<input id="createButton" class="submitButton" type="submit" value="CREATE">-->
                                     </form>
-                                	<!--<div id="createButton"><a href="#"><p>CREATE</p></a></div> -->   
-                                    <div id="hiddenMyCalText"></div>
-            						<div id="hiddenMyCalButtonExit"></div>
-            
-            						<div id="hiddenMyCalGrayBox"></div>          
+                                	<div id="createButton"><p>CREATE</p></div>           
                             	</div>
+                                
                                 
                                 <div id="leftColumn">
                                 	<ul id="buttonSelectorContainer">
@@ -387,20 +391,26 @@
 			enableScrolling();
 		});
 		
-		$('#myCalButton').on('tap', function(event){
+		$('#createButton').on('tap', function(event){
 			event.preventDefault();
-			$('#hiddenMyCalText').fadeIn(250);
-			$('#hiddenMyCalButtonExit').fadeIn(250);
-			$('#hiddenMyCalGrayBox').fadeIn(250);
+			$('#hiddenCreateText').fadeIn(250);
+			$('#hiddenCreateButtonExit').fadeIn(250);
+			$('#hiddenCreateGrayBox').fadeIn(250);
 			//$('#hiddenNav').fadeOut(250);
 			//$('#hiddenNavGrayBox').fadeOut(250);
 		});
 		
-		$('#hiddenMyCalButtonExit').on('tap', function(event){
+		$('#hiddenCreateButtonExit').on('tap', function(event){
 			event.preventDefault();
-			$('#hiddenMyCalText').fadeOut(250);
-			$('#hiddenMyCalButtonExit').fadeOut(250);
-			$('#hiddenMyCalGrayBox').fadeOut(250);
+			$('#hiddenCreateText').fadeOut(250);
+			$('#hiddenCreateButtonExit').fadeOut(250);
+			$('#hiddenCreateGrayBox').fadeOut(250);
+			
+			//$("#slider").animate({
+			//		right: '-='- 1536
+			//		}, 1000, 'easeInOutExpo'   //}, 1000, 'easeInOutExpo'
+			//	);
+			//	currentSliderObject=1;
 		});
 		
 		</script>
