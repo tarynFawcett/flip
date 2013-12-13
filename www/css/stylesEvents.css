@@ -510,6 +510,11 @@ button {
 	width:125px;
 	background-color:#fff;
 }
+.dropDividerb {
+	height:1px;
+	width:200px;
+	background-color:#fff;
+}
 .dropDividerTag {
 	height:1px;
 	width:150px;
