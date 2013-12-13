@@ -103,6 +103,14 @@
 				document.getElementById('hiddenNotif').style.display = "none";
 				document.getElementById('hiddenPlusButton').style.display = "none";
 				document.getElementById('hidePlusButton').style.display = "none";
+				
+				document.getElementById('hiddenMyCalText').style.display = "none";
+				document.getElementById('hiddenMyCalButtonExit').style.display = "none";
+				document.getElementById('hiddenMyCalGrayBox').style.display = "none";
+				
+				document.getElementById('hiddenTodayEventText').style.display = "none";
+				document.getElementById('hiddenTodayEventButtonExit').style.display = "none";
+				document.getElementById('hiddenTodayEventGrayBox').style.display = "none";
 								
 				document.getElementById('eventsPage').style.display = "block";
 				document.getElementById('searchPage').style.display = "none";
@@ -183,6 +191,39 @@
 				document.getElementById('countGrayBackText15').style.display = "none";
 				document.getElementById('countGrayBack16').style.display = "none";
 				document.getElementById('countGrayBackText16').style.display = "none";
+				
+				document.getElementById('alertGrayBack').style.display = "none";
+				document.getElementById('alertGrayBackText').style.display = "none";
+				document.getElementById('alertGrayBack2').style.display = "none";
+				document.getElementById('alertGrayBackText2').style.display = "none";
+				document.getElementById('alertGrayBack3').style.display = "none";
+				document.getElementById('alertGrayBackText3').style.display = "none";
+				document.getElementById('alertGrayBack4').style.display = "none";
+				document.getElementById('alertGrayBackText4').style.display = "none";
+				document.getElementById('alertGrayBack5').style.display = "none";
+				document.getElementById('alertGrayBackText5').style.display = "none";
+				document.getElementById('alertGrayBack6').style.display = "none";
+				document.getElementById('alertGrayBackText6').style.display = "none";
+				document.getElementById('alertGrayBack7').style.display = "none";
+				document.getElementById('alertGrayBackText7').style.display = "none";
+				document.getElementById('alertGrayBack8').style.display = "none";
+				document.getElementById('alertGrayBackText8').style.display = "none";
+				document.getElementById('alertGrayBack9').style.display = "none";
+				document.getElementById('alertGrayBackText9').style.display = "none";
+				document.getElementById('alertGrayBack10').style.display = "none";
+				document.getElementById('alertGrayBackText10').style.display = "none";
+				document.getElementById('alertGrayBack11').style.display = "none";
+				document.getElementById('alertGrayBackText11').style.display = "none";
+				document.getElementById('alertGrayBack12').style.display = "none";
+				document.getElementById('alertGrayBackText12').style.display = "none";
+				document.getElementById('alertGrayBack13').style.display = "none";
+				document.getElementById('alertGrayBackText13').style.display = "none";
+				document.getElementById('alertGrayBack14').style.display = "none";
+				document.getElementById('alertGrayBackText14').style.display = "none";
+				document.getElementById('alertGrayBack15').style.display = "none";
+				document.getElementById('alertGrayBackText15').style.display = "none";
+				document.getElementById('alertGrayBack16').style.display = "none";
+				document.getElementById('alertGrayBackText16').style.display = "none";
 				
 				document.getElementById('eventButton1Gray').style.display = "none";
 				document.getElementById('eventButton1Text').style.display = "none";
@@ -548,6 +589,40 @@
             
             <div id="hiddenNotifGrayBox"></div>
             
+            <!--check out what events you said you were going to go to-->
+            <div id="hiddenMyCalText"></div>
+            <div id="hiddenMyCalButtonExit"></div>
+            
+            <div id="hiddenMyCalGrayBox"></div>
+            
+            <!--check in at your event!-->
+            <div id="hiddenTodayEventText">
+            	<div id="todayEventTitle">Let's Check In!</div>
+                	<div class="tEdividerLine"></div>
+                <div id="teONE">
+                	<div class="teSTEPS">step one:</div>
+                    <div id="step1Q">Which event are you at?</div>
+                        <!--<div id="checkInEvents" class="curVal"><p>Search</p></div><div class="arrow"></div>
+                        
+                        <div class = "choices">
+                                <div class="dropDivider"></div>
+                            <div class = "choice" id="city"><p>City</p></div>
+                                <div class="dropDivider"></div>
+                            <div class = "choice" id="tag"><p>Tag</p></div>
+                                <div class="dropDivider"></div>
+                            <div class = "choice" id="cal"><p>Calendar</p></div>
+                        </div>-->
+                </div>
+                	<div class="tEdividerLine"></div>
+                <div id="teTWO">
+                	<div class="teSTEPS">step two:</div>
+                </div>
+            </div>
+            <div id="hiddenTodayEventButtonExit">let's go!</div>
+            
+            <div id="hiddenTodayEventGrayBox"></div>
+            
+            
             <div id="hiddenPlusButton">
 				<div id="newEventTitle">new event</div>
                 <div class="newEventDivider"></div>
@@ -555,7 +630,8 @@
                 	<form id="newEventForm" method="get" runat="server" action="">
                     	<p id="et">Event Title:</p><input type="text" maxlength="24" name="nETB" id="newEventTitleBox" placeholder="Event Title"><br/>
                         <div class="clearFloat"></div>
-                        <p id="c">Calendar:</p><select name="nED" id="newEventMonth">
+                        <p id="c">Calendar:</p>
+                        <select name="nED" id="newEventMonth">
                             <option class="month" value="Jan">Jan</option>
                             <option class="month" value="Feb">Feb</option>
                             <option class="month" value="Mar">Mar</option>
@@ -1383,7 +1459,7 @@
                             <div class="eventDenominator">/5</div>
                             <p>ATTENDEES</p>
                         </div>
-                        <div id="eventBoxCreator">lilflip07</div>
+                        <div id="eventBoxCreator2">lilflip07</div>
                         <div id="userListBox">
                         		<ul id="userList">
                         		    <li>vball_chick</li>
@@ -1393,8 +1469,8 @@
                         <div id="vertEventBoxLine"></div>
                         
                         <div id="eventBoxTimeDate">Monday, Jul 7<br />4:30 pm<br />Local Arts, Inc</div>
-                        <div id="alertButton">Alert a Friend!</div>
-                        <div id="imInButton">Count Me In!</div>
+                        <div id="alertButton2">Alert a Friend!</div>
+                        <div id="imInButton2">Count Me In!</div>
                         <div></div>
                     </li>
                 	<li id="leftColDescripExitButton2">back to events</li>
@@ -1439,7 +1515,7 @@
                             <div class="eventDenominator">/8</div>
                             <p>ATTENDEES</p>
                         </div>
-                        <div id="eventBoxCreator">flip7034</div>
+                        <div id="eventBoxCreator3">flip7034</div>
                         <div id="userListBox">
                         		<ul id="userList">
                         		    <li>vball_chick</li>
@@ -1452,8 +1528,8 @@
                         <div id="vertEventBoxLine"></div>
                         
                         <div id="eventBoxTimeDate">Thursday, Jul 10<br />2:00 pm<br />Valley View</div>
-                        <div id="alertButton">Alert a Friend!</div>
-                        <div id="imInButton">Count Me In!</div>
+                        <div id="alertButton3">Alert a Friend!</div>
+                        <div id="imInButton3">Count Me In!</div>
                         <div></div>
                     </li>
                 	<li id="leftColDescripExitButton3">back to events</li>
@@ -1496,7 +1572,7 @@
                             <div class="eventDenominator">/6</div>
                             <p>ATTENDEES</p>
                         </div>
-                        <div id="eventBoxCreator">user73820</div>
+                        <div id="eventBoxCreator4">user73820</div>
                         <div id="userListBox">
                         		<ul id="userList">
                         		    <li>i_heart_flip711</li>
@@ -1507,8 +1583,8 @@
                         <div id="vertEventBoxLine"></div>
                         
                         <div id="eventBoxTimeDate">Saturday, Jul 12<br />10:00 am<br />Hilltop</div>
-                        <div id="alertButton">Alert a Friend!</div>
-                        <div id="imInButton">Count Me In!</div>
+                        <div id="alertButton4">Alert a Friend!</div>
+                        <div id="imInButton4">Count Me In!</div>
                         <div></div>
                     </li>
                 	<li id="leftColDescripExitButton4">back to events</li>
@@ -1551,7 +1627,7 @@
                             <div class="eventDenominator">/8</div>
                             <p>ATTENDEES</p>
                         </div>
-                        <div id="eventBoxCreator">cedes_007</div>
+                        <div id="eventBoxCreator5">cedes_007</div>
                         <div id="userListBox">
                         		<ul id="userList">
                         			<li>sh0rt_stufff</li>
@@ -1563,8 +1639,8 @@
                         <div id="vertEventBoxLine"></div>
                         
                         <div id="eventBoxTimeDate">Sunday, Jul 13<br />3:00 pm<br />Stout Ropes</div>
-                        <div id="alertButton">Alert a Friend!</div>
-                        <div id="imInButton">Count Me In!</div>
+                        <div id="alertButton5">Alert a Friend!</div>
+                        <div id="imInButton5">Count Me In!</div>
                         <div></div>
                     </li>
                 	<li id="leftColDescripExitButton5">back to events</li>
@@ -1613,7 +1689,7 @@
                             <div class="eventDenominator">/12</div>
                             <p>ATTENDEES</p>
                         </div>
-                        <div id="eventBoxCreator">luckySix</div>
+                        <div id="eventBoxCreator6">luckySix</div>
                         <div id="userListBox">
                         		<ul id="userList">
                         		    <li>i_heart_flip711</li>
@@ -1625,8 +1701,8 @@
                         <div id="vertEventBoxLine"></div>
                         
                         <div id="eventBoxTimeDate">Tuesday, Jul 15<br />5:00 pm<br />Westway Gym</div>
-                        <div id="alertButton">Alert a Friend!</div>
-                        <div id="imInButton">Count Me In!</div>
+                        <div id="alertButton6">Alert a Friend!</div>
+                        <div id="imInButton6">Count Me In!</div>
                         <div></div>
                     </li>
                 	<li id="leftColDescripExitButton6">back to events</li>
@@ -1675,7 +1751,7 @@
                             <div class="eventDenominator">/12</div>
                             <p>ATTENDEES</p>
                         </div>
-                        <div id="eventBoxCreator">jKrier33</div>
+                        <div id="eventBoxCreator7">jKrier33</div>
                         <div id="userListBox">
                         		<ul id="userList">
                         		    <li>vball_chick</li>
@@ -1690,8 +1766,8 @@
                         <div id="vertEventBoxLine"></div>
                         
                         <div id="eventBoxTimeDate">Wed, Jul 16<br />4:00 pm<br />Legion Hall</div>
-                        <div id="alertButton">Alert a Friend!</div>
-                        <div id="imInButton">Count Me In!</div>
+                        <div id="alertButton7">Alert a Friend!</div>
+                        <div id="imInButton7">Count Me In!</div>
                         <div></div>
                     </li>
                 	<li id="leftColDescripExitButton7">back to events</li>
@@ -1743,7 +1819,7 @@
                             <div class="eventDenominator">/16</div>
                             <p>ATTENDEES</p>
                         </div>
-                        <div id="eventBoxCreator">vballchick</div>
+                        <div id="eventBoxCreator8">vballchick</div>
                         <div id="userListBox">	
                         		<ul id="userList">
                         		    <li>cedes</li>
@@ -1762,8 +1838,8 @@
                         <div id="vertEventBoxLine"></div>
                         
                         <div id="eventBoxTimeDate">Thursday, Jul 17<br />7:30 pm<br />The Ministry</div>
-                        <div id="alertButton">Alert a Friend!</div>
-                        <div id="imInButton">Count Me In!</div>
+                        <div id="alertButton8">Alert a Friend!</div>
+                        <div id="imInButton8">Count Me In!</div>
                         <div></div>
                     </li>
                 	<li id="leftColDescripExitButton8">back to events</li>
@@ -1810,7 +1886,7 @@
                             <div class="eventDenominator">/10</div>
                             <p>ATTENDEES</p>
                         </div>
-                        <div id="eventBoxCreator">cedes</div>
+                        <div id="eventBoxCreator9">cedes</div>
                         <div id="userListBox">
                         	
                         		<ul id="userList">
@@ -1827,8 +1903,8 @@
                         <div id="vertEventBoxLine"></div>
                         
                         <div id="eventBoxTimeDate">Monday, Jul 7<br />7:00 pm<br />River View Gym</div>
-                        <div id="alertButton">Alert a Friend!</div>
-                        <div id="imInButton">Count Me In!</div>
+                        <div id="alertButton9">Alert a Friend!</div>
+                        <div id="imInButton9">Count Me In!</div>
                         <div></div>
                     </li>
                 	<li id="leftColDescripExitButton9">back to events</li>
@@ -1871,7 +1947,7 @@
                             <div class="eventDenominator">/5</div>
                             <p>ATTENDEES</p>
                         </div>
-                        <div id="eventBoxCreator">lilflip07</div>
+                        <div id="eventBoxCreator10">lilflip07</div>
                         <div id="userListBox">	
                         		<ul id="userList">
                         		    <li>vball_chick</li>
@@ -1881,8 +1957,8 @@
                         <div id="vertEventBoxLine"></div>
                         
                         <div id="eventBoxTimeDate">Monday, Jul 7<br />4:30 pm<br />Local Arts, Inc</div>
-                        <div id="alertButton">Alert a Friend!</div>
-                        <div id="imInButton">Count Me In!</div>
+                        <div id="alertButton10">Alert a Friend!</div>
+                        <div id="imInButton10">Count Me In!</div>
                         <div></div>
                     </li>
                 	<li id="leftColDescripExitButton10">back to events</li>
@@ -1927,7 +2003,7 @@
                             <div class="eventDenominator">/8</div>
                             <p>ATTENDEES</p>
                         </div>
-                        <div id="eventBoxCreator">flip7034</div>
+                        <div id="eventBoxCreator11">flip7034</div>
                         <div id="userListBox">
                         	
                         		<ul id="userList">
@@ -1941,8 +2017,8 @@
                         <div id="vertEventBoxLine"></div>
                         
                         <div id="eventBoxTimeDate">Thursday, Jul 10<br />2:00 pm<br />Valley View</div>
-                        <div id="alertButton">Alert a Friend!</div>
-                        <div id="imInButton">Count Me In!</div>
+                        <div id="alertButton11">Alert a Friend!</div>
+                        <div id="imInButton11">Count Me In!</div>
                         <div></div>
                     </li>
                 	<li id="leftColDescripExitButton11">back to events</li>
@@ -1985,7 +2061,7 @@
                             <div class="eventDenominator">/6</div>
                             <p>ATTENDEES</p>
                         </div>
-                        <div id="eventBoxCreator">user73820</div>
+                        <div id="eventBoxCreator12">user73820</div>
                         <div id="userListBox">
                         	
                         		<ul id="userList">
@@ -1997,8 +2073,8 @@
                         <div id="vertEventBoxLine"></div>
                         
                         <div id="eventBoxTimeDate">Saturday, July 12<br />10:00 am<br />Hilltop</div>
-                        <div id="alertButton">Alert a Friend!</div>
-                        <div id="imInButton">Count Me In!</div>
+                        <div id="alertButton12">Alert a Friend!</div>
+                        <div id="imInButton12">Count Me In!</div>
                         <div></div>
                     </li>
                 	<li id="leftColDescripExitButton12">back to events</li>
@@ -2041,7 +2117,7 @@
                             <div class="eventDenominator">/8</div>
                             <p>ATTENDEES</p>
                         </div>
-                        <div id="eventBoxCreator">cedes_007</div>
+                        <div id="eventBoxCreator13">cedes_007</div>
                         <div id="userListBox">
                         	
                         		<ul id="userList">
@@ -2054,8 +2130,8 @@
                         <div id="vertEventBoxLine"></div>
                         
                         <div id="eventBoxTimeDate">Sunday, Jul 13<br />3:00 pm<br />Stout Ropes</div>
-                        <div id="alertButton">Alert a Friend!</div>
-                        <div id="imInButton">Count Me In!</div>
+                        <div id="alertButton13">Alert a Friend!</div>
+                        <div id="imInButton13">Count Me In!</div>
                         <div></div>
                     </li>
                 	<li id="leftColDescripExitButton13">back to events</li>
@@ -2104,7 +2180,7 @@
                             <div class="eventDenominator">/12</div>
                             <p>ATTENDEES</p>
                         </div>
-                        <div id="eventBoxCreator">luckySix</div>
+                        <div id="eventBoxCreator14">luckySix</div>
                         <div id="userListBox">
                         		<ul id="userList">
                         		    <li>i_heart_flip711</li>
@@ -2116,8 +2192,8 @@
                         <div id="vertEventBoxLine"></div>
                         
                         <div id="eventBoxTimeDate">Tuesday, Jul 15<br />5:00 pm<br />Westway Gym</div>
-                        <div id="alertButton">Alert a Friend!</div>
-                        <div id="imInButton">Count Me In!</div>
+                        <div id="alertButton14">Alert a Friend!</div>
+                        <div id="imInButton14">Count Me In!</div>
                         <div></div>
                     </li>
                 	<li id="leftColDescripExitButton14">back to events</li>
@@ -2166,7 +2242,7 @@
                             <div class="eventDenominator">/12</div>
                             <p>ATTENDEES</p>
                         </div>
-                        <div id="eventBoxCreator">jKrier33</div>
+                        <div id="eventBoxCreator15">jKrier33</div>
                         <div id="userListBox">
                         	
                         		<ul id="userList">
@@ -2182,8 +2258,8 @@
                         <div id="vertEventBoxLine"></div>
                         
                         <div id="eventBoxTimeDate">Wed, Jul 16<br />4:00 pm<br />Legion Hall</div>
-                        <div id="alertButton">Alert a Friend!</div>
-                        <div id="imInButton">Count Me In!</div>
+                        <div id="alertButton15">Alert a Friend!</div>
+                        <div id="imInButton15">Count Me In!</div>
                         <div></div>
                     </li>
                 	<li id="leftColDescripExitButton15">back to events</li>
@@ -2235,7 +2311,7 @@
                             <div class="eventDenominator">/16</div>
                             <p>ATTENDEES</p>
                         </div>
-                        <div id="eventBoxCreator">vballchick</div>
+                        <div id="eventBoxCreator16">vballchick</div>
                         <div id="userListBox">
                         	
                         		<ul id="userList">
@@ -2255,8 +2331,8 @@
                         <div id="vertEventBoxLine"></div>
                         
                         <div id="eventBoxTimeDate">Thursday, Jul 17<br />7:30 pm<br />The Ministry</div>
-                        <div id="alertButton">Alert a Friend!</div>
-                        <div id="imInButton">Count Me In!</div>
+                        <div id="alertButton16">Alert a Friend!</div>
+                        <div id="imInButton16">Count Me In!</div>
                         <div></div>
                     </li>
                 	<li id="leftColDescripExitButton16">back to events</li>
@@ -2795,7 +2871,651 @@
                 </ul>
             </div>
             
-            <!---->
+      <!----alert a friend divs--------------------------->
+            <div id="alertGrayBack"></div>
+            
+            <div id="alertGrayBackText">
+            	<ul>
+                	<li id="alertBox">
+                    	<div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5a"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user1a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user1b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user1c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user1d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user1e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user1f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user1g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user1h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user1i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user1j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user1k"><p>jkrier33</p></div>
+    					</div>
+                        
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
+                    
+                    <li id="alertBoxExit">SHARE THIS EVENT!</li>
+                </ul>
+            </div>
+            
+            <div id="alertGrayBack2"></div>
+            
+            <div id="alertGrayBackText2">
+            	<ul>
+                	<li id="alertBox2">
+                    <div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5b"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user2a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user2b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user2c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user2d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user2e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user2f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user2g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user2h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user2i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user2j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user2k"><p>jkrier33</p></div>
+    					</div>
+                        
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                    
+                    <li id="alertBoxExit2">BACK TO EVENTS</li>
+                </ul>
+            </div>
+            
+            <div id="alertGrayBack3"></div>
+            
+            <div id="alertGrayBackText3">
+            	<ul>
+                	<li id="alertBox3">
+                    <div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5c"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user3a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user3b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user3c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user3d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user3e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user3f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user3g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user3h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user3i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user3j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user3k"><p>jkrier33</p></div>
+    					</div>
+                        
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                    
+                    <li id="alertBoxExit3">BACK TO EVENTS</li>
+                </ul>
+            </div>
+            
+            <div id="alertGrayBack4"></div>
+            
+            <div id="alertGrayBackText4">
+            	<ul>
+                	<li id="alertBox4">
+                    <div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5d"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user4a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user4b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user4c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user4d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user4e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user4f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user4g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user4h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user4i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user4j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user4k"><p>jkrier33</p></div>
+    					</div>
+                       
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                    
+                    <li id="alertBoxExit4">BACK TO EVENTS</li>
+                </ul>
+            </div>
+            
+            <div id="alertGrayBack5"></div>
+            
+            <div id="alertGrayBackText5">
+            	<ul>
+                	<li id="alertBox5">
+                    <div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5e"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user5a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user5b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user5c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user5d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user5e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user5f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user5g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user5h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user5i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user5j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user5k"><p>jkrier33</p></div>
+    					</div>
+                        
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                    
+                    <li id="alertBoxExit5">BACK TO EVENTS</li>
+                </ul>
+            </div>
+            
+            <div id="alertGrayBack6"></div>
+            
+            <div id="alertGrayBackText6">
+            	<ul>
+                	<li id="alertBox6">
+                    <div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5f"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user6a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user6b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user6c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user6d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user6e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user6f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user6g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user6h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user6i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user6j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user6k"><p>jkrier33</p></div>
+    					</div>
+                        
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                    
+                    <li id="alertBoxExit6">BACK TO EVENTS</li>
+                </ul>
+            </div>
+            
+            <div id="alertGrayBack7"></div>
+            
+            <div id="alertGrayBackText7">
+            	<ul>
+                	<li id="alertBox7">
+                    <div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5g"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user7a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user7b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user7c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user7d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user7e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user7f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user7g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user7h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user7i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user7j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user7k"><p>jkrier33</p></div>
+    					</div>
+                        
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                    
+                    <li id="alertBoxExit7">BACK TO EVENTS</li>
+                </ul>
+            </div>
+            
+            <div id="alertGrayBack8"></div>
+            
+            <div id="alertGrayBackText8">
+            	<ul>
+                	<li id="alertBox8">
+                    <div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5h"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user8a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user8b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user8c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user8d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user8e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user8f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user8g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user8h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user8i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user8j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user8k"><p>jkrier33</p></div>
+    					</div>
+                        
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                    
+                    <li id="alertBoxExit8">BACK TO EVENTS</li>
+                </ul>
+            </div>
+            
+            <div id="alertGrayBack9"></div>
+            
+            <div id="alertGrayBackText9">
+            	<ul>
+                	<li id="alertBox9">
+                    <div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5i"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user9a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user9b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user9c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user9d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user9e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user9f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user9g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user9h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user9i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user9j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user9k"><p>jkrier33</p></div>
+    					</div>
+                        
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                    
+                    <li id="alertBoxExit9">BACK TO EVENTS</li>
+                </ul>
+            </div>
+            
+            <div id="alertGrayBack10"></div>
+            
+            <div id="alertGrayBackText10">
+            	<ul>
+                	<li id="alertBox10">
+                    <div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5j"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user10a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user10b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user10c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user10d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user10e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user10f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user10g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user10h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user10i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user10j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user10k"><p>jkrier33</p></div>
+    					</div>
+                        
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                    
+                    <li id="alertBoxExit10">BACK TO EVENTS</li>
+                </ul>
+            </div>
+            
+            <div id="alertGrayBack11"></div>
+            
+            <div id="alertGrayBackText11">
+            	<ul>
+                	<li id="alertBox11">
+                    <div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5k"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user11a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user11b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user11c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user11d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user11e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user11f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user11g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user11h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user11i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user11j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user11k"><p>jkrier33</p></div>
+    					</div>
+                        
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                    
+                    <li id="alertBoxExit11">BACK TO EVENTS</li>
+                </ul>
+            </div>
+            
+            <div id="alertGrayBack12"></div>
+            
+            <div id="alertGrayBackText12">
+            	<ul>
+                	<li id="alertBox12">
+                    <div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5l"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user12a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user12b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user12c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user12d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user12e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user12f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user12g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user12h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user12i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user12j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user12k"><p>jkrier33</p></div>
+    					</div>
+                       
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                    
+                    <li id="alertBoxExit12">BACK TO EVENTS</li>
+                </ul>
+            </div>
+            
+            <div id="alertGrayBack13"></div>
+            
+            <div id="alertGrayBackText13">
+            	<ul>
+                	<li id="alertBox13">
+                    <div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5m"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user13a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user13b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user13c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user13d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user13e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user13f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user13g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user13h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user13i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user13j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user13k"><p>jkrier33</p></div>
+    					</div>
+                        
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                    
+                    <li id="alertBoxExit13">BACK TO EVENTS</li>
+                </ul>
+            </div>
+            
+            <div id="alertGrayBack14"></div>
+            
+            <div id="alertGrayBackText14">
+            	<ul>
+                	<li id="alertBox14">
+                    <div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5n"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user14a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user14b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user14c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user14d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user14e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user14f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user14g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user14h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user14i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user14j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user14k"><p>jkrier33</p></div>
+    					</div>
+                        
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                    
+                    <li id="alertBoxExit14">BACK TO EVENTS</li>
+                </ul>
+            </div>
+            
+            <div id="alertGrayBack15"></div>
+            
+            <div id="alertGrayBackText15">
+            	<ul>
+                	<li id="alertBox15">
+                    <div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5o"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user15a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user15b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user15c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user15d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user15e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user15f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user15g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user15h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user15i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user15j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user15k"><p>jkrier33</p></div>
+    					</div>
+                        
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                    
+                    <li id="alertBoxExit15">BACK TO EVENTS</li>
+                </ul>
+            </div>
+            
+            <div id="alertGrayBack16"></div>
+            
+            <div id="alertGrayBackText16">
+            	<ul>
+                	<li id="alertBox16">
+                    <div class="alertTitle">alert a friend!</div>
+                        <div class="alertFullDivider"></div>
+                        
+                        <div id="alertDropDown" class="curVal5p"><p>Search</p></div><div class="alertArrow"></div>
+                    
+                    	<div class = "alertUsers">
+                        	<div class = "user" id="user16a"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user16b"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user16c"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user16d"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user16e"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user16f"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user16g"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user16h"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user16i"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "user" id="user16j"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "user" id="user16k"><p>jkrier33</p></div>
+    					</div>
+                        
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                    
+                    <li id="alertBoxExit16">BACK TO EVENTS</li>
+                </ul>
+            </div>
+            
+            
+            
+      <!------end alert divs------------------------------->
             
             
             <div id="eventDivs">
@@ -5817,6 +6537,750 @@
         	$("#searchingCal, #goCal").fadeIn(1000);
 		});
 		
+		//////////////////////////////////////////////////////////////
+		$(".alertUsers").hide();
+		
+		$(".alertArrow").click(function(event) {
+   			$(".alertUsers").slideToggle("fast"); 
+			//$(".user").hide(); 
+   			event.stopPropagation();
+		});
+		
+		$("#user1a").click(function() {
+			$(".curVal5a").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user1b").click(function() {
+			$(".curVal5a").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user1c").click(function() {
+			$(".curVal5a").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user1d").click(function() {
+			$(".curVal5a").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user1e").click(function() {
+			$(".curVal5a").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user1f").click(function() {
+			$(".curVal5a").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user1g").click(function() {
+			$(".curVal5a").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user1h").click(function() {
+			$(".curVal5a").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user1i").click(function() {
+			$(".curVal5a").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user1j").click(function() {
+			$(".curVal5a").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user1k").click(function() {
+			$(".curVal5a").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		
+		//////
+		$("#user2a").click(function() {
+			$(".curVal5b").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user2b").click(function() {
+			$(".curVal5b").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user2c").click(function() {
+			$(".curVal5b").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user2d").click(function() {
+			$(".curVal5b").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user2e").click(function() {
+			$(".curVal5b").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user2f").click(function() {
+			$(".curVal5b").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user2g").click(function() {
+			$(".curVal5b").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user2h").click(function() {
+			$(".curVal5b").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user2i").click(function() {
+			$(".curVal5b").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user2j").click(function() {
+			$(".curVal5b").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user2k").click(function() {
+			$(".curVal5b").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		
+		///////
+		$("#user3a").click(function() {
+			$(".curVal5c").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user3b").click(function() {
+			$(".curVal5c").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user3c").click(function() {
+			$(".curVal5c").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user3d").click(function() {
+			$(".curVal5c").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user3e").click(function() {
+			$(".curVal5c").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user3f").click(function() {
+			$(".curVal5c").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user3g").click(function() {
+			$(".curVal5c").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user3h").click(function() {
+			$(".curVal5c").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user3i").click(function() {
+			$(".curVal5c").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user3j").click(function() {
+			$(".curVal5c").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user3k").click(function() {
+			$(".curVal5c").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		
+		///////
+		$("#user4a").click(function() {
+			$(".curVal5d").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user4b").click(function() {
+			$(".curVal5d").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user4c").click(function() {
+			$(".curVal5d").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user4d").click(function() {
+			$(".curVal5d").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user4e").click(function() {
+			$(".curVal5d").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user4f").click(function() {
+			$(".curVal5d").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user4g").click(function() {
+			$(".curVal5d").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user4h").click(function() {
+			$(".curVal5d").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user4i").click(function() {
+			$(".curVal5d").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user4j").click(function() {
+			$(".curVal5d").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user4k").click(function() {
+			$(".curVal5d").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		
+		///////
+		$("#user5a").click(function() {
+			$(".curVal5e").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user5b").click(function() {
+			$(".curVal5e").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user5c").click(function() {
+			$(".curVal5e").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user5d").click(function() {
+			$(".curVal5e").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user5e").click(function() {
+			$(".curVal5e").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user5f").click(function() {
+			$(".curVal5e").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user5g").click(function() {
+			$(".curVal5e").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user5h").click(function() {
+			$(".curVal5e").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user5i").click(function() {
+			$(".curVal5e").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user5j").click(function() {
+			$(".curVal5e").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user5k").click(function() {
+			$(".curVal5e").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		
+		///////
+		$("#user6a").click(function() {
+			$(".curVal5f").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user6b").click(function() {
+			$(".curVal5f").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user6c").click(function() {
+			$(".curVal5f").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user6d").click(function() {
+			$(".curVal5f").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user6e").click(function() {
+			$(".curVal5f").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user6f").click(function() {
+			$(".curVal5f").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user6g").click(function() {
+			$(".curVal5f").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user6h").click(function() {
+			$(".curVal5f").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user6i").click(function() {
+			$(".curVal5f").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user6j").click(function() {
+			$(".curVal5f").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user6k").click(function() {
+			$(".curVal5f").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		
+		///////
+		$("#user7a").click(function() {
+			$(".curVal5g").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user7b").click(function() {
+			$(".curVal5g").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user7c").click(function() {
+			$(".curVal5g").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user7d").click(function() {
+			$(".curVal5g").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user7e").click(function() {
+			$(".curVal5g").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user7f").click(function() {
+			$(".curVal5g").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user7g").click(function() {
+			$(".curVal5g").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user7h").click(function() {
+			$(".curVal5g").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user7i").click(function() {
+			$(".curVal5g").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user7j").click(function() {
+			$(".curVal5g").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user7k").click(function() {
+			$(".curVal5g").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		
+		///////
+		$("#user8a").click(function() {
+			$(".curVal5h").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user8b").click(function() {
+			$(".curVal5h").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user8c").click(function() {
+			$(".curVal5h").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user8d").click(function() {
+			$(".curVal5h").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user8e").click(function() {
+			$(".curVal5h").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user8f").click(function() {
+			$(".curVal5h").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user8g").click(function() {
+			$(".curVal5h").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user8h").click(function() {
+			$(".curVal5h").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user8i").click(function() {
+			$(".curVal5h").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user8j").click(function() {
+			$(".curVal5h").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user8k").click(function() {
+			$(".curVal5h").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		
+		///////
+		$("#user9a").click(function() {
+			$(".curVal5i").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user9b").click(function() {
+			$(".curVal5i").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user9c").click(function() {
+			$(".curVal5i").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user9d").click(function() {
+			$(".curVal5i").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user9e").click(function() {
+			$(".curVal5i").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user9f").click(function() {
+			$(".curVal5i").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user9g").click(function() {
+			$(".curVal5i").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user9h").click(function() {
+			$(".curVal5i").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user9i").click(function() {
+			$(".curVal5i").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user9j").click(function() {
+			$(".curVal5i").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user9k").click(function() {
+			$(".curVal5i").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		
+		///////
+		$("#user10a").click(function() {
+			$(".curVal5j").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user10b").click(function() {
+			$(".curVal5j").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user10c").click(function() {
+			$(".curVal5j").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user10d").click(function() {
+			$(".curVal5j").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user10e").click(function() {
+			$(".curVal5j").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user10f").click(function() {
+			$(".curVal5j").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user10g").click(function() {
+			$(".curVal5j").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user10h").click(function() {
+			$(".curVal5j").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user10i").click(function() {
+			$(".curVal5j").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user10j").click(function() {
+			$(".curVal5j").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user10k").click(function() {
+			$(".curVal5j").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		
+		///////
+		$("#user11a").click(function() {
+			$(".curVal5k").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user11b").click(function() {
+			$(".curVal5k").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user11c").click(function() {
+			$(".curVal5k").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user11d").click(function() {
+			$(".curVal5k").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user11e").click(function() {
+			$(".curVal5k").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user11f").click(function() {
+			$(".curVal5k").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user11g").click(function() {
+			$(".curVal5k").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user11h").click(function() {
+			$(".curVal5k").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user11i").click(function() {
+			$(".curVal5k").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user11j").click(function() {
+			$(".curVal5k").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user11k").click(function() {
+			$(".curVal5k").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		
+		///////
+		$("#user12a").click(function() {
+			$(".curVal5l").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user12b").click(function() {
+			$(".curVal5l").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user12c").click(function() {
+			$(".curVal5l").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user12d").click(function() {
+			$(".curVal5l").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user12e").click(function() {
+			$(".curVal5l").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user12f").click(function() {
+			$(".curVal5l").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user12g").click(function() {
+			$(".curVal5l").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user12h").click(function() {
+			$(".curVal5l").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user12i").click(function() {
+			$(".curVal5l").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user12j").click(function() {
+			$(".curVal5l").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user12k").click(function() {
+			$(".curVal5l").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		
+		///////
+		$("#user13a").click(function() {
+			$(".curVal5m").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user13b").click(function() {
+			$(".curVal5m").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user13c").click(function() {
+			$(".curVal5m").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user13d").click(function() {
+			$(".curVal5m").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user13e").click(function() {
+			$(".curVal5m").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user13f").click(function() {
+			$(".curVal5m").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user13g").click(function() {
+			$(".curVal5m").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user13h").click(function() {
+			$(".curVal5m").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user13i").click(function() {
+			$(".curVal5m").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user13j").click(function() {
+			$(".curVal5m").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user13k").click(function() {
+			$(".curVal5m").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		
+		///////
+		$("#user14a").click(function() {
+			$(".curVal5n").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user14b").click(function() {
+			$(".curVal5n").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user14c").click(function() {
+			$(".curVal5n").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user14d").click(function() {
+			$(".curVal5n").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user14e").click(function() {
+			$(".curVal5n").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user14f").click(function() {
+			$(".curVal5n").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user14g").click(function() {
+			$(".curVal5n").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user14h").click(function() {
+			$(".curVal5n").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user14i").click(function() {
+			$(".curVal5n").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user14j").click(function() {
+			$(".curVal5n").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user14k").click(function() {
+			$(".curVal5n").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		
+		///////
+		$("#user15a").click(function() {
+			$(".curVal5o").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user15b").click(function() {
+			$(".curVal5o").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user15c").click(function() {
+			$(".curVal5o").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user15d").click(function() {
+			$(".curVal5o").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user15e").click(function() {
+			$(".curVal5o").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user15f").click(function() {
+			$(".curVal5o").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user15g").click(function() {
+			$(".curVal5o").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user15h").click(function() {
+			$(".curVal5o").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user15i").click(function() {
+			$(".curVal5o").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user15j").click(function() {
+			$(".curVal5o").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user15k").click(function() {
+			$(".curVal5o").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		
+		///////
+		$("#user16a").click(function() {
+			$(".curVal5p").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user16b").click(function() {
+			$(".curVal5p").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user16c").click(function() {
+			$(".curVal5p").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user16d").click(function() {
+			$(".curVal5p").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user16e").click(function() {
+			$(".curVal5p").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user16f").click(function() {
+			$(".curVal5p").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user16g").click(function() {
+			$(".curVal5p").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user16h").click(function() {
+			$(".curVal5p").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user16i").click(function() {
+			$(".curVal5p").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user16j").click(function() {
+			$(".curVal5p").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		$("#user16k").click(function() {
+			$(".curVal5p").html($(this).html());
+			$(".alertUsers").slideToggle("fast");
+		});
+		//////////////////////////////////////////////////////////////
 		
 		///////////////////////tag drop down
 		$(".tagChoices").hide();
@@ -6093,7 +7557,7 @@
 		}); 
           
 		  
-        $('#profile, #userSearch, #destination').on('tap', function(event){
+        $('#profile, #userSearch, #destination, #eventBoxCreator, #eventBoxCreator2, #eventBoxCreator3, #eventBoxCreator4, #eventBoxCreator5, #eventBoxCreator6, #eventBoxCreator7, #eventBoxCreator8, #eventBoxCreator9, #eventBoxCreator10, #eventBoxCreator11, #eventBoxCreator12, #eventBoxCreator13, #eventBoxCreator14, #eventBoxCreator15, #eventBoxCreator16').on('tap', function(event){
 			event.preventDefault();
 				
 				$('#hiddenNav').fadeOut(250);
@@ -6107,6 +7571,7 @@
 				$('#settingsPage').fadeOut(250);
 				$('html, body').animate({ scrollTop: -100 });
 				
+				$('#leftColDescripDiv, #leftColDescripDivText, #leftColDescripDiv2, #leftColDescripDivText2, #leftColDescripDiv3, #leftColDescripDivText3, #leftColDescripDiv4, #leftColDescripDivText4, #leftColDescripDiv5, #leftColDescripDivText5, #leftColDescripDiv6, #leftColDescripDivText6, #leftColDescripDiv7, #leftColDescripDivText7, #leftColDescripDiv8, #leftColDescripDivText8, #leftColDescripDiv9, #leftColDescripDivText9, #leftColDescripDiv10, #leftColDescripDivText10, #leftColDescripDiv11, #leftColDescripDivText11, #leftColDescripDiv12, #leftColDescripDivText12, #leftColDescripDiv13, #leftColDescripDivText13, #leftColDescripDiv14, #leftColDescripDivText14, #leftColDescripDiv15, #leftColDescripDivText15, #leftColDescripDiv16, #leftColDescripDivText16').fadeOut(250);
 				//$('#navBarSearch').fadeOut(250);
 				enableScrolling();
 		});  
@@ -6155,6 +7620,44 @@
 		});
 		
 		///////////////////END NOTIFCATIONS REVEAL////////////////
+		
+		
+		////////////////////my personal calendar//////////////////////////
+		$('#myCalButton').on('tap', function(event){
+			event.preventDefault();
+			$('#hiddenMyCalText').fadeIn(250);
+			$('#hiddenMyCalButtonExit').fadeIn(250);
+			$('#hiddenMyCalGrayBox').fadeIn(250);
+			//$('#hiddenNav').fadeOut(250);
+			//$('#hiddenNavGrayBox').fadeOut(250);
+		});
+		
+		$('#hiddenMyCalButtonExit').on('tap', function(event){
+			event.preventDefault();
+			$('#hiddenMyCalText').fadeOut(250);
+			$('#hiddenMyCalButtonExit').fadeOut(250);
+			$('#hiddenMyCalGrayBox').fadeOut(250);
+		});
+		////////////////////END - my personal calendar//////////////////////////
+		
+		////////////////////event check in //////////////////////////
+		$('#todayEventButton').on('tap', function(event){
+			event.preventDefault();
+			$('#hiddenTodayEventText').fadeIn(250);
+			$('#hiddenTodayEventButtonExit').fadeIn(250);
+			$('#hiddenTodayEventGrayBox').fadeIn(250);
+			//$('#hiddenNav').fadeOut(250);
+			//$('#hiddenNavGrayBox').fadeOut(250);
+		});
+		
+		$('#hiddenTodayEventButtonExit').on('tap', function(event){
+			event.preventDefault();
+			$('#hiddenTodayEventText').fadeOut(250);
+			$('#hiddenTodayEventButtonExit').fadeOut(250);
+			$('#hiddenTodayEventGrayBox').fadeOut(250);
+		});
+		////////////////////END - event check in//////////////////////////
+		
 		
 		////////////////////REVEAL new events modal/////////////////
 		
@@ -6449,10 +7952,11 @@
 		}
 		//////////end disable scroll - ipad////////////
 		
-		/////////events pop up/////////////////
+		////////////////////////////////////////////////////////////////////////events pop up/////////////////
 		$('#leftColDescrip, #pic1').on('tap', function(event){
 			event.preventDefault();
-			$('#leftColDescripDiv, #leftColDescripDivText').fadeIn(250);
+			$('#leftColDescripDiv').fadeIn(250);
+			$('#leftColDescripDivText').fadeIn(250);
 			disableScrolling();
 		});
 		$('#leftColDescripExitButton').on('tap', function(event){
@@ -6632,29 +8136,31 @@
 		$('#joinButton, #imInButton').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack, #countGrayBackText').fadeIn(250);
-			$('#leftColDescripBox, #leftColDescripDiv, #leftColDescripExitButton').fadeOut(250);
+			$('#leftColDescripDiv, #leftColDescripDivText').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit').on('tap', function(event){
 			event.preventDefault();
-			$('#countGrayBack, #countGrayBackText').fadeOut(250);
+			$('#countGrayBack, #countGrayBackText').fadeOut(150);
 			enableScrolling();
 		});
 		
-		$('#joinButton2').on('tap', function(event){
+		$('#joinButton2, #imInButton2').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack2, #countGrayBackText2').fadeIn(250);
+			$('#leftColDescripDiv2, #leftColDescripDivText2').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit2').on('tap', function(event){
 			event.preventDefault();
-			$('#countGrayBack2, #countGrayBackText2').fadeOut(250);
+			$('#countGrayBack2, #countGrayBackText2').fadeOut(150);
 			enableScrolling();
 		});
 		
-		$('#joinButton3').on('tap', function(event){
+		$('#joinButton3, #imInButton3').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack3, #countGrayBackText3').fadeIn(250);
+			$('#leftColDescripDiv3, #leftColDescripDivText3').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit3').on('tap', function(event){
@@ -6663,9 +8169,10 @@
 			enableScrolling();
 		});
 		
-		$('#joinButton4').on('tap', function(event){
+		$('#joinButton4, #imInButton4').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack4, #countGrayBackText4').fadeIn(250);
+			$('#leftColDescripDiv4, #leftColDescripDivText4').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit4').on('tap', function(event){
@@ -6674,9 +8181,10 @@
 			enableScrolling();
 		});
 		
-		$('#joinButton5').on('tap', function(event){
+		$('#joinButton5, #imInButton5').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack5, #countGrayBackText5').fadeIn(250);
+			$('#leftColDescripDiv5, #leftColDescripDivText5').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit5').on('tap', function(event){
@@ -6685,9 +8193,10 @@
 			enableScrolling();
 		});
 		
-		$('#joinButton6').on('tap', function(event){
+		$('#joinButton6, #imInButton6').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack6, #countGrayBackText6').fadeIn(250);
+			$('#leftColDescripDiv6, #leftColDescripDivText6').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit6').on('tap', function(event){
@@ -6696,9 +8205,10 @@
 			enableScrolling();
 		});
 		
-		$('#joinButton7').on('tap', function(event){
+		$('#joinButton7, #imInButton7').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack7, #countGrayBackText7').fadeIn(250);
+			$('#leftColDescripDiv7, #leftColDescripDivText7').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit7').on('tap', function(event){
@@ -6707,9 +8217,10 @@
 			enableScrolling();
 		});
 		
-		$('#joinButton8').on('tap', function(event){
+		$('#joinButton8, #imInButton8').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack8, #countGrayBackText8').fadeIn(250);
+			$('#leftColDescripDiv8, #leftColDescripDivText8').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit8').on('tap', function(event){
@@ -6718,9 +8229,10 @@
 			enableScrolling();
 		});
 		
-		$('#joinButton9').on('tap', function(event){
+		$('#joinButton9, #imInButton9').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack9, #countGrayBackText9').fadeIn(250);
+			$('#leftColDescripDiv9, #leftColDescripDivText9').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit9').on('tap', function(event){
@@ -6729,9 +8241,10 @@
 			enableScrolling();
 		});
 		
-		$('#joinButton10').on('tap', function(event){
+		$('#joinButton10, #imInButton10').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack10, #countGrayBackText10').fadeIn(250);
+			$('#leftColDescripDiv10, #leftColDescripDivText10').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit10').on('tap', function(event){
@@ -6740,9 +8253,10 @@
 			enableScrolling();
 		});
 		
-		$('#joinButton11').on('tap', function(event){
+		$('#joinButton11, #imInButton11').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack11, #countGrayBackText11').fadeIn(250);
+			$('#leftColDescripDiv11, #leftColDescripDivText11').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit11').on('tap', function(event){
@@ -6751,9 +8265,10 @@
 			enableScrolling();
 		});
 		
-		$('#joinButton12').on('tap', function(event){
+		$('#joinButton12, #imInButton12').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack12, #countGrayBackText12').fadeIn(250);
+			$('#leftColDescripDiv12, #leftColDescripDivText12').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit12').on('tap', function(event){
@@ -6762,9 +8277,10 @@
 			enableScrolling();
 		});
 		
-		$('#joinButton13').on('tap', function(event){
+		$('#joinButton13, #imInButton13').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack13, #countGrayBackText13').fadeIn(250);
+			$('#leftColDescripDiv13, #leftColDescripDivText13').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit13').on('tap', function(event){
@@ -6773,9 +8289,10 @@
 			enableScrolling();
 		});
 		
-		$('#joinButton14').on('tap', function(event){
+		$('#joinButton14, #imInButton14').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack14, #countGrayBackText14').fadeIn(250);
+			$('#leftColDescripDiv14, #leftColDescripDivText14').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit14').on('tap', function(event){
@@ -6784,9 +8301,10 @@
 			enableScrolling();
 		});
 		
-		$('#joinButton15').on('tap', function(event){
+		$('#joinButton15, #imInButton15').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack15, #countGrayBackText15').fadeIn(250);
+			$('#leftColDescripDiv15, #leftColDescripDivText15').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit15').on('tap', function(event){
@@ -6795,9 +8313,10 @@
 			enableScrolling();
 		});
 		
-		$('#joinButton16').on('tap', function(event){
+		$('#joinButton16, #imInButton16').on('tap', function(event){
 			event.preventDefault();
 			$('#countGrayBack16, #countGrayBackText16').fadeIn(250);
+			$('#leftColDescripDiv16, #leftColDescripDivText16').fadeOut(150);
 			disableScrolling();
 		});
 		$('#countBoxExit16').on('tap', function(event){
@@ -6806,6 +8325,199 @@
 			enableScrolling();
 		});
 		///////////////end count me in pop up//////////////////	
+		
+		//////////////alert a friend pop up//////////////////
+		$('#alertButton').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack, #alertGrayBackText').fadeIn(250);
+			$('#leftColDescripDiv, #leftColDescripDivText').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack, #alertGrayBackText').fadeOut(150);
+			enableScrolling();
+		});
+		
+		$('#alertButton2').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack2, #alertGrayBackText2').fadeIn(250);
+			$('#leftColDescripDiv2, #leftColDescripDivText2').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit2').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack2, #alertGrayBackText2').fadeOut(150);
+			enableScrolling();
+		});
+		
+		$('#alertButton3').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack3, #alertGrayBackText3').fadeIn(250);
+			$('#leftColDescripDiv3, #leftColDescripDivText3').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit3').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack3, #alertGrayBackText3').fadeOut(150);
+			enableScrolling();
+		});
+		
+		$('#alertButton4').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack4, #alertGrayBackText4').fadeIn(250);
+			$('#leftColDescripDiv4, #leftColDescripDivText4').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit4').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack4, #alertGrayBackText4').fadeOut(150);
+			enableScrolling();
+		});
+		$('#alertButton5').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack5, #alertGrayBackText5').fadeIn(250);
+			$('#leftColDescripDiv5, #leftColDescripDivText5').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit5').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack5, #alertGrayBackText5').fadeOut(150);
+			enableScrolling();
+		});
+		
+		$('#alertButton6').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack6, #alertGrayBackText6').fadeIn(250);
+			$('#leftColDescripDiv6, #leftColDescripDivText6').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit6').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack6, #alertGrayBackText6').fadeOut(150);
+			enableScrolling();
+		});
+		
+		$('#alertButton7').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack7, #alertGrayBackText7').fadeIn(250);
+			$('#leftColDescripDiv7, #leftColDescripDivText7').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit7').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack7, #alertGrayBackText7').fadeOut(150);
+			enableScrolling();
+		});
+		
+		$('#alertButton8').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack8, #alertGrayBackText8').fadeIn(250);
+			$('#leftColDescripDiv8, #leftColDescripDivText8').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit8').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack8, #alertGrayBackText8').fadeOut(150);
+			enableScrolling();
+		});
+		
+		$('#alertButton9').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack9, #alertGrayBackText9').fadeIn(250);
+			$('#leftColDescripDiv9, #leftColDescripDivText9').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit9').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack9, #alertGrayBackText9').fadeOut(150);
+			enableScrolling();
+		});
+		
+		$('#alertButton10').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack10, #alertGrayBackText10').fadeIn(250);
+			$('#leftColDescripDiv10, #leftColDescripDivText10').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit10').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack10, #alertGrayBackText10').fadeOut(150);
+			enableScrolling();
+		});
+		
+		$('#alertButton11').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack11, #alertGrayBackText11').fadeIn(250);
+			$('#leftColDescripDiv11, #leftColDescripDivText11').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit11').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack11, #alertGrayBackText11').fadeOut(150);
+			enableScrolling();
+		});
+		
+		$('#alertButton12').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack12, #alertGrayBackText12').fadeIn(250);
+			$('#leftColDescripDiv12, #leftColDescripDivText12').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit12').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack12, #alertGrayBackText12').fadeOut(150);
+			enableScrolling();
+		});
+		$('#alertButton13').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack13, #alertGrayBackText13').fadeIn(250);
+			$('#leftColDescripDiv13, #leftColDescripDivText13').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit13').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack13, #alertGrayBackText13').fadeOut(150);
+			enableScrolling();
+		});
+		
+		$('#alertButton14').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack14, #alertGrayBackText14').fadeIn(250);
+			$('#leftColDescripDiv14, #leftColDescripDivText14').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit14').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack14, #alertGrayBackText14').fadeOut(150);
+			enableScrolling();
+		});
+		
+		$('#alertButton15').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack15, #alertGrayBackText15').fadeIn(250);
+			$('#leftColDescripDiv15, #leftColDescripDivText15').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit15').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack15, #alertGrayBackText15').fadeOut(150);
+			enableScrolling();
+		});
+		
+		$('#alertButton16').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack16, #alertGrayBackText16').fadeIn(250);
+			$('#leftColDescripDiv16, #leftColDescripDivText16').fadeOut(150);
+			disableScrolling();
+		});
+		$('#alertBoxExit16').on('tap', function(event){
+			event.preventDefault();
+			$('#alertGrayBack16, #alertGrayBackText16').fadeOut(150);
+			enableScrolling();
+		});
+		
+		//////////////end alert a friend in pop up///////////
 		
 		////////////settings submit buttons////////////////////
 		$('#updateButton1').on('tap', function(event){

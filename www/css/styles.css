@@ -39,6 +39,14 @@
 	z-index:12;
 }
 
+#slideBlink {
+	position:absolute;
+	margin-left:335px;
+	opacity:.1;
+	margin-top:220px;
+	
+}
+
 #header ul {
 	margin-left:310px;
 	display:block;
@@ -46,12 +54,34 @@
 	background-color:#CC6;
 }
 
-#header ul li{
+#logIn1, #signUp1{
+	color:#FFF;
+	display:inline;
+	font-size:30px;
+	/*line-height:58px;*/
+	background-color:#9F3;
+	margin-right:30px;
+	height:30px;
+	width:50px;
+}
+
+#logIn2, #signUp2{
 	color:#FFF;
 	display:inline;
 	font-size:30px;
 	/*line-height:58px;*/
 	background-color:#06C;
+	margin-right:30px;
+	height:30px;
+	width:50px;
+}
+
+#logIn3, #signUp3{
+	color:#FFF;
+	display:inline;
+	font-size:30px;
+	/*line-height:58px;*/
+	background-color:#C96;
 	margin-right:30px;
 	height:30px;
 	width:50px;

@@ -15,6 +15,17 @@
         <script src="js/jquery.easing.1.3.js" type="text/javascript" ></script>
         <!--<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
         <script src="js/jquery.mobile.custom.min.js" type="text/javascript"></script>
+        
+        <script>
+			$(document).ready(function(){
+				document.getElementById('logIn1').style.display = "none";
+				document.getElementById('signUp1').style.display = "none";
+				document.getElementById('logIn2').style.display = "none";
+				document.getElementById('signUp2').style.display = "none";
+				document.getElementById('logIn3').style.display = "none";
+				document.getElementById('signUp3').style.display = "none";
+			});
+		</script>
     
     </head>
 
@@ -34,9 +45,17 @@
             
             
             <div id="header">
-            	<ul>
-                	<li id="logIn">LOG IN</li> <!--log in-->
-                    <li id="signUp">SIGN UP</li> <!--sign up-->
+            	<ul id="mainNav">
+                	<li id="logIn1">LOG IN</li> <!--log in-->
+                    <li id="signUp1">SIGN UP</li> <!--sign up-->
+                </ul>
+                <ul id="logInNav">
+                	<li id="logIn2">LOG IN</li> <!--log in-->
+                    <li id="signUp2">SIGN UP</li> <!--sign up-->
+                </ul>
+                <ul id="signUpNav">
+                	<li id="logIn3">LOG IN</li> <!--log in-->
+                    <li id="signUp3">SIGN UP</li> <!--sign up-->
                 </ul>
                 <!--<div id="buttonContainer">
                 	<a href="#" id="sliderPrevButton"></a>
@@ -69,6 +88,7 @@
                     
                 	<div class="pageSlide" id="logoPage">
                     	<div id="mainLogo"> </div>
+                        <div id="slideBlink"><img src="images/slideBlinker.png" height="30" width="120"></div>
             		</div>
                     
                     <div class="pageSlide" id="signInPage">
@@ -163,6 +183,15 @@
 				currentSliderObject++;
         });
 		
+		//slide blinker
+		
+	    var blink = function(){
+    	    $('#slideBlink').toggle();
+    	};
+    	$(document).ready(function() {
+    	    setInterval(blink, 550);
+    	});
+		
 		// VARIABLES
 		var numberOfSliderObjects = 3;
 		var currentSliderObject =1;
@@ -171,27 +200,40 @@
 		//var nextSliderButtonVisible = true;
 		
 		//MOUSE EVENTS
-		$('#logIn').on('tap', function(event){
+		//$('#logIn1').on('tap', function(event){
 			//event.preventDefault();
-			slideToPrevious();
+		//	slideToPrevious();
 			//currentSliderObject = 1;
-		});
+		//});
 		
-		$('#signUp').on('tap', function(event){ 
-			event.preventDefault();
-			slideToNext();
+		//$('#signUp1').on('tap', function(event){ 
+		//	event.preventDefault();
+		//	slideToNext();
 			//currentSliderObject = 3;	
-		});
+		//});
+		
+		
+		//$('#logIn1').click = function (){
+  		//	$(document).scrollTo(currentSliderObject = 1);
+ 		//} 
+		//$('#signUp1').click = function (){
+  		//	$("#logoPage").hide('slide', {direction:'up'}, 200);
+		//	currenSliderObject==3;
+ 		//}; 
+		
 		
 		// TOUCH EVENTS
 		$('#slider').on('swiperight', function(event){ 
 			event.stopPropagation();
 			slideToPrevious();
+			
+			
 		});
 		
 		$('#slider').on('swipeleft', function(event){ 
 			event.stopPropagation();
-			slideToNext();		
+			slideToNext();
+				
 		});
 		
 		// FUNCTIONS
@@ -204,6 +246,9 @@
 				); 
 				currentSliderObject--;
 				//currentSliderObject = 1;
+				//switchNavButtons1();
+				//switchNavButtons2();
+				//switchNavButtons3();	
 			};
 		};
 		
@@ -217,9 +262,48 @@
 				
 				//alert(currentSliderObject);
 				currentSliderObject++; 
+				//switchNavButtons1();	
+				//switchNavButtons2();
+				//switchNavButtons3();
 			};
 
 		};
+		
+		///////
+		//function switchNavButtons1(){
+			//if(currentSliderObject=1){
+			//	$('#logIn1').hide();
+			//	$('#signUp1').hide();
+			//	$('#logIn3').hide();
+			//	$('#signUp3').hide();
+			//	$('#logIn2').show();
+			//	$('#signUp2').show();
+			//	currentSliderObject--;
+				//alert(currentSliderObject); 
+			//}
+			//else{
+				//switchNavButtons2();
+			//}
+		//};
+		//function switchNavButtons2(){
+		//	if(currentSliderObject=2){
+		//		$('#logIn1').show();
+		//		$('#signUp1').show();
+		//		$('#logIn3').hide();
+		//		$('#signUp3').hide();
+		//		$('#logIn2').hide();
+		//		$('#signUp2').hide();
+		//	}
+		//function switchNavButtons3(){
+		//	if(currentSliderObject=3){
+		//		$('#logIn1').hide();
+		//		$('#signUp1').hide();
+		//		$('#logIn3').show();
+		//		$('#signUp3').show();
+		//		$('#logIn2').hide();
+		//		$('#signUp2').hide();
+		//	};
+		//};
 		
 		////////////////////////////section fade-in on create profile section//////////////////////////////////
 		
