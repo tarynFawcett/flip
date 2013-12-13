@@ -224,7 +224,7 @@ button {
 
 .curVal4 {
     height:26px;
-    width:73px;
+    width:40px;
     line-height:14px;
     vertical-align:middle;
     background-color:transparent;
@@ -481,7 +481,15 @@ button {
 	letter-spacing:1px;
 }
 
-#jan, #feb, #mar, #apr, #may, #jun, #jul, #aug, #sep, #oct, #nov, #dec, #janb, #febb, #marb, #aprb, #mayb, #junb, #julb, #augb, #sepb, #octb, #novb, #decb {
+#jan, #feb, #mar, #apr, #may, #jun, #jul, #aug, #sep, #oct, #nov, #dec {
+	height:24px;
+	font-size:16px;
+	margin-left:10px;
+	padding-top:5px;
+	letter-spacing:1px;
+}
+
+#janb, #febb, #marb, #aprb, #mayb, #junb, #julb, #augb, #sepb, #octb, #novb, #decb {
 	height:34px;
 	font-size:28px;
 	margin-left:10px;
@@ -489,7 +497,7 @@ button {
 	letter-spacing:1px;
 }
 
-#day1, #day2, #day3, #day4, #day5, #day6, #day7, #day8, #day9, #day10, #day11, #day12, #day12, #day14, #day15, #day16, #day17, #day18, #day19, #day20, #day21, #day22, #day23, #day24, #day25, #day26, #day27, #day28, #day29, #day30, #day31, #day1b, #day2b, #day3b, #day4b, #day5b, #day6b, #day7b, #day8b, #day9b, #day10b, #day11b, #day12b, #day12b, #day14b, #day15b, #day16b, #day17b, #day18b, #day19b, #day20b, #day21b, #day22b, #day23b, #day24b, #day25b, #day26b, #day27b, #day28b, #day29b, #day30b, #day31b {
+#day1, #day2, #day3, #day4, #day5, #day6, #day7, #day8, #day9, #day10, #day11, #day12, #day13, #day14, #day15, #day16, #day17, #day18, #day19, #day20, #day21, #day22, #day23, #day24, #day25, #day26, #day27, #day28, #day29, #day30, #day31, #day1b, #day2b, #day3b, #day4b, #day5b, #day6b, #day7b, #day8b, #day9b, #day10b, #day11b, #day12b, #day13b, #day14b, #day15b, #day16b, #day17b, #day18b, #day19b, #day20b, #day21b, #day22b, #day23b, #day24b, #day25b, #day26b, #day27b, #day28b, #day29b, #day30b, #day31b {
 	height:24px;
 	font-size:17px;
 	margin-left:10px;
@@ -509,10 +517,21 @@ button {
 }
 .dropDividerCal {
 	height:1px;
-	width:176px;
+	width:68px;
 	background-color:#fff;
 }
 .dropDividerDay {
+	height:1px;
+	width:45px;
+	background-color:#fff;
+}
+
+.dropDividerCalb {
+	height:1px;
+	width:176px;
+	background-color:#fff;
+}
+.dropDividerDayb {
 	height:1px;
 	width:45px;
 	background-color:#fff;
@@ -3189,7 +3208,7 @@ h2 {
 
 #profilePage {
 	/*background-color:#C63;*/
-	height:1536px;
+	height:988px; /*w/ feedback section - 1536px;*/
 	width:728px;
 	margin-top:120px;
 	position:absolute;
