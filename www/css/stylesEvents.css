@@ -185,6 +185,25 @@ button {
 	margin-top:10px;
 }
 
+.curVal2b {
+    height:25px;
+    width:153px;
+    line-height:14px;
+    vertical-align: middle;
+    background-color:transparent;
+    color: white;
+	float:left;
+	margin-left:140px;
+	margin-top:3px;
+	border-bottom:1px dashed #ffffff;
+}
+.curVal2b p {
+	/*margin-left:10px;*/
+	letter-spacing:1px;
+	font-size:30px;
+	
+}
+
 .curVal3 {
     height:25px;
     width:52px;
@@ -205,7 +224,7 @@ button {
 
 .curVal4 {
     height:26px;
-    width:33px;
+    width:73px;
     line-height:14px;
     vertical-align:middle;
     background-color:transparent;
@@ -219,6 +238,42 @@ button {
 	margin-top:10px;
 	letter-spacing:1px;
 	font-size:14px;
+}
+
+.curVal3b {
+    height:25px;
+    width:175px;
+    line-height:14px;
+    vertical-align: middle;
+    background-color:transparent;
+    color: white;
+	float:left;
+	margin-left:35px;
+	margin-top:10px;
+	border-bottom:1px dashed #ffffff;
+}
+.curVal3b p {
+	margin-top:0px;
+	letter-spacing:1px;
+	font-size:30px;
+}
+
+.curVal4b {
+    height:26px;
+    width:60px;
+    line-height:14px;
+    vertical-align:middle;
+    background-color:transparent;
+    color: white;
+	float:left;
+	margin-left:25px;
+	margin-top:11px;
+	border-bottom:1px dashed #ffffff;
+}
+.curVal4b p {
+	margin-top:0px;
+	letter-spacing:1px;
+	font-size:30px;
 }
 
 .arrow {
@@ -242,7 +297,28 @@ button {
 	margin-left:5px;
 	border: 1px solid #fff;
 }
+.arrow2b {
+	background-image:url(../images/dropArrow15x15.png);
+	width:15px;
+    cursor: pointer;
+    height:15px;
+    float:left;
+    margin-top:10px;
+	margin-left:5px;
+	border: 1px solid #fff;
+}
 .arrow3 {
+	background-image:url(../images/dropArrow15x15.png);
+	width:15px;
+    cursor:pointer;
+    height:15px;
+    float:left;
+    margin-top:10px;
+	/*margin-left:12px;*/
+	border: 1px solid #fff;
+	margin-left:4px;
+}
+.arrow3b {
 	background-image:url(../images/dropArrow15x15.png);
 	width:15px;
     cursor:pointer;
@@ -264,6 +340,17 @@ button {
 	/*margin-left:12px;*/
 	border: 1px solid #fff;
 	margin-left:4px;
+}
+.arrow4b {
+	background-image:url(../images/dropArrow15x15.png);
+	width:15px;
+    cursor:pointer;
+    height:15px;
+    float:left;
+    margin-top:10px;
+	/*margin-left:12px;*/
+	border: 1px solid #fff;
+	margin-left:10px;
 }
 
 .choices {
@@ -291,8 +378,25 @@ button {
 	height:300px;
 	overflow:scroll;
 	margin-left:5px;
+	height:30px;
 }
 .tagChoices div {
+	display:block;
+	cursor:pointer;
+}
+.tagChoicesb {
+	position: absolute;*/
+    left: 0px;
+    top: 293px;
+    background-color:#222222;
+    color: white;
+    width: 150px;
+	height:300px;
+	overflow:scroll;
+	margin-left:140px;
+	font-size:25px;
+}
+.tagChoicesb div {
 	display:block;
 	cursor:pointer;
 }
@@ -313,6 +417,22 @@ button {
 	cursor:pointer;
 }
 
+.calChoicesb {
+	position: absolute;*/
+    left: 0px;
+    top:393px;
+    background-color:#222222;
+    color: white;
+    width:176px;
+	height:300px;
+	overflow:scroll;
+	margin-left:9px;
+}
+.calChoicesb div {
+	display:block;
+	cursor:pointer;
+}
+
 .dayChoices {
 	position: absolute;*/
     left:0px;
@@ -329,6 +449,22 @@ button {
 	cursor:pointer;
 }
 
+.dayChoicesb {
+	position: absolute;*/
+    left:0px;
+    top: 395px;
+    background-color:#222222;
+    color: white;
+    width:60px;
+	height:300px;
+	overflow:scroll;
+	margin-left:256px;
+}
+.dayChoicesb div {
+	display:block;
+	cursor:pointer;
+}
+
 #city, #tag, #cal {
 	height:31px;
 	font-size:20px;
@@ -337,7 +473,7 @@ button {
 	letter-spacing:1px;
 }
 
-#animals, #astrology, #art, #bookClub, #crafts, #concerts, #diy, #drink, #exercise, #food, #games, #indoor, #karaoke, #music, #outdoor, #recLeague, #running, #snow, #sports, #studio, #teamwork, #theater, #travel, #water, #yardGames, #yoga, #youth {
+#animals, #astrology, #art, #bookClub, #crafts, #concerts, #diy, #drink, #exercise, #food, #games, #indoor, #karaoke, #music, #outdoor, #recLeague, #running, #snow, #sports, #studio, #teamwork, #theater, #travel, #water, #yardGames, #yoga, #youth, #animalsb, #astrologyb, #artb, #bookClubb, #craftsb, #concertsb, #diyb, #drinkb, #exerciseb, #foodb, #gamesb, #indoorb, #karaokeb, #musicb, #outdoorb, #recLeagueb, #runningb, #snowb, #sportsb, #studiob, #teamworkb, #theaterb, #travelb, #waterb, #yardGamesb, #yogab, #youth b {
 	height:24px;
 	font-size:17px;
 	margin-left:10px;
@@ -345,15 +481,15 @@ button {
 	letter-spacing:1px;
 }
 
-#jan, #feb, #mar, #apr, #may, #jun, #jul, #aug, #sep, #oct, #nov, #dec {
-	height:24px;
-	font-size:17px;
+#jan, #feb, #mar, #apr, #may, #jun, #jul, #aug, #sep, #oct, #nov, #dec, #janb, #febb, #marb, #aprb, #mayb, #junb, #julb, #augb, #sepb, #octb, #novb, #decb {
+	height:34px;
+	font-size:28px;
 	margin-left:10px;
 	padding-top:5px;
 	letter-spacing:1px;
 }
 
-#day1, #day2, #day3, #day4, #day5, #day6, #day7, #day8, #day9, #day10, #day11, #day12, #day12, #day14, #day15, #day16, #day17, #day18, #day19, #day20, #day21, #day22, #day23, #day24, #day25, #day26, #day27, #day28, #day29, #day30, #day31 {
+#day1, #day2, #day3, #day4, #day5, #day6, #day7, #day8, #day9, #day10, #day11, #day12, #day12, #day14, #day15, #day16, #day17, #day18, #day19, #day20, #day21, #day22, #day23, #day24, #day25, #day26, #day27, #day28, #day29, #day30, #day31, #day1b, #day2b, #day3b, #day4b, #day5b, #day6b, #day7b, #day8b, #day9b, #day10b, #day11b, #day12b, #day12b, #day14b, #day15b, #day16b, #day17b, #day18b, #day19b, #day20b, #day21b, #day22b, #day23b, #day24b, #day25b, #day26b, #day27b, #day28b, #day29b, #day30b, #day31b {
 	height:24px;
 	font-size:17px;
 	margin-left:10px;
@@ -373,7 +509,7 @@ button {
 }
 .dropDividerCal {
 	height:1px;
-	width:68px;
+	width:176px;
 	background-color:#fff;
 }
 .dropDividerDay {
@@ -434,9 +570,20 @@ button {
 	background-color:transparent; /*transparent*/
 	color:#fff;
 	border:none;
-	height:20px;
-	font-size:14px; /*20*/
-	width:140px;
+	height:28px;
+	font-size:30px; /*20*/
+	width:184px;
+	margin-left:100px;
+}
+
+#searchCityTextb {
+	background-color:transparent; /*transparent*/
+	color:#fff;
+	border:none;
+	height:39px;
+	font-size:30px; /*20*/
+	width:184px;
+	margin-left:100px;
 }
 
 #searchingTag {
@@ -659,7 +806,7 @@ button {
 }
 
 #hiddenTodayEventText {
-	height:500px;
+	height:400px;
 	width:590px;
 	background-color:#434343;
 	z-index:309;
@@ -676,6 +823,7 @@ button {
 	width:590px;
 	text-align:center;
 	margin-top:14px;
+	margin-bottom:15px;
 }
 
 .tEdividerLine {
@@ -689,7 +837,7 @@ button {
 
 #teONE {
 	width:550px;
-	height:100px;
+	height:80px;
 	/*background-color:#0CC;*/
 	margin-left:20px;
 }
@@ -714,7 +862,7 @@ button {
 	float:left;
 }
 
-#step1Q {
+#step1Q, #step2Q {
 	font-size:20px;
 	color:#fff;
 	float:left;
@@ -722,16 +870,125 @@ button {
 	margin-left:7px;
 }
 
+#checkInEvents {
+	position:absolute;
+	margin-top:37px;
+	margin-left:150px;
+	width:185px;
+	font-size:20px;
+	color:#fff;
+	height:20px;
+	/*background-color:#36C;*/
+	padding-left:13px;
+	padding-top:3px;
+	border-bottom:dashed;
+	border-color:#fff;
+	border-width:1px;
+}
+
+.arrowEvents {
+	background-image:url(../images/dropArrow.png);
+	width:20px;
+    cursor: pointer;
+    height:20px;
+    position:absolute;
+    margin-top:38px;
+	margin-left:365px;
+	border: 1px solid #fff;
+}
+
+.checkEventsDrop {
+	width:200px;
+	height:188px;	
+	position:absolute;
+	margin-top:71px;
+	margin-left:150px;
+	background-color:#222222;
+	z-index:100;
+	opacity:.9;
+}
+
+.eventOptions {
+	height:30px;
+	width:300px;
+	color:#fff;
+	font-size:20px;
+	padding-left:13px;
+	padding-top:6px;
+	
+}
+
+#eventDodgeballResults {
+	height:20px;
+	width:129px;
+	/*background-color:#03F;*/
+	
+	position:absolute;
+	margin-top:40px;
+	/*margin-left:119px;*/
+	color:#fff;
+	letter-spacing:1px;
+}
+
+#eventStudioResults {
+	height:20px;
+	width:129px;
+	/*background-color:#03F;*/
+	
+	position:absolute;
+	margin-top:40px;
+	/*margin-left:119px;*/
+	color:#fff;
+	letter-spacing:1px;
+}
+
+#eventVolunteeringResults {
+	hheight:20px;
+	width:129px;
+	/*background-color:#03F;*/
+	
+	position:absolute;
+	margin-top:40px;
+	/*margin-left:119px;*/
+	color:#fff;
+	letter-spacing:1px;
+}
+
+#eventFoosballResults {
+	height:20px;
+	width:129px;
+	/*background-color:#03F;*/
+	
+	position:absolute;
+	margin-top:40px;
+	/*margin-left:119px;*/
+	color:#fff;
+	letter-spacing:1px;
+}
+
+#eventCardsResults {
+	height:20px;
+	width:129px;
+	/*background-color:#03F;*/
+	
+	position:absolute;
+	margin-top:40px;
+	/*margin-left:119px;*/
+	color:#fff;
+	letter-spacing:1px;
+}
+
 #hiddenTodayEventButtonExit {
-	height:24px;
+	height:30px;
 	width:590px;
 	background-color:#00b048;
-	margin-top:670px;
+	margin-top:580px;
 	text-align:center;
 	letter-spacing:1px;
+	font-size:20px;
 	color:#fff;
 	text-transform:uppercase;
-	padding-top:6px;
+	padding-top:10px;
 	position:absolute;
 	z-index:350;
 	margin-left:88px;
@@ -891,6 +1148,68 @@ button {
 	height:20px;
 	font-size:16px;	
 }
+
+
+#attendeesDodgeball, #attendeesStudio, #attendeesVolunteering, #attendeesFoosball, #attendeesCards {
+	height:160px;
+	width:432px;
+	margin-top:10px;
+	margin-left:60px;
+	/*background-color:#FC9;*/
+}
+
+#attendeesDodgeball li, #attendeesStudio li, #attendeesVolunteering li, #attendeesFoosball li, #attendeesCards li {
+	height:27px;
+	width:139px;
+	margin-right:7px;
+	margin-bottom:10px;
+	/*background-color:#FFF;*/
+	display:inline;
+	float:left;
+	text-align:center;
+	border-radius:30px;
+}
+
+#attendeesDodgeball li p, #attendeesStudio li p, #attendeesVolunteering li p, #attendeesFoosball li p, #attendeesCards li p {
+	padding-top:1px;
+	font-size:15px;
+	margin-left:0px;
+}
+
+#attendeesDodgeball li.rowEnd, #attendeesStudio li.rowEnd, #attendeesVolunteering li.rowEnd, #attendeesFoosball li.rowEnd, #attendeesCards li.rowEnd {
+	margin-right:0px;
+}
+
+#attendeesDodgeball li a, #attendeesStudio li a, #attendeesVolunteering li a, #attendeesFoosball li a, #attendeesCards li a {
+	width:100%;
+	height:100%;
+}
+
+#attendeesDodgeball li.unselectedTag p, #attendeesStudio li.unselectedTag p, #attendeesVolunteering li.unselectedTag p, #attendeesFoosball li.unselectedTag p, #attendeesCards li.unselectedTag p{
+	background-color:#FFF;
+	color:#434343;
+	border-radius:30px;
+	padding-top:6px;
+	height:20px;
+	font-size:16px;	
+}
+
+.unselectedTag p {
+	/*color:#434343;*/
+}
+
+.selectedTag {
+	background-color:#00b048;
+}
+
+#attendeesDodgeball li.selectedTag p, #attendeesStudio li.selectedTag p, #attendeesVolunteering li.selectedTag p, #attendeesFoosball li.selectedTag p, #attendeesCards li.selectedTag p{
+	color:#ffffff;
+	border-radius:30px;
+	padding-top:6px;
+	height:20px;
+	font-size:16px;	
+}
+
 
 #newEventForm p {
 	float:left;
@@ -1574,47 +1893,67 @@ h3 {
 }
 
 #object1 {
-	background:#0FF;
+	/*background:#0FF;*/
 }
 
 #citySearch {
-	width:300px;
-	height:100px;
-	background-color:#936;
+	width:37px;
+	height:26px;
 	cursor:pointer;
+	float:right;
+	margin-right:115px;
+	border:1px #fff solid;
+	text-align:center;
+	padding-top:6px;
+	color:#fff;
 }
 
 #object2 {
-	background:#3F6;
+	/*background:#3F6;*/
 }
 
 #tagSearch {
-	width:300px;
-	height:100px;
-	background-color:#0C9;
+	width:37px;
+	height:29px;
 	cursor:pointer;
+	float:right;
+	margin-right:40px;
+	border:1px #fff solid;
+	text-align:center;
+	padding-top:6px;
+	color:#fff;
 }
 
 #object3 {
-	background:#F90;
+	/*background:#F90;*/
 }
 
 #calSearch {
-	width:300px;
-	height:100px;
-	background-color:#0C9;
+	width:37px;
+	height:29px;
 	cursor:pointer;
+	float:right;
+	margin-right:40px;
+	border:1px #fff solid;
+	text-align:center;
+	padding-top:6px;
+	color:#fff;
 }
 
 #object4 {
-	background:#F90;
+	/*background:#F90;*/
 }
 
 #userSearch {
-	width:300px;
-	height:100px;
-	background-color:#0C9;
+	width:37px;
+	height:29px;
 	cursor:pointer;
+	float:right;
+	margin-right:40px;
+	border:1px #fff solid;
+	text-align:center;
+	padding-top:6px;
+	color:#fff;
 }
 
 .orBreak {
@@ -3741,6 +4080,21 @@ h2 {
 	color:#fff;
 }
 
+#alertDropDownb {
+	font-size:26px;
+	float:left;
+	width:220px;
+	margin-left:113px;
+	margin-top:5px;
+	height:23px;
+	border-bottom:1px #fff dashed;
+	/*background-color:#C09;*/
+	padding-top:5px;
+	padding-bottom:7px;
+	padding-left:7px;
+	color:#fff;
+}
+
 .alertArrow {
 	background-image:url(../images/dropArrow35x35.png);
 	width:35px;
@@ -3748,6 +4102,18 @@ h2 {
     height:35px;
     float:left;
     margin-top:5px;
+	margin-left:12px;
+	border: 1px solid #fff;
+	margin-left:5px;
+}
+
+.alertArrowb {
+	background-image:url(../images/dropArrow15x15.png);
+	width:15px;
+    cursor: pointer;
+    height:15px;
+    float:left;
+    margin-top:19px;
 	margin-left:12px;
 	border: 1px solid #fff;
 	margin-left:5px;
@@ -3776,6 +4142,35 @@ h2 {
 }
 
 .user p {
+	padding-top:10px;
+	padding-left:10px;
+	font-size:18px;
+	letter-spacing:1px;
+}
+
+.alertUsersb {
+    position: absolute;
+    left: 0px;
+    top:493px;
+    background-color:#222222;
+    color: white;
+    width:230px;
+	margin-left:246px;
+	height:150px;
+	overflow:scroll;
+	opacity:.9;
+	/*display:inline;*/
+}
+.alertUsersb div {
+    display:block;
+    cursor: pointer;        
+}
+
+.userb {
+	height:40px;
+}
+
+.userb p {
 	padding-top:10px;
 	padding-left:10px;
 	font-size:18px;

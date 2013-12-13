@@ -112,8 +112,8 @@
 				document.getElementById('hiddenTodayEventButtonExit').style.display = "none";
 				document.getElementById('hiddenTodayEventGrayBox').style.display = "none";
 								
-				document.getElementById('eventsPage').style.display = "block";
-				document.getElementById('searchPage').style.display = "none";
+				document.getElementById('eventsPage').style.display = "none";
+				document.getElementById('searchPage').style.display = "block";
 				document.getElementById('calPage').style.display = "none";
 				document.getElementById('safePage').style.display = "none";
 				document.getElementById('profilePage').style.display = "none";
@@ -243,6 +243,12 @@
 				document.getElementById('searchingCal').style.display = "none";
 				document.getElementById('goEvents').style.display = "none";
 				document.getElementById('goCal').style.display = "none";
+				
+				document.getElementById('eventDodgeballResults').style.display = "none";
+				document.getElementById('eventStudioResults').style.display = "none";
+				document.getElementById('eventVolunteeringResults').style.display = "none";
+				document.getElementById('eventFoosballResults').style.display = "none";
+				document.getElementById('eventCardsResults').style.display = "none";
         
 			});
 			
@@ -602,20 +608,80 @@
                 <div id="teONE">
                 	<div class="teSTEPS">step one:</div>
                     <div id="step1Q">Which event are you at?</div>
-                        <!--<div id="checkInEvents" class="curVal"><p>Search</p></div><div class="arrow"></div>
+                        <div id="checkInEvents" class="curVal100"><p>Select</p></div><div class="arrowEvents"></div>
                         
-                        <div class = "choices">
+                        <div class = "checkEventsDrop">
                                 <div class="dropDivider"></div>
-                            <div class = "choice" id="city"><p>City</p></div>
+                            <div class = "eventOptions" id="eventDodgeball"><p>Dodgeball</p></div>
                                 <div class="dropDivider"></div>
-                            <div class = "choice" id="tag"><p>Tag</p></div>
+                            <div class = "eventOptions" id="eventStudio"><p>Studio Time</p></div>
                                 <div class="dropDivider"></div>
-                            <div class = "choice" id="cal"><p>Calendar</p></div>
-                        </div>-->
+                            <div class = "eventOptions" id="eventVolunteering"><p>Volunteering</p></div>
+                            <div class="dropDivider"></div>
+                            <div class = "eventOptions" id="eventFoosball"><p>Foosball</p></div>
+                            <div class="dropDivider"></div>
+                            <div class = "eventOptions" id="eventCards"><p>Nertz Card Game</p></div>
+                        </div>
+                        
                 </div>
                 	<div class="tEdividerLine"></div>
                 <div id="teTWO">
                 	<div class="teSTEPS">step two:</div>
+                    <div id="step2Q">Who has arrived?</div>
+                    <div class="revealedEventDiv" id="eventDodgeballResults">
+                        <ul id="attendeesDodgeball">
+                            <li class="unselectedTag"><p>cedes</p></li>
+                            <li class="unselectedTag"><p>tfawce</p></li>
+                            <li class="rowEnd unselectedTag"><p>vball_chick</p></li>
+                            <li class="unselectedTag"><p>i_heart_flip711</p></li>
+                            <li class="unselectedTag"><p>tacotuesday18</p></li>
+                            <li class="rowEnd unselectedTag"><p>sh0rt_stufff</p></li>
+                            <li class="unselectedTag"><p>user738210</p></li>
+                            <li class="unselectedTag"><p>luckySeven</p></li>
+                        </ul>
+                    </div>
+                    <div class="revealedEventDiv" id="eventStudioResults">
+                        <ul id="attendeesStudio">
+                            <li class="unselectedTag"><p>lilflip07</p></li>
+                            <li class="unselectedTag"><p>vball_chick</p></li>
+                        </ul>
+                    </div>
+					<div class="revealedEventDiv" id="eventVolunteeringResults">
+                        <ul id="attendeesVolunteering">
+                            <li class="unselectedTag"><p>user73820</p></li>
+                            <li class="unselectedTag"><p>i_heart_flip711</p></li>
+                            <li class="rowEnd unselectedTag"><p>tacotuesday18</p></li>
+                        </ul>
+                    </div>
+                    <div class="revealedEventDiv" id="eventFoosballResults">
+                        <ul id="attendeesFoosball">
+                            <li class="unselectedTag"><p>vballchick</p></li>
+                            <li class="unselectedTag"><p>cedes</p></li>
+                            <li class="rowEnd unselectedTag"><p>i_heart_flip711</p></li>
+                            <li class="unselectedTag"><p>sh0rt_stufff</p></li>
+                            <li class="unselectedTag"><p>yser738210</p></li>
+                            <li class="rowEnd unselectedTag"><p>luckySeven</p></li>
+                            <li class="unselectedTag"><p>jkrier33</p></li>
+                            <li class="unselectedTag"><p>lilflip07</p></li>
+                            <li class="rowEnd unselectedTag"><p>tfawce</p></li>
+                            <li class="unselectedTag"><p>flip7034</p></li>
+                            <li class="unselectedTag"><p>luckySeven</p></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="revealedEventDiv" id="eventCardsResults">
+                        <ul id="attendeesCards">
+                            <li class="unselectedTag"><p>jKrier33</p></li>
+                            <li class="unselectedTag"><p>vball_chick</p></li>
+                            <li class="rowEnd unselectedTag"><p>i_heart_flip711</p></li>
+                            <li class="unselectedTag"><p>tacotuesday18</p></li>
+                            <li class="unselectedTag"><p>sh0rt_stufff</p></li>
+                            <li class="rowEnd unselectedTag"><p>user738210</p></li>
+                            <li class="unselectedTag"><p>luckySeven</p></li>
+                        </ul>
+                    </div>
+
+                    
                 </div>
             </div>
             <div id="hiddenTodayEventButtonExit">let's go!</div>
@@ -2947,9 +3013,10 @@
         					<div class = "user" id="user2k"><p>jkrier33</p></div>
     					</div>
                         
-                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
                     
-                    <li id="alertBoxExit2">BACK TO EVENTS</li>
+                    <li id="alertBoxExit2">SHARE THIS EVENT!</li>
                 </ul>
             </div>
             
@@ -2987,9 +3054,10 @@
         					<div class = "user" id="user3k"><p>jkrier33</p></div>
     					</div>
                         
-                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
                     
-                    <li id="alertBoxExit3">BACK TO EVENTS</li>
+                    <li id="alertBoxExit3">SHARE THIS EVENT!</li>
                 </ul>
             </div>
             
@@ -3027,9 +3095,10 @@
         					<div class = "user" id="user4k"><p>jkrier33</p></div>
     					</div>
                        
-                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
                     
-                    <li id="alertBoxExit4">BACK TO EVENTS</li>
+                    <li id="alertBoxExit4">SHARE THIS EVENT!</li>
                 </ul>
             </div>
             
@@ -3067,9 +3136,10 @@
         					<div class = "user" id="user5k"><p>jkrier33</p></div>
     					</div>
                         
-                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
                     
-                    <li id="alertBoxExit5">BACK TO EVENTS</li>
+                    <li id="alertBoxExit5">SHARE THIS EVENT!</li>
                 </ul>
             </div>
             
@@ -3107,9 +3177,10 @@
         					<div class = "user" id="user6k"><p>jkrier33</p></div>
     					</div>
                         
-                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
                     
-                    <li id="alertBoxExit6">BACK TO EVENTS</li>
+                    <li id="alertBoxExit6">SHARE THIS EVENT!</li>
                 </ul>
             </div>
             
@@ -3147,9 +3218,10 @@
         					<div class = "user" id="user7k"><p>jkrier33</p></div>
     					</div>
                         
-                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
                     
-                    <li id="alertBoxExit7">BACK TO EVENTS</li>
+                    <li id="alertBoxExit7">SHARE THIS EVENT!</li>
                 </ul>
             </div>
             
@@ -3187,9 +3259,10 @@
         					<div class = "user" id="user8k"><p>jkrier33</p></div>
     					</div>
                         
-                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
                     
-                    <li id="alertBoxExit8">BACK TO EVENTS</li>
+                    <li id="alertBoxExit8">SHARE THIS EVENT!</li>
                 </ul>
             </div>
             
@@ -3227,9 +3300,10 @@
         					<div class = "user" id="user9k"><p>jkrier33</p></div>
     					</div>
                         
-                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
                     
-                    <li id="alertBoxExit9">BACK TO EVENTS</li>
+                    <li id="alertBoxExit9">SHARE THIS EVENT!</li>
                 </ul>
             </div>
             
@@ -3267,9 +3341,10 @@
         					<div class = "user" id="user10k"><p>jkrier33</p></div>
     					</div>
                         
-                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
                     
-                    <li id="alertBoxExit10">BACK TO EVENTS</li>
+                    <li id="alertBoxExit10">SHARE THIS EVENT!</li>
                 </ul>
             </div>
             
@@ -3307,9 +3382,10 @@
         					<div class = "user" id="user11k"><p>jkrier33</p></div>
     					</div>
                         
-                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
                     
-                    <li id="alertBoxExit11">BACK TO EVENTS</li>
+                    <li id="alertBoxExit11">SHARE THIS EVENT!</li>
                 </ul>
             </div>
             
@@ -3347,9 +3423,10 @@
         					<div class = "user" id="user12k"><p>jkrier33</p></div>
     					</div>
                        
-                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
                     
-                    <li id="alertBoxExit12">BACK TO EVENTS</li>
+                    <li id="alertBoxExit12">SHARE THIS EVENT!</li>
                 </ul>
             </div>
             
@@ -3387,9 +3464,10 @@
         					<div class = "user" id="user13k"><p>jkrier33</p></div>
     					</div>
                         
-                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
                     
-                    <li id="alertBoxExit13">BACK TO EVENTS</li>
+                    <li id="alertBoxExit13">SHARE THIS EVENT!</li>
                 </ul>
             </div>
             
@@ -3427,9 +3505,10 @@
         					<div class = "user" id="user14k"><p>jkrier33</p></div>
     					</div>
                         
-                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
                     
-                    <li id="alertBoxExit14">BACK TO EVENTS</li>
+                    <li id="alertBoxExit14">SHARE THIS EVENT!</li>
                 </ul>
             </div>
             
@@ -3467,9 +3546,10 @@
         					<div class = "user" id="user15k"><p>jkrier33</p></div>
     					</div>
                         
-                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
                     
-                    <li id="alertBoxExit15">BACK TO EVENTS</li>
+                    <li id="alertBoxExit15">SHARE THIS EVENT!</li>
                 </ul>
             </div>
             
@@ -3507,9 +3587,10 @@
         					<div class = "user" id="user16k"><p>jkrier33</p></div>
     					</div>
                         
-                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div> </li>
+                        <div class="explainAlertText">This is a great way to let your friends or other users know about this event!<br /><br /> The user options available pertains to every user you've interacted with via Flip attendees.</div>      
+                    </li>
                     
-                    <li id="alertBoxExit16">BACK TO EVENTS</li>
+                    <li id="alertBoxExit16">SHARE THIS EVENT!</li>
                 </ul>
             </div>
             
@@ -3533,7 +3614,8 @@
                     </a>
                 </div>
                 <div id="object1" class="content">
-                	<div id="citySearch">yo.</div>
+                <input id="searchCityTextb" type="text" placeholder="Minneapolis"></form>
+                	<div id="citySearch">go</div>
                 </div>
                 
                 <!--<div class="orBreak">  <div class="orLine"></div>  <p>or</p>  <div class="orLine"></div>  </div>-->
@@ -3544,7 +3626,64 @@
                     </a>
                 </div>
                 <div id="object2" class="content">
-                	<div id="tagSearch">hey.</div>
+                	<div class="curVal2b"><p>Select</p></div><div class="arrow2b"></div>
+                    	<div class="tagChoicesb">
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="animalsb"><p>Animals</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="astrologyb"><p>Astrology</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="artb"><p>Art</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="bookClubb"><p>Book Club</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="craftsb"><p>Crafts</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="concertsb"><p>Concerts</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="diyb"><p>DIY</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="drinkb"><p>Drink</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="exerciseb"><p>Exercise</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="foodb"><p>Food</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="gamesb"><p>Games</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="indoorb"><p>Indoor</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="karaokeb"><p>Karaoke</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="musicb"><p>Music</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="outdoorb"><p>Outdoor</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="recLeagueb"><p>Rec League</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="runningb"><p>Running</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="snowb"><p>Snow</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="sportsb"><p>Sports</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="studiob"><p>Studio</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="teamworkb"><p>Teamwork</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="theaterb"><p>Theater</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="travelb"><p>Travel</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="waterb"><p>Water</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="yardGamesb"><p>Yard Games</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="yogab"><p>Yoga</p></div>
+                                <div class="dropDividerTag"></div>
+                            <div class="tagChoiceb" id="youthb"><p>Youth</p></div>
+    					</div>
+                	<div id="tagSearch">go</div>
                 </div>
                 
                 <!--<div class="orBreak">  <div class="orLine"></div>  <p>or</p>  <div class="orLine"></div>  </div>-->
@@ -3555,7 +3694,99 @@
                     </a>
                 </div>
                 <div id="object3" class="content">
-                	<div id="calSearch">hola.</div>
+                    <div class="curVal3b"><p>Month</p></div><div class="arrow3b"></div>
+                    	<div class="calChoicesb">
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoiceb" id="janb"><p>January</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoiceb" id="febb"><p>February</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoiceb" id="marb"><p>March</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoiceb" id="aprb"><p>April</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoiceb" id="mayb"><p>May</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoiceb" id="junb"><p>June</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoiceb" id="julb"><p>July</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoiceb" id="augb"><p>August</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoiceb" id="sepb"><p>September</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoiceb" id="octb"><p>October</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoiceb" id="novb"><p>November</p></div>
+                                <div class="dropDividerCal"></div>
+                            <div class="calChoiceb" id="decb"><p>December</p></div>
+    					</div>
+           			<div class="curVal4b"><p>Day</p></div><div class="arrow4b"></div>
+                    	<div class="dayChoicesb">
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day1b"><p>1</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day2b"><p>2</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day3b"><p>3</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day4b"><p>4</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day5b"><p>5</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day6b"><p>6</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day7b"><p>7</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day8b"><p>8</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day9b"><p>9</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day10b"><p>10</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day11b"><p>11</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day12b"><p>12</p></div>
+                            	<div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day13b"><p>13</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day14b"><p>14</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day15b"><p>15</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day16b"><p>16</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day17b"><p>17</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day18b"><p>18</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day19b"><p>19</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day20b"><p>20</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day21b"><p>21</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day22b"><p>22</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day23b"><p>23</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day24b"><p>24</p></div>
+                            	<div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day25b"><p>25</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day26b"><p>26</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day27b"><p>27</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day28b"><p>28</p></div>
+                            	<div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day29b"><p>29</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day30b"><p>30</p></div>
+                                <div class="dropDividerDay"></div>
+                            <div class="dayChoiceb" id="day31b"><p>31</p></div>
+    					</div>
+                    <div id="calSearch">go</div>
                 </div>
                 
                 <!--<div class="orBreak">  <div class="orLine"></div>  <p>or</p>  <div class="orLine"></div>  </div>-->
@@ -3566,7 +3797,33 @@
                     </a>
                 </div>
                 <div id="object4" class="content">
-                	<div id="userSearch">hello.</div>
+                	
+                    <div id="alertDropDownb" class="curVal5pb"><p>Search</p></div><div class="alertArrowb"></div>
+                    
+                    	<div class = "alertUsersb">
+                        	<div class = "userb" id="user16ab"><p>cedes</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "userb" id="user16bb"><p>vball_chick</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "userb" id="user16cb"><p>i_heart_flip711</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "userb" id="user16db"><p>tacotuesday18</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "userb" id="user16eb"><p>sh0rt_stufff</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "userb" id="user16fb"><p>user738210</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "userb" id="user16gb"><p>luckySeven</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "userb" id="user16hb"><p>tfawce</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "userb" id="user16ib"><p>flip7034</p></div>
+                            	<div class="alertDropDivider"></div>
+                            <div class = "userb" id="user16jb"><p>lilflip07</p></div>
+                        		<div class="alertDropDivider"></div>
+        					<div class = "userb" id="user16kb"><p>jkrier33</p></div>
+    					</div>
+                        <div id="userSearch">go</div>
                 </div>
             </div>
             
@@ -6156,7 +6413,7 @@
             	<ul id="sectionLabels">
             		<li><div id="profLabel"></div></li>
                 	<li><div id="archiveLabel"></div></li>
-                    <li><div id="feedBackLabel"></div></li>
+                   <!--<li><div id="feedBackLabel"></div></li>-->
                 </ul>	
                 <ul>
                 	<li>
@@ -6274,10 +6531,10 @@
                         </div>
                     </li>
                     
-                    <li>
+                    <!--<li>
                     	<div id="feedbackProfInfo">
                         </div>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
             
@@ -6496,7 +6753,7 @@
 		
 		////////////new event Tags////////////
 		$(function(){
-		 $("#tagsGroup li").click(function () {
+		 $("#tagsGroup li, #attendeesDodgeball li, #attendeesStudio li, #attendeesVolunteering li, #attendeesFoosball li, #attendeesCards li").click(function () {
 			 if ($(this).hasClass("selectedTag")) {
 				$(this).removeClass("selectedTag").addClass("unselectedTag"); 
 			 } else {
@@ -6537,11 +6794,69 @@
         	$("#searchingCal, #goCal").fadeIn(1000);
 		});
 		
+		/////////////////////////////////
+		$(".checkEventsDrop").hide();
+		
+		$(".arrowEvents").click(function(event) {
+   			$(".checkEventsDrop").slideToggle("fast"); 
+			//$(".tagChoices").hide(); 
+   			event.stopPropagation();
+		});
+		
+		$("#eventDodgeball").click(function() {
+			$(".curVal100").html($(this).html());
+			//$("#goCal").hide();
+			$(".checkEventsDrop").slideToggle("fast");
+			$(".revealedEventDiv").not("#eventDodgeballResults").hide();
+        	$("#eventDodgeballResults").show();
+        	$("#eventDodgeballResults").fadeIn(1000);
+		});
+		$("#eventStudio").click(function() {
+			$(".curVal100").html($(this).html());
+			//$("#goCal").hide();
+			$(".checkEventsDrop").slideToggle("fast");
+			$(".revealedEventDiv").not("#eventStudioResults").hide();
+        	$("#eventStudioResults").show();
+        	$("#eventStudioResults").fadeIn(1000);
+		});
+		$("#eventVolunteering").click(function() {
+			$(".curVal100").html($(this).html());
+			//$("#goEvents").hide();
+			$(".checkEventsDrop").slideToggle("fast");
+			$(".revealedEventDiv").not("#eventVolunteeringResults").hide();
+        	$("#eventVolunteeringResults").show();
+        	$("#eventVolunteeringResults").fadeIn(1000);
+		});
+		$("#eventFoosball").click(function() {
+			$(".curVal100").html($(this).html());
+			//$("#goCal").hide();
+			$(".checkEventsDrop").slideToggle("fast");
+			$(".revealedEventDiv").not("#eventFoosballResults").hide();
+        	$("#eventFoosballResults").show();
+        	$("#eventFoosballResults").fadeIn(1000);
+		});
+		$("#eventCards").click(function() {
+			$(".curVal100").html($(this).html());
+			//$("#goEvents").hide();
+			$(".checkEventsDrop").slideToggle("fast");
+			$(".revealedEventDiv").not("#eventCardsResults").hide();
+        	$("#eventCardsResults").show();
+        	$("#eventCardsResults").fadeIn(1000);
+		});
+		
 		//////////////////////////////////////////////////////////////
 		$(".alertUsers").hide();
 		
 		$(".alertArrow").click(function(event) {
    			$(".alertUsers").slideToggle("fast"); 
+			//$(".user").hide(); 
+   			event.stopPropagation();
+		});
+		
+		$(".alertUsersb").hide();
+		
+		$(".alertArrowb").click(function(event) {
+   			$(".alertUsersb").slideToggle("fast"); 
 			//$(".user").hide(); 
    			event.stopPropagation();
 		});
@@ -7280,6 +7595,53 @@
 			$(".curVal5p").html($(this).html());
 			$(".alertUsers").slideToggle("fast");
 		});
+		
+		
+		
+		$("#user16ab").click(function() {
+			$(".curVal5pb").html($(this).html());
+			$(".alertUsersb").slideToggle("fast");
+		});
+		$("#user16bb").click(function() {
+			$(".curVal5pb").html($(this).html());
+			$(".alertUsersb").slideToggle("fast");
+		});
+		$("#user16cb").click(function() {
+			$(".curVal5pb").html($(this).html());
+			$(".alertUsersb").slideToggle("fast");
+		});
+		$("#user16db").click(function() {
+			$(".curVal5pb").html($(this).html());
+			$(".alertUsersb").slideToggle("fast");
+		});
+		$("#user16eb").click(function() {
+			$(".curVal5pb").html($(this).html());
+			$(".alertUsersb").slideToggle("fast");
+		});
+		$("#user16fb").click(function() {
+			$(".curVal5pb").html($(this).html());
+			$(".alertUsersb").slideToggle("fast");
+		});
+		$("#user16gb").click(function() {
+			$(".curVal5pb").html($(this).html());
+			$(".alertUsersb").slideToggle("fast");
+		});
+		$("#user16hb").click(function() {
+			$(".curVal5pb").html($(this).html());
+			$(".alertUsersb").slideToggle("fast");
+		});
+		$("#user16ib").click(function() {
+			$(".curVal5pb").html($(this).html());
+			$(".alertUsersb").slideToggle("fast");
+		});
+		$("#user16jb").click(function() {
+			$(".curVal5pb").html($(this).html());
+			$(".alertUsersb").slideToggle("fast");
+		});
+		$("#user16kb").click(function() {
+			$(".curVal5pb").html($(this).html());
+			$(".alertUsersb").slideToggle("fast");
+		});
 		//////////////////////////////////////////////////////////////
 		
 		///////////////////////tag drop down
@@ -7294,6 +7656,22 @@
 		$("#animals, #astrology, #art, #bookClub, #crafts, #concerts, #diy, #drink, #exercise, #food, #games, #indoor, #karaoke, #music, #outdoor, #recLeague, #running, #snow, #sports, #studio, #teamwork, #travel, #water, #yardGames, #yoga, #youth").click(function() {
 			$(".curVal2").html($(this).html());
 		});
+		
+		
+		
+		$(".tagChoicesb").hide();
+		
+		$(".arrow2b").click(function(event) {
+   			$(".tagChoicesb").slideToggle("fast"); //scrollTop? 
+			//$(".choices").hide();
+   			event.stopPropagation();
+		});
+		
+		$("#animalsb, #astrologyb, #artb, #bookClubb, #craftsb, #concertsb, #diyb, #drinkb, #exerciseb, #foodb, #gamesb, #indoorb, #karaokeb, #musicb, #outdoorb, #recLeagueb, #runningb, #snowb, #sportsb, #studiob, #teamworkb, #travelb, #waterb, #yardGamesb, #yogab, #youthb").click(function() {
+			$(".curVal2b").html($(this).html());
+			$(".tagChoicesb").slideToggle("fast");
+		});
+		
 		
 		///////////////////////cal drop down one
 		$(".calChoices").hide();
@@ -7323,6 +7701,37 @@
 		
 		$("#day1, #day2, #day3, #day4, #day5, #day6, #day7, #day8, #day9, #day10, #day11, #day12, #day13, #day14, #day15, #day16, #day17, #day18, #day19, #day20, #day21, #day22, #day23, #day24, #day25, #day26, #day27, #day28, #day29, #day30, #day31").click(function() {
 			$(".curVal4").html($(this).html());
+		});
+		
+		$(".calChoicesb").hide();
+		
+		$(".arrow3b").click(function(event) {
+   			$(".calChoicesb").slideToggle("fast"); //scrollTop? 
+			//$(".choicesb").hide();
+			//$(".tagChoices").hide();
+			$(".dayChoicesb").hide();
+   			event.stopPropagation();
+		});
+		
+		$("#janb, #febb, #marb, #aprb, #mayb, #junb, #julb, #augb, #sepb, #octb, #novb, #decb").click(function() {
+			$(".curVal3b").html($(this).html());
+			$(".calChoicesb").slideToggle("fast");
+		});
+		
+		///////////////////////cal drop down one
+		$(".dayChoicesb").hide();
+		
+		$(".arrow4b").click(function(event) {
+   			$(".dayChoicesb").slideToggle("fast"); //scrollTop? 
+			//$(".choices").hide();
+			//$(".tagChoices").hide();
+			$(".calChoicesb").hide();			
+   			event.stopPropagation();
+		});
+		
+		$("#day1b, #day2b, #day3b, #day4b, #day5b, #day6b, #day7b, #day8b, #day9b, #day10b, #day11b, #day12b, #day13b, #day14b, #day15b, #day16b, #day17b, #day18b, #day19b, #day20b, #day21b, #day22b, #day23b, #day24b, #day25b, #day26b, #day27b, #day28b, #day29b, #day30b, #day31b").click(function() {
+			$(".curVal4b").html($(this).html());
+			$(".dayChoicesb").slideToggle("fast");
 		});
 		
 		////////////
@@ -7442,8 +7851,8 @@
 	            var match = regex.exec(qs);
 	            var value = "";
 	            if (match != null) {
-	                //value = match[1];
-					value = "cedes";
+	                value = match[1];
+					//value = "cedes";
 	            };
 	            return value;
 	        };

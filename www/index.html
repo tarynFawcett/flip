@@ -24,6 +24,10 @@
 				document.getElementById('signUp2').style.display = "none";
 				document.getElementById('logIn3').style.display = "none";
 				document.getElementById('signUp3').style.display = "none";
+				
+				document.getElementById('hiddenMyCalText').style.display = "none";
+				document.getElementById('hiddenMyCalButtonExit').style.display = "none";
+				document.getElementById('hiddenMyCalGrayBox').style.display = "none";
 			});
 		</script>
     
@@ -38,7 +42,9 @@
                 
             <div id="forgotHiddenDivText">
 				<ul>
-					<li id="forgotHiddenBox"></li>
+					<li id="forgotHiddenBox">
+                    	Your new password has been sent to your email!
+                    </li>
                     <li id="forgotHiddenExitButton">EXIT</li>
               	</ul>
          	</div>
@@ -113,7 +119,8 @@
                                 
                                 <div id="secondStep">
                                     <h1>...THEN THE FUN STUFF!</h1>
-                                    <form id="myForm3" onSubmit="sendProfileData(); return false" method="get">
+                                    <!--<form id="myForm3" onSubmit="sendProfileData(); return false" method="get">-->
+                                    <form id="myForm3">
                                         <p>choose your main city:</p><input type="text" name="maincity" id="mainCity" class="whiteForm" placeholder="This will be visible to all.">
                                         <!--<div><h3>This will default shown events.</h3></div>-->
                                    	
@@ -151,7 +158,11 @@
                                           
                                     <input id="createButton" class="submitButton" type="submit" value="CREATE">
                                     </form>
-                                	<!--<div id="createButton"><a href="#"><p>CREATE</p></a></div> -->             
+                                	<!--<div id="createButton"><a href="#"><p>CREATE</p></a></div> -->   
+                                    <div id="hiddenMyCalText"></div>
+            						<div id="hiddenMyCalButtonExit"></div>
+            
+            						<div id="hiddenMyCalGrayBox"></div>          
                             	</div>
                                 
                                 <div id="leftColumn">
@@ -374,6 +385,22 @@
 			event.preventDefault();
 			$('#forgotHiddenDiv, #forgotHiddenDivText').fadeOut(250);
 			enableScrolling();
+		});
+		
+		$('#myCalButton').on('tap', function(event){
+			event.preventDefault();
+			$('#hiddenMyCalText').fadeIn(250);
+			$('#hiddenMyCalButtonExit').fadeIn(250);
+			$('#hiddenMyCalGrayBox').fadeIn(250);
+			//$('#hiddenNav').fadeOut(250);
+			//$('#hiddenNavGrayBox').fadeOut(250);
+		});
+		
+		$('#hiddenMyCalButtonExit').on('tap', function(event){
+			event.preventDefault();
+			$('#hiddenMyCalText').fadeOut(250);
+			$('#hiddenMyCalButtonExit').fadeOut(250);
+			$('#hiddenMyCalGrayBox').fadeOut(250);
 		});
 		
 		</script>
