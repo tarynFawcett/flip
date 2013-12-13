@@ -6860,8 +6860,9 @@
 		$(".alertUsers").hide();
 		
 		$(".alertArrow").click(function(event) {
-   			$(".alertUsers").slideToggle("fast").enableScrolling();
+   			$(".alertUsers").slideToggle("fast");
 			//$(".user").hide(); 
+			$(".alertUsers").enableScrolling();
    			event.stopPropagation();
 		});
 		
